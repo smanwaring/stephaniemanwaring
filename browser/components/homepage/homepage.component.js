@@ -52,13 +52,16 @@ class Homepage extends React.Component {
 
     render() {
         return (
-            <div className="box">
-            <div className="welcome">
-                <div className="md-font green">Hi! I'm Stephanie Manwaring</div>
-                <div className="lg-font pink">web developer</div>
-                <div className="sm-font yellowish"> and {this.state.currentRandomFact}</div>
-                <i className="material-icons lg-icon" onClick={this.randomFactGeneratorDown}>keyboard_arrow_left</i><i className="material-icons lg-icon" onClick={this.randomFactGeneratorUp}>keyboard_arrow_right</i>
-            </div>
+            <div>
+                <div className="box">
+                <div className="welcome">
+                    <div className="md-font green">Hi! I'm Stephanie Manwaring</div>
+                    <div className="lg-font pink">WEB DEVELOPER</div>
+                    <div className="sm-font yellowish"> and {this.state.currentRandomFact}</div>
+                    <i className="material-icons lg-icon" onClick={this.randomFactGeneratorDown}>keyboard_arrow_left</i><i className="material-icons lg-icon" onClick={this.randomFactGeneratorUp}>keyboard_arrow_right</i>
+                </div>
+                </div>
+                <About/>
             </div>
         );
     }

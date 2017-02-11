@@ -13,11 +13,19 @@ class About extends React.Component {
             <div>
                 <div className="wrapper">
                 <aside className="aside aside-1">
-                    <div>Hello!</div>
-                    <div>Nice to meet you.</div>
+                    <div className="text-highlight">Hello!</div>
+                    <div className="text-bold">Nice to meet you.</div>
                 </aside>
                 <article className="main">
-                    <p>Web development is my passion. I've had over five years' experience working as a front-end web developer. I've worked in small studios developing sites for clients and at large companies working in-house on web projects. I believe in writing hand-crafted, semantic markup that is performant, uses progressive enhancement and is accessible to as many users and devices as possible. I the web.</p>  
+                    <p className="main-text"> I'm Stephanie Manwaring (	man - weh - ring ). I'm a former marketing director turned full stack web developer. 
+                        I attended Fullstack Academy of Code where I currently work as a teaching fellow and engineering intern. 
+                        I've worked independently and in small teams to develop sweet projects with the technologies I've learned.  
+                        I currently reside in NYC and continue to be inspired by its tech community. 
+                        <br/>
+                        <br/>
+                        When I'm not coding you can find me cycling on the streets on NYC, running through Central Park,  
+                        putting together a four-course meal, board-gaming it up with friends, or doing laundry. 
+                        I the web.</p>  
                 </article>
                 </div>
    
@@ -25,37 +33,40 @@ class About extends React.Component {
 
                 <div className="wrapper">
                 <aside className="aside aside-1">
-                    <div>Languages</div>
+                    <div className="text-bold" >Languages</div>
                 </aside>
                 <article className="main">
-                    <ul className="left">
+                    <ul className="main-text">
                         <li>JavaScript</li>
                         <li>HTML5</li>
-                        <li>CSS</li>
-                        <li>SASS</li>
+                        <li>CSS3</li>
+                        <li>SASS/LESS</li>
                     </ul>
                 </article>
                 </div>
 
                 <hr />
 
-                 <div className="wrapper">
+                <div className="wrapper">
                 <aside className="aside aside-1">
-                    <div>Technologies</div>
-                    <div>Frameworks/libraries</div>
-                    <div>Party in the front, party in the back</div>
+                    <div className="text-bold">Technologies</div>
                 </aside>
                 <article className="main">
-                    <ul className="left">
+                    <ul className="left main-text">
+                        <div className="text-bold">Frameworks/libraries</div>
                         <li>React</li>
                         <li>React-Redux</li>
                         <li>Angular 2</li>
                         <li>Node.js</li>
                         <li>jQuery</li>
-                        <li>express</li>
-                        <li>moach chai</li>
+                        <li>Express</li>
+                        <li>Mocha / Chai</li>
+                        <li>AJAX</li>
                         <li>PostgresSQL</li>
                         <li>Sequelize</li>
+                        <div className="text-bold">Day-to-day comfort</div>
+                            <li>Version Control (GIT)</li>
+                            <li>Agile Methodology</li>
                     </ul>
                 </article>
                 </div>

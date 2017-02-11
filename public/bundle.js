@@ -29882,37 +29882,42 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                'div',
-	                { className: 'box' },
+	                null,
 	                _react2.default.createElement(
 	                    'div',
-	                    { className: 'welcome' },
+	                    { className: 'box' },
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'md-font green' },
-	                        'Hi! I\'m Stephanie Manwaring'
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'lg-font pink' },
-	                        'web developer'
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'sm-font yellowish' },
-	                        ' and ',
-	                        this.state.currentRandomFact
-	                    ),
-	                    _react2.default.createElement(
-	                        'i',
-	                        { className: 'material-icons lg-icon', onClick: this.randomFactGeneratorDown },
-	                        'keyboard_arrow_left'
-	                    ),
-	                    _react2.default.createElement(
-	                        'i',
-	                        { className: 'material-icons lg-icon', onClick: this.randomFactGeneratorUp },
-	                        'keyboard_arrow_right'
+	                        { className: 'welcome' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'md-font green' },
+	                            'Hi! I\'m Stephanie Manwaring'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'lg-font pink' },
+	                            'WEB DEVELOPER'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'sm-font yellowish' },
+	                            ' and ',
+	                            this.state.currentRandomFact
+	                        ),
+	                        _react2.default.createElement(
+	                            'i',
+	                            { className: 'material-icons lg-icon', onClick: this.randomFactGeneratorDown },
+	                            'keyboard_arrow_left'
+	                        ),
+	                        _react2.default.createElement(
+	                            'i',
+	                            { className: 'material-icons lg-icon', onClick: this.randomFactGeneratorUp },
+	                            'keyboard_arrow_right'
+	                        )
 	                    )
-	                )
+	                ),
+	                _react2.default.createElement(_about2.default, null)
 	            );
 	        }
 	    }]);
@@ -29981,12 +29986,12 @@
 	                        { className: 'aside aside-1' },
 	                        _react2.default.createElement(
 	                            'div',
-	                            null,
+	                            { className: 'text-highlight' },
 	                            'Hello!'
 	                        ),
 	                        _react2.default.createElement(
 	                            'div',
-	                            null,
+	                            { className: 'text-bold' },
 	                            'Nice to meet you.'
 	                        )
 	                    ),
@@ -29995,8 +30000,11 @@
 	                        { className: 'main' },
 	                        _react2.default.createElement(
 	                            'p',
-	                            null,
-	                            'Web development is my passion. I\'ve had over five years\' experience working as a front-end web developer. I\'ve worked in small studios developing sites for clients and at large companies working in-house on web projects. I believe in writing hand-crafted, semantic markup that is performant, uses progressive enhancement and is accessible to as many users and devices as possible. I the web.'
+	                            { className: 'main-text' },
+	                            ' I\'m Stephanie Manwaring ( man - weh - ring ). I\'m a former marketing director turned full stack web developer. I attended Fullstack Academy of Code where I currently work as a teaching fellow and engineering intern. I\'ve worked independently and in small teams to develop sweet projects with the technologies I\'ve learned. I currently reside in NYC and continue to be inspired by its tech community.',
+	                            _react2.default.createElement('br', null),
+	                            _react2.default.createElement('br', null),
+	                            'When I\'m not coding you can find me cycling on the streets on NYC, running through Central Park, putting together a four-course meal, board-gaming it up with friends, or doing laundry. I the web.'
 	                        )
 	                    )
 	                ),
@@ -30009,7 +30017,7 @@
 	                        { className: 'aside aside-1' },
 	                        _react2.default.createElement(
 	                            'div',
-	                            null,
+	                            { className: 'text-bold' },
 	                            'Languages'
 	                        )
 	                    ),
@@ -30018,7 +30026,7 @@
 	                        { className: 'main' },
 	                        _react2.default.createElement(
 	                            'ul',
-	                            { className: 'left' },
+	                            { className: 'main-text' },
 	                            _react2.default.createElement(
 	                                'li',
 	                                null,
@@ -30032,12 +30040,12 @@
 	                            _react2.default.createElement(
 	                                'li',
 	                                null,
-	                                'CSS'
+	                                'CSS3'
 	                            ),
 	                            _react2.default.createElement(
 	                                'li',
 	                                null,
-	                                'SASS'
+	                                'SASS/LESS'
 	                            )
 	                        )
 	                    )
@@ -30051,18 +30059,8 @@
 	                        { className: 'aside aside-1' },
 	                        _react2.default.createElement(
 	                            'div',
-	                            null,
+	                            { className: 'text-bold' },
 	                            'Technologies'
-	                        ),
-	                        _react2.default.createElement(
-	                            'div',
-	                            null,
-	                            'Frameworks/libraries'
-	                        ),
-	                        _react2.default.createElement(
-	                            'div',
-	                            null,
-	                            'Party in the front, party in the back'
 	                        )
 	                    ),
 	                    _react2.default.createElement(
@@ -30070,7 +30068,12 @@
 	                        { className: 'main' },
 	                        _react2.default.createElement(
 	                            'ul',
-	                            { className: 'left' },
+	                            { className: 'left main-text' },
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'text-bold' },
+	                                'Frameworks/libraries'
+	                            ),
 	                            _react2.default.createElement(
 	                                'li',
 	                                null,
@@ -30099,12 +30102,17 @@
 	                            _react2.default.createElement(
 	                                'li',
 	                                null,
-	                                'express'
+	                                'Express'
 	                            ),
 	                            _react2.default.createElement(
 	                                'li',
 	                                null,
-	                                'moach chai'
+	                                'Mocha / Chai'
+	                            ),
+	                            _react2.default.createElement(
+	                                'li',
+	                                null,
+	                                'AJAX'
 	                            ),
 	                            _react2.default.createElement(
 	                                'li',
@@ -30115,6 +30123,21 @@
 	                                'li',
 	                                null,
 	                                'Sequelize'
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'text-bold' },
+	                                'Day-to-day comfort'
+	                            ),
+	                            _react2.default.createElement(
+	                                'li',
+	                                null,
+	                                'Version Control (GIT)'
+	                            ),
+	                            _react2.default.createElement(
+	                                'li',
+	                                null,
+	                                'Agile Methodology'
 	                            )
 	                        )
 	                    )
@@ -30263,7 +30286,7 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                'div',
-	                null,
+	                { className: 'projects-background' },
 	                _react2.default.createElement(
 	                    'h1',
 	                    null,
@@ -30272,29 +30295,36 @@
 	                _react2.default.createElement('hr', null),
 	                _react2.default.createElement(
 	                    'div',
-	                    { className: 'wrapper' },
+	                    { className: 'wrapper white' },
 	                    _react2.default.createElement(
 	                        'aside',
 	                        { className: 'aside aside-1' },
 	                        _react2.default.createElement(
 	                            'div',
-	                            null,
-	                            'Presentations'
+	                            { className: 'text-bold' },
+	                            'Clap-Fetti'
 	                        ),
 	                        _react2.default.createElement(
 	                            'div',
-	                            null,
-	                            'Nice to meet you.'
+	                            { className: 'main-text-project' },
+	                            'A fun single page web application inspired by Periscope\'s floating hearts and Facebook\'s reaction icons. Create a custom clap board or join one that already exists to view and/or participate in silent reactions from a audience, gauge audience sentiment, or use it for a colorful visual applaud from remote users during your presentation. '
+	                        ),
+	                        _react2.default.createElement('br', null),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'main-text-project' },
+	                            'Powered by: React-Redux, Socket.io, and my own react/redux boilerplate'
+	                        ),
+	                        _react2.default.createElement('br', null),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'link-box' },
+	                            'GITHUB'
 	                        ),
 	                        _react2.default.createElement(
 	                            'div',
-	                            null,
-	                            'Nice to meet you.'
-	                        ),
-	                        _react2.default.createElement(
-	                            'div',
-	                            null,
-	                            'Nice to meet you.'
+	                            { className: 'link-box' },
+	                            'LIVESITE'
 	                        )
 	                    ),
 	                    _react2.default.createElement(
@@ -30316,22 +30346,12 @@
 	                        _react2.default.createElement(
 	                            'div',
 	                            null,
-	                            'Presentations'
+	                            'Santa-Swap'
 	                        ),
 	                        _react2.default.createElement(
 	                            'div',
-	                            null,
-	                            'Nice to meet you.'
-	                        ),
-	                        _react2.default.createElement(
-	                            'div',
-	                            null,
-	                            'Nice to meet you.'
-	                        ),
-	                        _react2.default.createElement(
-	                            'div',
-	                            null,
-	                            'Nice to meet you.'
+	                            { className: 'main-text-project' },
+	                            'A fun single page web application inspired by Periscope\'s floating hearts and Facebook\'s reaction icons. Create a custom clap board or join one that already exists to view and/or participate in silent reactions from a audience, gauge audience sentiment, or use it for a colorful visual applaud from remote users during your presentation. '
 	                        )
 	                    ),
 	                    _react2.default.createElement(
@@ -30353,22 +30373,12 @@
 	                        _react2.default.createElement(
 	                            'div',
 	                            null,
-	                            'Presentations'
+	                            'Archiver'
 	                        ),
 	                        _react2.default.createElement(
 	                            'div',
-	                            null,
-	                            'Nice to meet you.'
-	                        ),
-	                        _react2.default.createElement(
-	                            'div',
-	                            null,
-	                            'Nice to meet you.'
-	                        ),
-	                        _react2.default.createElement(
-	                            'div',
-	                            null,
-	                            'Used my own react redux boilerplate'
+	                            { className: 'main-text-project' },
+	                            'A fun single page web application inspired by Periscope\'s floating hearts and Facebook\'s reaction icons. Create a custom clap board or join one that already exists to display silent reactions from a audience, gauge audience sentiment, or use it for a colorful visual applaud from remote users during your presentation.  '
 	                        )
 	                    ),
 	                    _react2.default.createElement(
@@ -30390,22 +30400,12 @@
 	                        _react2.default.createElement(
 	                            'div',
 	                            null,
-	                            'Presentations'
+	                            'Relationship'
 	                        ),
 	                        _react2.default.createElement(
 	                            'div',
-	                            null,
-	                            'Nice to meet you.'
-	                        ),
-	                        _react2.default.createElement(
-	                            'div',
-	                            null,
-	                            'Nice to meet you.'
-	                        ),
-	                        _react2.default.createElement(
-	                            'div',
-	                            null,
-	                            'Used my own react redux boilerplate'
+	                            { className: 'main-text-project' },
+	                            'A fun single page web application inspired by Periscope\'s floating hearts and Facebook\'s reaction icons. Create a custom clap board or join one that already exists to display silent reactions from a audience, gauge audience sentiment, or use it for a colorful visual applaud from remote users during your presentation. Built using my own react-redux boilerplate '
 	                        )
 	                    ),
 	                    _react2.default.createElement(
