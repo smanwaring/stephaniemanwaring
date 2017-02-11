@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Navbar from './Navbar';
+import About from '../about/about.component';
 
 
 class Homepage extends React.Component {
@@ -18,7 +18,8 @@ class Homepage extends React.Component {
             'needle fearer',
             'empanada maker',
             'mystery novel reader',
-            'human being'
+            'human being',
+            'tardigrade admirer'
             ],
             currentRandomFact: 'yellow-cake enthusiast'
     };
@@ -51,12 +52,13 @@ class Homepage extends React.Component {
 
     render() {
         return (
-            <div>
-                <h1>Hi!</h1> 
-                <h1>I'm Stephanie Manwaring.</h1>  
-                <h1>Fullstack web developer and</h1><h1>{this.state.currentRandomFact}</h1>
-                <button onClick={this.randomFactGeneratorUp}>up</button> <button onClick={this.randomFactGeneratorDown}>down</button>
-
+            <div className="box">
+            <div className="welcome">
+                <div className="md-font green">Hi! I'm Stephanie Manwaring</div>
+                <div className="lg-font pink">web developer</div>
+                <div className="sm-font yellowish"> and {this.state.currentRandomFact}</div>
+                <i className="material-icons lg-icon" onClick={this.randomFactGeneratorDown}>keyboard_arrow_left</i><i className="material-icons lg-icon" onClick={this.randomFactGeneratorUp}>keyboard_arrow_right</i>
+            </div>
             </div>
         );
     }

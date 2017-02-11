@@ -67,13 +67,24 @@
 	
 	var _Root2 = _interopRequireDefault(_Root);
 	
-	var _Homepage = __webpack_require__(279);
+	var _homepage = __webpack_require__(280);
 	
-	var _Homepage2 = _interopRequireDefault(_Homepage);
+	var _homepage2 = _interopRequireDefault(_homepage);
+	
+	var _about = __webpack_require__(281);
+	
+	var _about2 = _interopRequireDefault(_about);
+	
+	var _presentation = __webpack_require__(282);
+	
+	var _presentation2 = _interopRequireDefault(_presentation);
+	
+	var _projects = __webpack_require__(283);
+	
+	var _projects2 = _interopRequireDefault(_projects);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	/*------ COMPONENTS/CONTAINERS ------ */
 	_reactDom2.default.render(_react2.default.createElement(
 		_reactRedux.Provider,
 		{ store: _store2.default },
@@ -82,12 +93,17 @@
 			{ history: _reactRouter.hashHistory },
 			_react2.default.createElement(
 				_reactRouter.Route,
-				{ component: _Root2.default },
-				_react2.default.createElement(_reactRouter.Route, { path: '/', component: _Homepage2.default }),
-				_react2.default.createElement(_reactRouter.IndexRoute, { component: _Homepage2.default })
+				{ path: '/', component: _Root2.default },
+				_react2.default.createElement(_reactRouter.Route, { path: '/hello', component: _homepage2.default }),
+				_react2.default.createElement(_reactRouter.Route, { path: '/about', component: _about2.default }),
+				_react2.default.createElement(_reactRouter.Route, { path: '/presentations', component: _presentation2.default }),
+				_react2.default.createElement(_reactRouter.Route, { path: '/projects', component: _projects2.default }),
+				_react2.default.createElement(_reactRouter.IndexRoute, { component: _homepage2.default })
 			)
 		)
 	), document.getElementById('app'));
+	
+	/*------ COMPONENTS/CONTAINERS ------ */
 
 /***/ },
 /* 1 */
@@ -28717,8 +28733,10 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var testReducer = function testReducer() {
-		var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+	var interestingFacts = ['yellow-cake enthusiast', 'Mr. Meeseeks sympathizer', 'Arrested Development quoter', 'former baby', 'NYC cyclist', 'carrot juice junkie', 'lover of semicolons', 'needle fearer', 'empanada maker', 'mystery novel reader', 'human being'];
+	
+	var interestingFactsReducer = function interestingFactsReducer() {
+		var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : interestingFacts;
 		var action = arguments[1];
 	
 		switch (action.type) {
@@ -28730,7 +28748,7 @@
 	};
 	
 	var rootReducer = (0, _redux.combineReducers)({
-		test: testReducer
+		test: interestingFactsReducer
 	});
 	
 	exports.default = rootReducer;
@@ -29638,6 +29656,10 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _navbar = __webpack_require__(279);
+	
+	var _navbar2 = _interopRequireDefault(_navbar);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -29661,6 +29683,7 @@
 	            return _react2.default.createElement(
 	                'div',
 	                null,
+	                _react2.default.createElement(_navbar2.default, null),
 	                this.props.children
 	            );
 	        }
@@ -29689,6 +29712,122 @@
 	
 	var _reactRedux = __webpack_require__(178);
 	
+	var _reactRouter = __webpack_require__(216);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Navbar = function (_React$Component) {
+	    _inherits(Navbar, _React$Component);
+	
+	    function Navbar() {
+	        _classCallCheck(this, Navbar);
+	
+	        return _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).apply(this, arguments));
+	    }
+	
+	    _createClass(Navbar, [{
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'div',
+	                { className: 'navbar' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'navbar-center' },
+	                    _react2.default.createElement(
+	                        _reactRouter.Link,
+	                        { to: '/hello' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'navbar-text' },
+	                            'hello'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        _reactRouter.Link,
+	                        { to: '/about' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'navbar-text' },
+	                            'about'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        _reactRouter.Link,
+	                        { to: '/projects' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'navbar-text' },
+	                            'projects'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        _reactRouter.Link,
+	                        { to: '/presentations' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'navbar-text' },
+	                            'presentations'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'navbar-text' },
+	                        'resume'
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'navbar-text' },
+	                        'contact'
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return Navbar;
+	}(_react2.default.Component);
+	
+	/* -----------------    CONTAINER     ------------------ */
+	
+	function mapStateToProps(state) {
+	    return {};
+	}
+	
+	function mapDispatchToProps(dispatch) {
+	    return {};
+	}
+	
+	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Navbar);
+
+/***/ },
+/* 280 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRedux = __webpack_require__(178);
+	
+	var _about = __webpack_require__(281);
+	
+	var _about2 = _interopRequireDefault(_about);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -29700,22 +29839,79 @@
 	var Homepage = function (_React$Component) {
 	    _inherits(Homepage, _React$Component);
 	
-	    function Homepage() {
+	    function Homepage(props) {
 	        _classCallCheck(this, Homepage);
 	
-	        return _possibleConstructorReturn(this, (Homepage.__proto__ || Object.getPrototypeOf(Homepage)).apply(this, arguments));
+	        var _this = _possibleConstructorReturn(this, (Homepage.__proto__ || Object.getPrototypeOf(Homepage)).call(this, props));
+	
+	        _this.state = {
+	            randomFactsArr: ['yellow-cake enthusiast', 'Mr. Meeseeks sympathizer', 'Arrested Development quoter', 'former baby', 'NYC cyclist', 'carrot juice junkie', 'lover of semicolons', 'needle fearer', 'empanada maker', 'mystery novel reader', 'human being', 'tardigrade admirer'],
+	            currentRandomFact: 'yellow-cake enthusiast'
+	        };
+	        _this.randomFactGeneratorDown = _this.randomFactGeneratorDown.bind(_this);
+	        _this.randomFactGeneratorUp = _this.randomFactGeneratorUp.bind(_this);
+	        return _this;
 	    }
 	
 	    _createClass(Homepage, [{
+	        key: 'randomFactGeneratorDown',
+	        value: function randomFactGeneratorDown() {
+	            var currentIndex = this.state.randomFactsArr.indexOf(this.state.currentRandomFact);
+	            var nextIndex = void 0;
+	            if (currentIndex === this.state.randomFactsArr.length - 1) {
+	                nextIndex = 0;
+	            } else {
+	                nextIndex = currentIndex + 1;
+	            }
+	            this.setState({ currentRandomFact: this.state.randomFactsArr[nextIndex] });
+	        }
+	    }, {
+	        key: 'randomFactGeneratorUp',
+	        value: function randomFactGeneratorUp() {
+	            var currentIndex = this.state.randomFactsArr.indexOf(this.state.currentRandomFact);
+	            var nextIndex = void 0;
+	            if (currentIndex === 0) {
+	                nextIndex = this.state.randomFactsArr.length - 1;
+	            } else {
+	                nextIndex = currentIndex - 1;
+	            }
+	            this.setState({ currentRandomFact: this.state.randomFactsArr[nextIndex] });
+	        }
+	    }, {
 	        key: 'render',
 	        value: function render() {
 	            return _react2.default.createElement(
 	                'div',
-	                null,
+	                { className: 'box' },
 	                _react2.default.createElement(
-	                    'h1',
-	                    null,
-	                    ' Hello World! '
+	                    'div',
+	                    { className: 'welcome' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'md-font green' },
+	                        'Hi! I\'m Stephanie Manwaring'
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'lg-font pink' },
+	                        'web developer'
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'sm-font yellowish' },
+	                        ' and ',
+	                        this.state.currentRandomFact
+	                    ),
+	                    _react2.default.createElement(
+	                        'i',
+	                        { className: 'material-icons lg-icon', onClick: this.randomFactGeneratorDown },
+	                        'keyboard_arrow_left'
+	                    ),
+	                    _react2.default.createElement(
+	                        'i',
+	                        { className: 'material-icons lg-icon', onClick: this.randomFactGeneratorUp },
+	                        'keyboard_arrow_right'
+	                    )
 	                )
 	            );
 	        }
@@ -29735,6 +29931,511 @@
 	}
 	
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Homepage);
+
+/***/ },
+/* 281 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRedux = __webpack_require__(178);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var About = function (_React$Component) {
+	    _inherits(About, _React$Component);
+	
+	    function About(props) {
+	        _classCallCheck(this, About);
+	
+	        return _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).call(this, props));
+	    }
+	
+	    _createClass(About, [{
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'div',
+	                null,
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'wrapper' },
+	                    _react2.default.createElement(
+	                        'aside',
+	                        { className: 'aside aside-1' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            null,
+	                            'Hello!'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            null,
+	                            'Nice to meet you.'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'article',
+	                        { className: 'main' },
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            'Web development is my passion. I\'ve had over five years\' experience working as a front-end web developer. I\'ve worked in small studios developing sites for clients and at large companies working in-house on web projects. I believe in writing hand-crafted, semantic markup that is performant, uses progressive enhancement and is accessible to as many users and devices as possible. I the web.'
+	                        )
+	                    )
+	                ),
+	                _react2.default.createElement('hr', null),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'wrapper' },
+	                    _react2.default.createElement(
+	                        'aside',
+	                        { className: 'aside aside-1' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            null,
+	                            'Languages'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'article',
+	                        { className: 'main' },
+	                        _react2.default.createElement(
+	                            'ul',
+	                            { className: 'left' },
+	                            _react2.default.createElement(
+	                                'li',
+	                                null,
+	                                'JavaScript'
+	                            ),
+	                            _react2.default.createElement(
+	                                'li',
+	                                null,
+	                                'HTML5'
+	                            ),
+	                            _react2.default.createElement(
+	                                'li',
+	                                null,
+	                                'CSS'
+	                            ),
+	                            _react2.default.createElement(
+	                                'li',
+	                                null,
+	                                'SASS'
+	                            )
+	                        )
+	                    )
+	                ),
+	                _react2.default.createElement('hr', null),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'wrapper' },
+	                    _react2.default.createElement(
+	                        'aside',
+	                        { className: 'aside aside-1' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            null,
+	                            'Technologies'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            null,
+	                            'Frameworks/libraries'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            null,
+	                            'Party in the front, party in the back'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'article',
+	                        { className: 'main' },
+	                        _react2.default.createElement(
+	                            'ul',
+	                            { className: 'left' },
+	                            _react2.default.createElement(
+	                                'li',
+	                                null,
+	                                'React'
+	                            ),
+	                            _react2.default.createElement(
+	                                'li',
+	                                null,
+	                                'React-Redux'
+	                            ),
+	                            _react2.default.createElement(
+	                                'li',
+	                                null,
+	                                'Angular 2'
+	                            ),
+	                            _react2.default.createElement(
+	                                'li',
+	                                null,
+	                                'Node.js'
+	                            ),
+	                            _react2.default.createElement(
+	                                'li',
+	                                null,
+	                                'jQuery'
+	                            ),
+	                            _react2.default.createElement(
+	                                'li',
+	                                null,
+	                                'express'
+	                            ),
+	                            _react2.default.createElement(
+	                                'li',
+	                                null,
+	                                'moach chai'
+	                            ),
+	                            _react2.default.createElement(
+	                                'li',
+	                                null,
+	                                'PostgresSQL'
+	                            ),
+	                            _react2.default.createElement(
+	                                'li',
+	                                null,
+	                                'Sequelize'
+	                            )
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return About;
+	}(_react2.default.Component);
+	
+	/* -----------------    CONTAINER     ------------------ */
+	
+	function mapStateToProps(state) {
+	    return {};
+	}
+	
+	function mapDispatchToProps(dispatch) {
+	    return {};
+	}
+	
+	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(About);
+
+/***/ },
+/* 282 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRedux = __webpack_require__(178);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Presentations = function (_React$Component) {
+	    _inherits(Presentations, _React$Component);
+	
+	    function Presentations(props) {
+	        _classCallCheck(this, Presentations);
+	
+	        return _possibleConstructorReturn(this, (Presentations.__proto__ || Object.getPrototypeOf(Presentations)).call(this, props));
+	    }
+	
+	    _createClass(Presentations, [{
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'div',
+	                null,
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'wrapper' },
+	                    _react2.default.createElement(
+	                        'aside',
+	                        { className: 'aside aside-1' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            null,
+	                            'Presentations'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'article',
+	                        { className: 'main' },
+	                        _react2.default.createElement(
+	                            'ul',
+	                            { className: 'flex-container' },
+	                            _react2.default.createElement('li', { className: 'video-sm' }),
+	                            _react2.default.createElement('li', { className: 'video-sm' }),
+	                            _react2.default.createElement('li', { className: 'video-sm' })
+	                        )
+	                    )
+	                ),
+	                _react2.default.createElement('hr', null)
+	            );
+	        }
+	    }]);
+	
+	    return Presentations;
+	}(_react2.default.Component);
+	
+	/* -----------------    CONTAINER     ------------------ */
+	
+	function mapStateToProps(state) {
+	    return {};
+	}
+	
+	function mapDispatchToProps(dispatch) {
+	    return {};
+	}
+	
+	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Presentations);
+
+/***/ },
+/* 283 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRedux = __webpack_require__(178);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Projects = function (_React$Component) {
+	    _inherits(Projects, _React$Component);
+	
+	    function Projects(props) {
+	        _classCallCheck(this, Projects);
+	
+	        return _possibleConstructorReturn(this, (Projects.__proto__ || Object.getPrototypeOf(Projects)).call(this, props));
+	    }
+	
+	    _createClass(Projects, [{
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'div',
+	                null,
+	                _react2.default.createElement(
+	                    'h1',
+	                    null,
+	                    'These are my projects'
+	                ),
+	                _react2.default.createElement('hr', null),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'wrapper' },
+	                    _react2.default.createElement(
+	                        'aside',
+	                        { className: 'aside aside-1' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            null,
+	                            'Presentations'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            null,
+	                            'Nice to meet you.'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            null,
+	                            'Nice to meet you.'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            null,
+	                            'Nice to meet you.'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'article',
+	                        { className: 'main' },
+	                        _react2.default.createElement(
+	                            'ul',
+	                            { className: 'flex-container' },
+	                            _react2.default.createElement('li', { className: 'video-lg' })
+	                        )
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'wrapper' },
+	                    _react2.default.createElement(
+	                        'aside',
+	                        { className: 'aside aside-1' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            null,
+	                            'Presentations'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            null,
+	                            'Nice to meet you.'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            null,
+	                            'Nice to meet you.'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            null,
+	                            'Nice to meet you.'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'article',
+	                        { className: 'main' },
+	                        _react2.default.createElement(
+	                            'ul',
+	                            { className: 'flex-container' },
+	                            _react2.default.createElement('li', { className: 'video-lg' })
+	                        )
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'wrapper' },
+	                    _react2.default.createElement(
+	                        'aside',
+	                        { className: 'aside aside-1' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            null,
+	                            'Presentations'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            null,
+	                            'Nice to meet you.'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            null,
+	                            'Nice to meet you.'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            null,
+	                            'Used my own react redux boilerplate'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'article',
+	                        { className: 'main' },
+	                        _react2.default.createElement(
+	                            'ul',
+	                            { className: 'flex-container' },
+	                            _react2.default.createElement('li', { className: 'video-lg' })
+	                        )
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'wrapper' },
+	                    _react2.default.createElement(
+	                        'aside',
+	                        { className: 'aside aside-1' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            null,
+	                            'Presentations'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            null,
+	                            'Nice to meet you.'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            null,
+	                            'Nice to meet you.'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            null,
+	                            'Used my own react redux boilerplate'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'article',
+	                        { className: 'main' },
+	                        _react2.default.createElement(
+	                            'ul',
+	                            { className: 'flex-container' },
+	                            _react2.default.createElement('li', { className: 'video-lg' })
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return Projects;
+	}(_react2.default.Component);
+	
+	/* -----------------    CONTAINER     ------------------ */
+	
+	function mapStateToProps(state) {
+	    return {};
+	}
+	
+	function mapDispatchToProps(dispatch) {
+	    return {};
+	}
+	
+	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Projects);
 
 /***/ }
 /******/ ]);

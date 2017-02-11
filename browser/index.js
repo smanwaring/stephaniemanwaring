@@ -8,17 +8,24 @@ import { Router, Route, hashHistory, IndexRoute } from 'react-router';
 import store from './store';
 
 
+
 /*------ COMPONENTS/CONTAINERS ------ */
 import Root from './components/Root';
-import Homepage from './components/Homepage';
+import Homepage from './components/homepage/homepage.component';
+import About from './components/about/about.component';
+import Presentations from './components/presentations/presentation.component';
+import Projects from './components/projects/projects.component';
 
 
 
 ReactDOM.render(
   <Provider store={store}>
 	    <Router history={hashHistory}>
-			<Route component={Root}>
-				<Route path="/" component={Homepage}/>
+			<Route path="/"component={Root}>
+				<Route path="/hello" component={Homepage}/>
+				<Route path="/about" component={About}/>
+				<Route path="/presentations" component={Presentations}/>
+				<Route path="/projects" component={Projects}/>
 				<IndexRoute component={Homepage}/>
 			</Route>
 		</Router>
