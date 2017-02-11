@@ -24,8 +24,8 @@ NAVBAR
 .navbar{
     height: 75px;
     width: 100%;
-    text-align: center;
-    background-color: #f8f9fb;
+    text-align: right;
+    background-color: white;
 
 }
 
@@ -49,7 +49,7 @@ NAVBAR
     /*color:#968f91;*/
     color:#636262;
     margin: 10px;
-    font-size: 32px;
+    font-size: 18px;
     font-weight: 300;
 }
 

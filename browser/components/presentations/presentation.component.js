@@ -26,7 +26,7 @@ class Presentations extends React.Component {
                         <div>
                             <div className="video-sm"></div>
                             <div className="video-text">
-                                <div>Tech Talk</div>
+                                <div>Project Demonstration</div>
                                 <div>The Javascript Semicolon</div>
                                 <div>A semi-deep dive into the finer points of semicolons and the ASI in JavaScript</div>
                             </div>
@@ -34,7 +34,7 @@ class Presentations extends React.Component {
                         <div>
                             <div className="video-sm"></div>
                             <div className="video-text">
-                                <div>Tech Talk</div>
+                                <div>Project Demonstration</div>
                                 <div>The Javascript Semicolon</div>
                                 <div>A semi-deep dive into the finer points of semicolons and the ASI in JavaScript</div>
                             </div>

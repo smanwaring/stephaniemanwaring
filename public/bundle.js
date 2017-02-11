@@ -30250,7 +30250,7 @@
 	                                    _react2.default.createElement(
 	                                        'div',
 	                                        null,
-	                                        'Tech Talk'
+	                                        'Project Demonstration'
 	                                    ),
 	                                    _react2.default.createElement(
 	                                        'div',
@@ -30274,7 +30274,7 @@
 	                                    _react2.default.createElement(
 	                                        'div',
 	                                        null,
-	                                        'Tech Talk'
+	                                        'Project Demonstration'
 	                                    ),
 	                                    _react2.default.createElement(
 	                                        'div',
