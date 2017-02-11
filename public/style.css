@@ -22,7 +22,7 @@ NAVBAR
 
 
 .navbar{
-    height: 75px;
+    height: 50px;
     width: 100%;
     text-align: right;
     background-color: white;
@@ -310,7 +310,7 @@ hr{
     background-color: #f8f9fb;
 }*/
 
-.video-text{
+.video-text-box{
     width: 330px;
     height: 100px;
     background-color:white;;
@@ -320,5 +320,21 @@ hr{
 
 .grey-section{
     background-color: rgb(237, 238, 239);
-;
+}
+
+.video-text-sm{
+    font-size: 12px;
+
+}
+
+.video-text-title{
+    color: black;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 900;
+
+}
+
+.text-box{
+    margin: 10px 20px 10px 20px;
 }

@@ -30222,21 +30222,20 @@
 	                                _react2.default.createElement('div', { className: 'video-sm' }),
 	                                _react2.default.createElement(
 	                                    'div',
-	                                    { className: 'video-text' },
+	                                    { className: 'video-text-box' },
 	                                    _react2.default.createElement(
 	                                        'div',
-	                                        null,
-	                                        'Tech Talk'
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        'div',
-	                                        null,
-	                                        'The Javascript Semicolon'
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        'div',
-	                                        null,
-	                                        'A semi-deep dive into the finer points of semicolons and the ASI in JavaScript'
+	                                        { className: 'text-box' },
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'video-text-title' },
+	                                            'TECH TALK: THE JAVASCRIPT SEMICOLON '
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'video-text-sm' },
+	                                            'A semi-deep dive into the finer points of semicolons in JavaScript.'
+	                                        )
 	                                    )
 	                                )
 	                            ),
@@ -30246,21 +30245,20 @@
 	                                _react2.default.createElement('div', { className: 'video-sm' }),
 	                                _react2.default.createElement(
 	                                    'div',
-	                                    { className: 'video-text' },
+	                                    { className: 'video-text-box' },
 	                                    _react2.default.createElement(
 	                                        'div',
-	                                        null,
-	                                        'Project Demonstration'
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        'div',
-	                                        null,
-	                                        'The Javascript Semicolon'
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        'div',
-	                                        null,
-	                                        'A semi-deep dive into the finer points of semicolons and the ASI in JavaScript'
+	                                        { className: 'text-box' },
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'video-text-title' },
+	                                            'PROJECT DEMO: SILENT-SALUTATIONS'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'video-text-sm' },
+	                                            'A demonstration of a simple silent-applauding app built during a 24-hour hackathon.'
+	                                        )
 	                                    )
 	                                )
 	                            ),
@@ -30270,21 +30268,20 @@
 	                                _react2.default.createElement('div', { className: 'video-sm' }),
 	                                _react2.default.createElement(
 	                                    'div',
-	                                    { className: 'video-text' },
+	                                    { className: 'video-text-box' },
 	                                    _react2.default.createElement(
 	                                        'div',
-	                                        null,
-	                                        'Project Demonstration'
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        'div',
-	                                        null,
-	                                        'The Javascript Semicolon'
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        'div',
-	                                        null,
-	                                        'A semi-deep dive into the finer points of semicolons and the ASI in JavaScript'
+	                                        { className: 'text-box' },
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'video-text-title' },
+	                                            'PROJECT DEMO: ARCHIVER '
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'video-text-sm' },
+	                                            'A group presentation on a custom version control desktop application.'
+	                                        )
 	                                    )
 	                                )
 	                            )
