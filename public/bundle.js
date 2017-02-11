@@ -30201,28 +30201,93 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                'div',
-	                null,
+	                { className: 'grey-section' },
+	                _react2.default.createElement(
+	                    'h1',
+	                    null,
+	                    'Presentations'
+	                ),
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'wrapper' },
 	                    _react2.default.createElement(
-	                        'aside',
-	                        { className: 'aside aside-1' },
-	                        _react2.default.createElement(
-	                            'div',
-	                            null,
-	                            'Presentations'
-	                        )
-	                    ),
-	                    _react2.default.createElement(
 	                        'article',
 	                        { className: 'main' },
 	                        _react2.default.createElement(
-	                            'ul',
+	                            'div',
 	                            { className: 'flex-container' },
-	                            _react2.default.createElement('li', { className: 'video-sm' }),
-	                            _react2.default.createElement('li', { className: 'video-sm' }),
-	                            _react2.default.createElement('li', { className: 'video-sm' })
+	                            _react2.default.createElement(
+	                                'div',
+	                                null,
+	                                _react2.default.createElement('div', { className: 'video-sm' }),
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'video-text' },
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        null,
+	                                        'Tech Talk'
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        null,
+	                                        'The Javascript Semicolon'
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        null,
+	                                        'A semi-deep dive into the finer points of semicolons and the ASI in JavaScript'
+	                                    )
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                null,
+	                                _react2.default.createElement('div', { className: 'video-sm' }),
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'video-text' },
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        null,
+	                                        'Tech Talk'
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        null,
+	                                        'The Javascript Semicolon'
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        null,
+	                                        'A semi-deep dive into the finer points of semicolons and the ASI in JavaScript'
+	                                    )
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                null,
+	                                _react2.default.createElement('div', { className: 'video-sm' }),
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'video-text' },
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        null,
+	                                        'Tech Talk'
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        null,
+	                                        'The Javascript Semicolon'
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        null,
+	                                        'A semi-deep dive into the finer points of semicolons and the ASI in JavaScript'
+	                                    )
+	                                )
+	                            )
 	                        )
 	                    )
 	                ),

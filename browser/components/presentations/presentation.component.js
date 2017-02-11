@@ -10,17 +10,37 @@ class Presentations extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="grey-section">
+                <h1>Presentations</h1>
                 <div className="wrapper">
-                <aside className="aside aside-1">
-                    <div>Presentations</div>
-                </aside>
                 <article className="main">
-                    <ul className="flex-container">
-                        <li className="video-sm"></li>
-                        <li className="video-sm"></li>
-                        <li className="video-sm"></li>
-                    </ul>
+                    <div className="flex-container">
+                        <div>
+                            <div className="video-sm"></div>
+                            <div className="video-text">
+                                <div>Tech Talk</div>
+                                <div>The Javascript Semicolon</div>
+                                <div>A semi-deep dive into the finer points of semicolons and the ASI in JavaScript</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div className="video-sm"></div>
+                            <div className="video-text">
+                                <div>Tech Talk</div>
+                                <div>The Javascript Semicolon</div>
+                                <div>A semi-deep dive into the finer points of semicolons and the ASI in JavaScript</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div className="video-sm"></div>
+                            <div className="video-text">
+                                <div>Tech Talk</div>
+                                <div>The Javascript Semicolon</div>
+                                <div>A semi-deep dive into the finer points of semicolons and the ASI in JavaScript</div>
+                            </div>
+                        </div>
+
+                    </div>
                 </article>
                 </div>
                 <hr/>
