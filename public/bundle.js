@@ -83,8 +83,13 @@
 	
 	var _projects2 = _interopRequireDefault(_projects);
 	
+	var _contact = __webpack_require__(284);
+	
+	var _contact2 = _interopRequireDefault(_contact);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	/*------ COMPONENTS/CONTAINERS ------ */
 	_reactDom2.default.render(_react2.default.createElement(
 		_reactRedux.Provider,
 		{ store: _store2.default },
@@ -98,12 +103,11 @@
 				_react2.default.createElement(_reactRouter.Route, { path: '/about', component: _about2.default }),
 				_react2.default.createElement(_reactRouter.Route, { path: '/presentations', component: _presentation2.default }),
 				_react2.default.createElement(_reactRouter.Route, { path: '/projects', component: _projects2.default }),
+				_react2.default.createElement(_reactRouter.Route, { path: '/contact', component: _contact2.default }),
 				_react2.default.createElement(_reactRouter.IndexRoute, { component: _homepage2.default })
 			)
 		)
 	), document.getElementById('app'));
-	
-	/*------ COMPONENTS/CONTAINERS ------ */
 
 /***/ },
 /* 1 */
@@ -29782,9 +29786,13 @@
 	                        'resume'
 	                    ),
 	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'navbar-text' },
-	                        'contact'
+	                        _reactRouter.Link,
+	                        { to: '/contact' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'navbar-text' },
+	                            'contact'
+	                        )
 	                    )
 	                )
 	            );
@@ -30219,7 +30227,7 @@
 	                            _react2.default.createElement(
 	                                'div',
 	                                null,
-	                                _react2.default.createElement('div', { className: 'video-sm' }),
+	                                _react2.default.createElement('div', { className: 'video-sm-1' }),
 	                                _react2.default.createElement(
 	                                    'div',
 	                                    { className: 'video-text-box' },
@@ -30242,7 +30250,7 @@
 	                            _react2.default.createElement(
 	                                'div',
 	                                null,
-	                                _react2.default.createElement('div', { className: 'video-sm' }),
+	                                _react2.default.createElement('div', { className: 'video-sm-2' }),
 	                                _react2.default.createElement(
 	                                    'div',
 	                                    { className: 'video-text-box' },
@@ -30265,7 +30273,7 @@
 	                            _react2.default.createElement(
 	                                'div',
 	                                null,
-	                                _react2.default.createElement('div', { className: 'video-sm' }),
+	                                _react2.default.createElement('div', { className: 'video-sm-3' }),
 	                                _react2.default.createElement(
 	                                    'div',
 	                                    { className: 'video-text-box' },
@@ -30280,15 +30288,14 @@
 	                                        _react2.default.createElement(
 	                                            'div',
 	                                            { className: 'video-text-sm' },
-	                                            'A group presentation on a custom version control desktop application.'
+	                                            'A group presentation on a custom version control desktop application built while at Fullstack Academy.'
 	                                        )
 	                                    )
 	                                )
 	                            )
 	                        )
 	                    )
-	                ),
-	                _react2.default.createElement('hr', null)
+	                )
 	            );
 	        }
 	    }]);
@@ -30498,6 +30505,103 @@
 	}
 	
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Projects);
+
+/***/ },
+/* 284 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRedux = __webpack_require__(178);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Contact = function (_React$Component) {
+	    _inherits(Contact, _React$Component);
+	
+	    function Contact(props) {
+	        _classCallCheck(this, Contact);
+	
+	        return _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).call(this, props));
+	    }
+	
+	    _createClass(Contact, [{
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'div',
+	                { className: 'grey-section' },
+	                _react2.default.createElement(
+	                    'h1',
+	                    null,
+	                    'Let\'s have a chat'
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'wrapper' },
+	                    _react2.default.createElement(
+	                        'article',
+	                        { className: 'main' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'flex-container-contact' },
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'dummy-logo' },
+	                                _react2.default.createElement('img', { src: 'stack-overflow.png', alt: 'stack-overflow', height: '60', width: '60' })
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'dummy-logo' },
+	                                _react2.default.createElement('img', { src: 'github.png', alt: 'github', height: '60', width: '60' })
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'dummy-logo' },
+	                                _react2.default.createElement('img', { src: 'linkedin.png', alt: 'linkedin', height: '60', width: '60' })
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'dummy-logo' },
+	                                _react2.default.createElement('img', { src: 'envelope.png', alt: 'email', height: '60', width: '60' })
+	                            )
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return Contact;
+	}(_react2.default.Component);
+	
+	/* -----------------    CONTAINER     ------------------ */
+	
+	function mapStateToProps(state) {
+	    return {};
+	}
+	
+	function mapDispatchToProps(dispatch) {
+	    return {};
+	}
+	
+	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Contact);
 
 /***/ }
 /******/ ]);

@@ -16,7 +16,7 @@ class Presentations extends React.Component {
                 <article className="main">
                     <div className="flex-container">
                         <div>
-                            <div className="video-sm"></div>
+                            <div className="video-sm-1"></div>
                             <div className="video-text-box">
                                 <div className="text-box">
                                     <div className="video-text-title">TECH TALK: THE JAVASCRIPT SEMICOLON </div>
@@ -25,7 +25,7 @@ class Presentations extends React.Component {
                             </div>
                         </div>
                         <div>
-                            <div className="video-sm"></div>
+                            <div className="video-sm-2"></div>
                             <div className="video-text-box">
                                 <div className="text-box">
                                     <div className="video-text-title">PROJECT DEMO: SILENT-SALUTATIONS</div>
@@ -34,19 +34,17 @@ class Presentations extends React.Component {
                             </div>
                         </div>
                         <div>
-                            <div className="video-sm"></div>
+                            <div className="video-sm-3"></div>
                             <div className="video-text-box">
                                 <div className="text-box">
                                     <div className="video-text-title">PROJECT DEMO: ARCHIVER </div>
-                                    <div className="video-text-sm">A group presentation on a custom version control desktop application.</div>
+                                    <div className="video-text-sm">A group presentation on a custom version control desktop application built while at Fullstack Academy.</div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </article>
                 </div>
-                <hr/>
             </div>
         );
     }

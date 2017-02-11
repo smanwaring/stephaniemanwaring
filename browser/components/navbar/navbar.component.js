@@ -13,8 +13,8 @@ class Navbar extends React.Component {
                     <Link to={'/about'}><div className="navbar-text">about</div></Link>
                     <Link to={'/projects'}><div className="navbar-text">projects</div></Link>
                     <Link to={'/presentations'}><div className="navbar-text">presentations</div></Link>
-                    <div className="navbar-text">resume</div>  
-                    <div className="navbar-text">contact</div>                     
+                    <div className="navbar-text">resume</div> 
+                    <Link to={'/contact'}><div className="navbar-text">contact</div></Link>
                 </div>
             </div>
         );
