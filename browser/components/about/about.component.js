@@ -17,7 +17,7 @@ class About extends React.Component {
                     <div className="text-bold">Nice to meet you.</div>
                 </aside>
                 <article className="main">
-                    <p className="main-text"> I'm Stephanie Manwaring (	man - weh - ring ). I'm a former marketing director turned full stack web developer. 
+                    <p className="main-text"> I'm Stephanie Manwaring. I'm a former marketing director turned full stack web developer. 
                         I attended Fullstack Academy of Code where I currently work as a teaching fellow and engineering intern. 
                         I've worked independently and in small teams to develop sweet projects with the technologies I've learned.  
                         I currently reside in NYC and continue to be inspired by its tech community. 

@@ -315,17 +315,32 @@ hr{
 }
 
 .link-box{
-    border-color: lightgrey;
-    border-radius: 2em;
-    font-weight: 300;
+    border-color: black;
     font-size: 14px;
     padding: 10px;
     width: 70px;
     text-align: center;
     border-style: solid;
-    border-width: 1px;
+    border-width: 2px;
     display: inline-block;
+    margin-left: 5px;
+    color: black;
 }
+
+.link-box:hover{
+    border-color: black;
+    background-color:#fee000; 
+    font-size: 14px;
+    padding: 10px;
+    width: 70px;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    display: inline-block;
+    margin-left: 5px;
+    color: black;
+}
+
 
 .white{
     background-color: white;

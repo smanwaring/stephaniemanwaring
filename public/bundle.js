@@ -30009,7 +30009,7 @@
 	                        _react2.default.createElement(
 	                            'p',
 	                            { className: 'main-text' },
-	                            ' I\'m Stephanie Manwaring ( man - weh - ring ). I\'m a former marketing director turned full stack web developer. I attended Fullstack Academy of Code where I currently work as a teaching fellow and engineering intern. I\'ve worked independently and in small teams to develop sweet projects with the technologies I\'ve learned. I currently reside in NYC and continue to be inspired by its tech community.',
+	                            ' I\'m Stephanie Manwaring. I\'m a former marketing director turned full stack web developer. I attended Fullstack Academy of Code where I currently work as a teaching fellow and engineering intern. I\'ve worked independently and in small teams to develop sweet projects with the technologies I\'ve learned. I currently reside in NYC and continue to be inspired by its tech community.',
 	                            _react2.default.createElement('br', null),
 	                            _react2.default.createElement('br', null),
 	                            'When I\'m not coding you can find me cycling on the streets on NYC, running through Central Park, putting together a four-course meal, board-gaming it up with friends, or doing laundry. I the web.'
