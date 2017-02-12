@@ -11,11 +11,11 @@ class Projects extends React.Component {
     render() {
         return (
             <div className="projects-background">
-                <h1>These are my projects</h1>
+                <h1 className="no-margin">These are my projects</h1>
                 <hr/>
           <div className="wrapper white">
                 <aside className="aside aside-1">
-                    <div className="text-bold">Clap-Fetti</div>
+                    <div className="text-bold-black">Clap-Fetti</div>
                      <div className="main-text-project">
                          A fun single page web application inspired by Periscope's floating hearts 
                          and Facebook's reaction icons. Create a custom clap board or join one that

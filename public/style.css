@@ -300,6 +300,10 @@ hr {
 
 }
 
+.text-bold-black{
+    color:black;
+}
+
 .main-text{
     color: black;
 }
@@ -394,3 +398,6 @@ hr{
   justify-content: space-around;
 }
 
+.no-margin{
+    margin-top: 0;
+}

@@ -29750,7 +29750,7 @@
 	                        _react2.default.createElement(
 	                            'div',
 	                            { className: 'navbar-text' },
-	                            'hello'
+	                            'hello!'
 	                        )
 	                    ),
 	                    _react2.default.createElement(
@@ -30212,7 +30212,7 @@
 	                { className: 'grey-section' },
 	                _react2.default.createElement(
 	                    'h1',
-	                    null,
+	                    { className: 'no-margin' },
 	                    'Presentations'
 	                ),
 	                _react2.default.createElement(
@@ -30358,7 +30358,7 @@
 	                { className: 'projects-background' },
 	                _react2.default.createElement(
 	                    'h1',
-	                    null,
+	                    { className: 'no-margin' },
 	                    'These are my projects'
 	                ),
 	                _react2.default.createElement('hr', null),
@@ -30370,7 +30370,7 @@
 	                        { className: 'aside aside-1' },
 	                        _react2.default.createElement(
 	                            'div',
-	                            { className: 'text-bold' },
+	                            { className: 'text-bold-black' },
 	                            'Clap-Fetti'
 	                        ),
 	                        _react2.default.createElement(
