@@ -10,7 +10,7 @@ class Resume extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="spacer">
                 <h1 className="no-margin">What I've been up to</h1>
                 <div className="wrapper">
                 <article className="main">

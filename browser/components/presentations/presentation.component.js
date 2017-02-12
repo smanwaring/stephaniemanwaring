@@ -10,7 +10,7 @@ class Presentations extends React.Component {
 
     render() {
         return (
-            <div className="grey-section">
+            <div className="grey-section spacer">
                 <h1 className="no-margin">Presentations</h1>
                 <div className="wrapper">
                 <article className="main">

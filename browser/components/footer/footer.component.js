@@ -14,7 +14,7 @@ class Footer extends React.Component {
                 <div className="wrapper">
                 <article className="main">
                     <div className="footer-white">&#169; 2017 Stephanie Manwaring</div>
-                    <div className="footer-white"> This site was built and designed by yours truly</div>
+                    <div className="footer-white"> This site was built and designed with love by yours truly</div>
                 </article>
                 </div>
             </div>

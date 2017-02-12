@@ -72,7 +72,8 @@ HOMEPAGE
   /*background-color: #3a1a44;*/
   /*background-color: #16b9d8;*/
   /*background-color: #edf1f4;*/
-  background-color: black;
+  /*background-color: black;*/
+  background-color:  rgb(237, 238, 239);
   color: white;
   font-family: 'Cabin Sketch', cursive;
 }
@@ -81,6 +82,7 @@ HOMEPAGE
     font-weight: 300;
     margin-top: 80px;
     margin-left: 50px;
+    color: #333333;
 }
 
 .md-font{
@@ -301,11 +303,13 @@ hr {
 }
 
 .text-bold-black{
-    color:black;
+    /*color:black;*/
+    color: #333333;
 }
 
 .main-text{
-    color: black;
+    /*color: black;*/
+    color: #333333;
 }
 
 hr{
@@ -364,6 +368,7 @@ hr{
 
 .grey-section{
     background-color: rgb(237, 238, 239);
+    /*background-color: #f8f8f8;*/
 }
 
 .video-text-sm{
@@ -444,4 +449,14 @@ hr{
     margin-left: 20px;
     font-size: 12px;
     margin-top: 2px;
+}
+
+.spacer{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.spacer-sm{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }

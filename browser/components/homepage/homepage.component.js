@@ -1,6 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import About from '../about/about.component';
+import Projects from '../projects/projects.component';
+import Presentations from '../presentations/presentation.component';
+import Resume from '../resume/resume';
+import Contact from '../contact/contact.component';
 
 
 class Homepage extends React.Component {
@@ -55,13 +59,17 @@ class Homepage extends React.Component {
             <div>
                 <div className="box">
                 <div className="welcome">
-                    <div className="md-font green">Hi! I'm Stephanie Manwaring</div>
-                    <div className="lg-font pink">WEB DEVELOPER</div>
-                    <div className="sm-font yellowish"> and {this.state.currentRandomFact}</div>
+                    <div className="md-font">Hi! I'm Stephanie Manwaring</div>
+                    <div className="lg-font">WEB DEVELOPER</div>
+                    <div className="sm-font"> and {this.state.currentRandomFact}</div>
                     <i className="material-icons lg-icon" onClick={this.randomFactGeneratorDown}>keyboard_arrow_left</i><i className="material-icons lg-icon" onClick={this.randomFactGeneratorUp}>keyboard_arrow_right</i>
                 </div>
                 </div>
-                <About/>
+                <About />
+                <Projects />
+                <Presentations />
+                <Resume />
+                <Contact />
             </div>
         );
     }

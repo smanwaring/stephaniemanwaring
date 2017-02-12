@@ -67,31 +67,31 @@
 	
 	var _Root2 = _interopRequireDefault(_Root);
 	
-	var _homepage = __webpack_require__(280);
+	var _homepage = __webpack_require__(281);
 	
 	var _homepage2 = _interopRequireDefault(_homepage);
 	
-	var _about = __webpack_require__(281);
+	var _about = __webpack_require__(282);
 	
 	var _about2 = _interopRequireDefault(_about);
 	
-	var _presentation = __webpack_require__(282);
+	var _presentation = __webpack_require__(283);
 	
 	var _presentation2 = _interopRequireDefault(_presentation);
 	
-	var _projects = __webpack_require__(283);
+	var _projects = __webpack_require__(284);
 	
 	var _projects2 = _interopRequireDefault(_projects);
 	
-	var _contact = __webpack_require__(284);
+	var _contact = __webpack_require__(285);
 	
 	var _contact2 = _interopRequireDefault(_contact);
 	
-	var _resume = __webpack_require__(285);
+	var _resume = __webpack_require__(286);
 	
 	var _resume2 = _interopRequireDefault(_resume);
 	
-	var _footer = __webpack_require__(286);
+	var _footer = __webpack_require__(280);
 	
 	var _footer2 = _interopRequireDefault(_footer);
 	
@@ -29673,7 +29673,7 @@
 	
 	var _navbar2 = _interopRequireDefault(_navbar);
 	
-	var _footer = __webpack_require__(286);
+	var _footer = __webpack_require__(280);
 	
 	var _footer2 = _interopRequireDefault(_footer);
 	
@@ -29850,9 +29850,103 @@
 	
 	var _reactRedux = __webpack_require__(178);
 	
-	var _about = __webpack_require__(281);
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Footer = function (_React$Component) {
+	    _inherits(Footer, _React$Component);
+	
+	    function Footer(props) {
+	        _classCallCheck(this, Footer);
+	
+	        return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).call(this, props));
+	    }
+	
+	    _createClass(Footer, [{
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'div',
+	                { className: 'footer' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'wrapper' },
+	                    _react2.default.createElement(
+	                        'article',
+	                        { className: 'main' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'footer-white' },
+	                            '\xA9 2017 Stephanie Manwaring'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'footer-white' },
+	                            ' This site was built and designed with love by yours truly'
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return Footer;
+	}(_react2.default.Component);
+	
+	/* -----------------    CONTAINER     ------------------ */
+	
+	function mapStateToProps(state) {
+	    return {};
+	}
+	
+	function mapDispatchToProps(dispatch) {
+	    return {};
+	}
+	
+	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Footer);
+
+/***/ },
+/* 281 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRedux = __webpack_require__(178);
+	
+	var _about = __webpack_require__(282);
 	
 	var _about2 = _interopRequireDefault(_about);
+	
+	var _projects = __webpack_require__(284);
+	
+	var _projects2 = _interopRequireDefault(_projects);
+	
+	var _presentation = __webpack_require__(283);
+	
+	var _presentation2 = _interopRequireDefault(_presentation);
+	
+	var _resume = __webpack_require__(286);
+	
+	var _resume2 = _interopRequireDefault(_resume);
+	
+	var _contact = __webpack_require__(285);
+	
+	var _contact2 = _interopRequireDefault(_contact);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -29917,17 +30011,17 @@
 	                        { className: 'welcome' },
 	                        _react2.default.createElement(
 	                            'div',
-	                            { className: 'md-font green' },
+	                            { className: 'md-font' },
 	                            'Hi! I\'m Stephanie Manwaring'
 	                        ),
 	                        _react2.default.createElement(
 	                            'div',
-	                            { className: 'lg-font pink' },
+	                            { className: 'lg-font' },
 	                            'WEB DEVELOPER'
 	                        ),
 	                        _react2.default.createElement(
 	                            'div',
-	                            { className: 'sm-font yellowish' },
+	                            { className: 'sm-font' },
 	                            ' and ',
 	                            this.state.currentRandomFact
 	                        ),
@@ -29943,7 +30037,11 @@
 	                        )
 	                    )
 	                ),
-	                _react2.default.createElement(_about2.default, null)
+	                _react2.default.createElement(_about2.default, null),
+	                _react2.default.createElement(_projects2.default, null),
+	                _react2.default.createElement(_presentation2.default, null),
+	                _react2.default.createElement(_resume2.default, null),
+	                _react2.default.createElement(_contact2.default, null)
 	            );
 	        }
 	    }]);
@@ -29964,7 +30062,7 @@
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Homepage);
 
 /***/ },
-/* 281 */
+/* 282 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30188,7 +30286,7 @@
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(About);
 
 /***/ },
-/* 282 */
+/* 283 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30227,7 +30325,7 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                'div',
-	                { className: 'grey-section' },
+	                { className: 'grey-section spacer' },
 	                _react2.default.createElement(
 	                    'h1',
 	                    { className: 'no-margin' },
@@ -30334,7 +30432,7 @@
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Presentations);
 
 /***/ },
-/* 283 */
+/* 284 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30373,7 +30471,7 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                'div',
-	                { className: 'projects-background' },
+	                { className: 'projects-background spacer' },
 	                _react2.default.createElement(
 	                    'h1',
 	                    { className: 'no-margin' },
@@ -30525,7 +30623,7 @@
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Projects);
 
 /***/ },
-/* 284 */
+/* 285 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30564,7 +30662,7 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                'div',
-	                { className: 'grey-section' },
+	                { className: 'grey-section spacer-sm' },
 	                _react2.default.createElement(
 	                    'h1',
 	                    null,
@@ -30622,7 +30720,7 @@
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Contact);
 
 /***/ },
-/* 285 */
+/* 286 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30661,7 +30759,7 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                'div',
-	                null,
+	                { className: 'spacer' },
 	                _react2.default.createElement(
 	                    'h1',
 	                    { className: 'no-margin' },
@@ -30710,84 +30808,6 @@
 	}
 	
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Resume);
-
-/***/ },
-/* 286 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactRedux = __webpack_require__(178);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var Footer = function (_React$Component) {
-	    _inherits(Footer, _React$Component);
-	
-	    function Footer(props) {
-	        _classCallCheck(this, Footer);
-	
-	        return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).call(this, props));
-	    }
-	
-	    _createClass(Footer, [{
-	        key: 'render',
-	        value: function render() {
-	            return _react2.default.createElement(
-	                'div',
-	                { className: 'footer' },
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'wrapper' },
-	                    _react2.default.createElement(
-	                        'article',
-	                        { className: 'main' },
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'footer-white' },
-	                            '\xA9 2017 Stephanie Manwaring'
-	                        ),
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'footer-white' },
-	                            ' This site was built and designed by yours truly'
-	                        )
-	                    )
-	                )
-	            );
-	        }
-	    }]);
-	
-	    return Footer;
-	}(_react2.default.Component);
-	
-	/* -----------------    CONTAINER     ------------------ */
-	
-	function mapStateToProps(state) {
-	    return {};
-	}
-	
-	function mapDispatchToProps(dispatch) {
-	    return {};
-	}
-	
-	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Footer);
 
 /***/ }
 /******/ ]);

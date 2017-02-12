@@ -10,7 +10,7 @@ class Contact extends React.Component {
 
     render() {
         return (
-            <div className="grey-section">
+            <div className="grey-section spacer-sm">
                 <h1>Let's have a chat</h1>
                 <div className="wrapper">
                 <article className="main">
