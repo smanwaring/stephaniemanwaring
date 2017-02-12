@@ -16,6 +16,8 @@ import About from './components/about/about.component';
 import Presentations from './components/presentations/presentation.component';
 import Projects from './components/projects/projects.component';
 import Contact from './components/contact/contact.component';
+import Resume from './components/resume/resume';
+import Footer from './components/footer/footer.component';
 
 
 
@@ -28,6 +30,7 @@ ReactDOM.render(
 				<Route path="/presentations" component={Presentations}/>
 				<Route path="/projects" component={Projects}/>
 				<Route path="/contact" component={Contact}/>
+				<Route path="/resume" component={Resume}/>
 				<IndexRoute component={Homepage}/>
 			</Route>
 		</Router>

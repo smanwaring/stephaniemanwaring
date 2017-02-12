@@ -87,6 +87,14 @@
 	
 	var _contact2 = _interopRequireDefault(_contact);
 	
+	var _resume = __webpack_require__(285);
+	
+	var _resume2 = _interopRequireDefault(_resume);
+	
+	var _footer = __webpack_require__(286);
+	
+	var _footer2 = _interopRequireDefault(_footer);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	/*------ COMPONENTS/CONTAINERS ------ */
@@ -104,6 +112,7 @@
 				_react2.default.createElement(_reactRouter.Route, { path: '/presentations', component: _presentation2.default }),
 				_react2.default.createElement(_reactRouter.Route, { path: '/projects', component: _projects2.default }),
 				_react2.default.createElement(_reactRouter.Route, { path: '/contact', component: _contact2.default }),
+				_react2.default.createElement(_reactRouter.Route, { path: '/resume', component: _resume2.default }),
 				_react2.default.createElement(_reactRouter.IndexRoute, { component: _homepage2.default })
 			)
 		)
@@ -29664,6 +29673,10 @@
 	
 	var _navbar2 = _interopRequireDefault(_navbar);
 	
+	var _footer = __webpack_require__(286);
+	
+	var _footer2 = _interopRequireDefault(_footer);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -29688,7 +29701,8 @@
 	                'div',
 	                null,
 	                _react2.default.createElement(_navbar2.default, null),
-	                this.props.children
+	                this.props.children,
+	                _react2.default.createElement(_footer2.default, null)
 	            );
 	        }
 	    }]);
@@ -29781,9 +29795,13 @@
 	                        )
 	                    ),
 	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'navbar-text' },
-	                        'resume'
+	                        _reactRouter.Link,
+	                        { to: '/resume' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'navbar-text' },
+	                            'resume'
+	                        )
 	                    ),
 	                    _react2.default.createElement(
 	                        _reactRouter.Link,
@@ -30602,6 +30620,174 @@
 	}
 	
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Contact);
+
+/***/ },
+/* 285 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRedux = __webpack_require__(178);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Resume = function (_React$Component) {
+	    _inherits(Resume, _React$Component);
+	
+	    function Resume(props) {
+	        _classCallCheck(this, Resume);
+	
+	        return _possibleConstructorReturn(this, (Resume.__proto__ || Object.getPrototypeOf(Resume)).call(this, props));
+	    }
+	
+	    _createClass(Resume, [{
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'div',
+	                null,
+	                _react2.default.createElement(
+	                    'h1',
+	                    { className: 'no-margin' },
+	                    'What I\'ve been up to'
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'wrapper' },
+	                    _react2.default.createElement(
+	                        'article',
+	                        { className: 'main' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'flex-container' },
+	                            _react2.default.createElement(
+	                                'div',
+	                                null,
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'link-box-resume' },
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        { className: 'btn-lg-text' },
+	                                        'DOWNLOAD RESUME'
+	                                    )
+	                                )
+	                            )
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return Resume;
+	}(_react2.default.Component);
+	
+	/* -----------------    CONTAINER     ------------------ */
+	
+	function mapStateToProps(state) {
+	    return {};
+	}
+	
+	function mapDispatchToProps(dispatch) {
+	    return {};
+	}
+	
+	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Resume);
+
+/***/ },
+/* 286 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRedux = __webpack_require__(178);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Footer = function (_React$Component) {
+	    _inherits(Footer, _React$Component);
+	
+	    function Footer(props) {
+	        _classCallCheck(this, Footer);
+	
+	        return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).call(this, props));
+	    }
+	
+	    _createClass(Footer, [{
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'div',
+	                { className: 'footer' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'wrapper' },
+	                    _react2.default.createElement(
+	                        'article',
+	                        { className: 'main' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'footer-white' },
+	                            '\xA9 2017 Stephanie Manwaring'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'footer-white' },
+	                            ' This site was built and designed by yours truly'
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return Footer;
+	}(_react2.default.Component);
+	
+	/* -----------------    CONTAINER     ------------------ */
+	
+	function mapStateToProps(state) {
+	    return {};
+	}
+	
+	function mapDispatchToProps(dispatch) {
+	    return {};
+	}
+	
+	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Footer);
 
 /***/ }
 /******/ ]);

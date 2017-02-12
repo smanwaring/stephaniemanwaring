@@ -1,6 +1,7 @@
 
 import React, { Component } from 'react';
 import Navbar from './navbar/navbar.component';
+import Footer from './footer/footer.component';
 
 export default class Root extends Component {
     render() {
@@ -8,6 +9,7 @@ export default class Root extends Component {
             <div>
                 <Navbar/>
                 {this.props.children}
+                <Footer/>
             </div>
         )
     }

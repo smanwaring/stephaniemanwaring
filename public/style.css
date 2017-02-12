@@ -401,3 +401,47 @@ hr{
 .no-margin{
     margin-top: 0;
 }
+
+
+.link-box{
+    border-color: black;
+    font-size: 14px;
+    padding: 10px;
+    width: 70px;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    display: inline-block;
+    margin-left: 5px;
+    color: black;
+}
+
+.link-box-resume{
+    border-color: black;
+    font-size: 18px;
+    width: 220px;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    color: black;
+    height: 60px;
+    font-weight: 600;
+}
+
+.btn-lg-text{
+    margin-top: 20px;
+}
+
+
+.footer{
+    background-color: black;
+    text-align: left;
+    height: 80px;
+}
+
+.footer-white{
+    color:white;
+    margin-left: 20px;
+    font-size: 12px;
+    margin-top: 2px;
+}
