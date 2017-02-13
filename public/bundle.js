@@ -75,19 +75,19 @@
 	
 	var _about2 = _interopRequireDefault(_about);
 	
-	var _presentation = __webpack_require__(283);
+	var _presentation = __webpack_require__(284);
 	
 	var _presentation2 = _interopRequireDefault(_presentation);
 	
-	var _projects = __webpack_require__(284);
+	var _projects = __webpack_require__(283);
 	
 	var _projects2 = _interopRequireDefault(_projects);
 	
-	var _contact = __webpack_require__(285);
+	var _contact = __webpack_require__(286);
 	
 	var _contact2 = _interopRequireDefault(_contact);
 	
-	var _resume = __webpack_require__(286);
+	var _resume = __webpack_require__(285);
 	
 	var _resume2 = _interopRequireDefault(_resume);
 	
@@ -28800,11 +28800,11 @@
 
 	'use strict';
 	
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 	
 	var _core = __webpack_require__(273);
 	
@@ -28836,17 +28836,17 @@
 	 * @returns {function} logger middleware
 	 */
 	function createLogger() {
-	  var options = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];
+	  var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
 	
 	  var loggerOptions = _extends({}, _defaults2.default, options);
 	
-	  var logger = loggerOptions.logger;
-	  var transformer = loggerOptions.transformer;
-	  var stateTransformer = loggerOptions.stateTransformer;
-	  var errorTransformer = loggerOptions.errorTransformer;
-	  var predicate = loggerOptions.predicate;
-	  var logErrors = loggerOptions.logErrors;
-	  var diffPredicate = loggerOptions.diffPredicate;
+	  var logger = loggerOptions.logger,
+	      transformer = loggerOptions.transformer,
+	      stateTransformer = loggerOptions.stateTransformer,
+	      errorTransformer = loggerOptions.errorTransformer,
+	      predicate = loggerOptions.predicate,
+	      logErrors = loggerOptions.logErrors,
+	      diffPredicate = loggerOptions.diffPredicate;
 	
 	  // Return if 'console' object is not defined
 	
@@ -28883,7 +28883,7 @@
 	        logEntry.prevState = stateTransformer(getState());
 	        logEntry.action = action;
 	
-	        var returnedValue = undefined;
+	        var returnedValue = void 0;
 	        if (logErrors) {
 	          try {
 	            returnedValue = next(action);
@@ -28921,6 +28921,9 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+	
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+	
 	exports.printBuffer = printBuffer;
 	
 	var _helpers = __webpack_require__(274);
@@ -28932,8 +28935,6 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
-	
-	function _typeof(obj) { return obj && typeof Symbol !== "undefined" && obj.constructor === Symbol ? "symbol" : typeof obj; }
 	
 	/**
 	 * Get log level string based on supplied params
@@ -28957,40 +28958,40 @@
 	}
 	
 	function defaultTitleFormatter(options) {
-	  var timestamp = options.timestamp;
-	  var duration = options.duration;
+	  var timestamp = options.timestamp,
+	      duration = options.duration;
+	
 	
 	  return function (action, time, took) {
 	    var parts = ['action'];
-	    if (timestamp) {
-	      parts.push('@ ' + time);
-	    }
-	    parts.push(action.type);
-	    if (duration) {
-	      parts.push('(in ' + took.toFixed(2) + ' ms)');
-	    }
+	
+	    if (timestamp) parts.push('@ ' + time);
+	    parts.push(String(action.type));
+	    if (duration) parts.push('(in ' + took.toFixed(2) + ' ms)');
+	
 	    return parts.join(' ');
 	  };
 	}
 	
 	function printBuffer(buffer, options) {
-	  var logger = options.logger;
-	  var actionTransformer = options.actionTransformer;
-	  var _options$titleFormatt = options.titleFormatter;
-	  var titleFormatter = _options$titleFormatt === undefined ? defaultTitleFormatter(options) : _options$titleFormatt;
-	  var collapsed = options.collapsed;
-	  var colors = options.colors;
-	  var level = options.level;
-	  var diff = options.diff;
+	  var logger = options.logger,
+	      actionTransformer = options.actionTransformer,
+	      _options$titleFormatt = options.titleFormatter,
+	      titleFormatter = _options$titleFormatt === undefined ? defaultTitleFormatter(options) : _options$titleFormatt,
+	      collapsed = options.collapsed,
+	      colors = options.colors,
+	      level = options.level,
+	      diff = options.diff;
+	
 	
 	  buffer.forEach(function (logEntry, key) {
-	    var started = logEntry.started;
-	    var startedTime = logEntry.startedTime;
-	    var action = logEntry.action;
-	    var prevState = logEntry.prevState;
-	    var error = logEntry.error;
-	    var took = logEntry.took;
-	    var nextState = logEntry.nextState;
+	    var started = logEntry.started,
+	        startedTime = logEntry.startedTime,
+	        action = logEntry.action,
+	        prevState = logEntry.prevState,
+	        error = logEntry.error;
+	    var took = logEntry.took,
+	        nextState = logEntry.nextState;
 	
 	    var nextEntry = buffer[key + 1];
 	
@@ -29003,7 +29004,7 @@
 	    var formattedAction = actionTransformer(action);
 	    var isCollapsed = typeof collapsed === 'function' ? collapsed(function () {
 	      return nextState;
-	    }, action) : collapsed;
+	    }, action, logEntry) : collapsed;
 	
 	    var formattedTime = (0, _helpers.formatTime)(startedTime);
 	    var titleCSS = colors.title ? 'color: ' + colors.title(formattedAction) + ';' : null;
@@ -29048,7 +29049,7 @@
 	    try {
 	      logger.groupEnd();
 	    } catch (e) {
-	      logger.log('—— log end ——');
+	      logger.log('\u2014\u2014 log end \u2014\u2014');
 	    }
 	  });
 	}
@@ -29094,6 +29095,8 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+	
 	// https://github.com/flitbit/diff#differences
 	var dictionary = {
 	  'E': {
@@ -29119,24 +29122,25 @@
 	}
 	
 	function render(diff) {
-	  var kind = diff.kind;
-	  var path = diff.path;
-	  var lhs = diff.lhs;
-	  var rhs = diff.rhs;
-	  var index = diff.index;
-	  var item = diff.item;
+	  var kind = diff.kind,
+	      path = diff.path,
+	      lhs = diff.lhs,
+	      rhs = diff.rhs,
+	      index = diff.index,
+	      item = diff.item;
+	
 	
 	  switch (kind) {
 	    case 'E':
-	      return path.join('.') + ' ' + lhs + ' → ' + rhs;
+	      return [path.join('.'), lhs, '\u2192', rhs];
 	    case 'N':
-	      return path.join('.') + ' ' + rhs;
+	      return [path.join('.'), rhs];
 	    case 'D':
-	      return '' + path.join('.');
+	      return [path.join('.')];
 	    case 'A':
 	      return [path.join('.') + '[' + index + ']', item];
 	    default:
-	      return null;
+	      return [];
 	  }
 	}
 	
@@ -29159,16 +29163,16 @@
 	
 	      var output = render(elem);
 	
-	      logger.log('%c ' + dictionary[kind].text, style(kind), output);
+	      logger.log.apply(logger, ['%c ' + dictionary[kind].text, style(kind)].concat(_toConsumableArray(output)));
 	    });
 	  } else {
-	    logger.log('—— no diff ——');
+	    logger.log('\u2014\u2014 no diff \u2014\u2014');
 	  }
 	
 	  try {
 	    logger.groupEnd();
 	  } catch (e) {
-	    logger.log('—— diff end —— ');
+	    logger.log('\u2014\u2014 diff end \u2014\u2014 ');
 	  }
 	}
 	module.exports = exports['default'];
@@ -29651,7 +29655,7 @@
 	  // Deprecated options
 	  transformer: undefined
 	};
-	module.exports = exports['default'];
+	module.exports = exports["default"];
 
 /***/ },
 /* 278 */
@@ -29932,19 +29936,19 @@
 	
 	var _about2 = _interopRequireDefault(_about);
 	
-	var _projects = __webpack_require__(284);
+	var _projects = __webpack_require__(283);
 	
 	var _projects2 = _interopRequireDefault(_projects);
 	
-	var _presentation = __webpack_require__(283);
+	var _presentation = __webpack_require__(284);
 	
 	var _presentation2 = _interopRequireDefault(_presentation);
 	
-	var _resume = __webpack_require__(286);
+	var _resume = __webpack_require__(285);
 	
 	var _resume2 = _interopRequireDefault(_resume);
 	
-	var _contact = __webpack_require__(285);
+	var _contact = __webpack_require__(286);
 	
 	var _contact2 = _interopRequireDefault(_contact);
 	
@@ -30311,152 +30315,6 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var Presentations = function (_React$Component) {
-	    _inherits(Presentations, _React$Component);
-	
-	    function Presentations(props) {
-	        _classCallCheck(this, Presentations);
-	
-	        return _possibleConstructorReturn(this, (Presentations.__proto__ || Object.getPrototypeOf(Presentations)).call(this, props));
-	    }
-	
-	    _createClass(Presentations, [{
-	        key: 'render',
-	        value: function render() {
-	            return _react2.default.createElement(
-	                'div',
-	                { className: 'grey-section spacer' },
-	                _react2.default.createElement(
-	                    'h1',
-	                    { className: 'no-margin' },
-	                    'Presentations'
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'wrapper' },
-	                    _react2.default.createElement(
-	                        'article',
-	                        { className: 'main' },
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'flex-container' },
-	                            _react2.default.createElement(
-	                                'div',
-	                                null,
-	                                _react2.default.createElement('div', { className: 'video-sm-1' }),
-	                                _react2.default.createElement(
-	                                    'div',
-	                                    { className: 'video-text-box' },
-	                                    _react2.default.createElement(
-	                                        'div',
-	                                        { className: 'text-box' },
-	                                        _react2.default.createElement(
-	                                            'div',
-	                                            { className: 'video-text-title' },
-	                                            'TECH TALK: THE JAVASCRIPT SEMICOLON '
-	                                        ),
-	                                        _react2.default.createElement(
-	                                            'div',
-	                                            { className: 'video-text-sm' },
-	                                            'A semi-deep dive into the finer points of semicolons in JavaScript.'
-	                                        )
-	                                    )
-	                                )
-	                            ),
-	                            _react2.default.createElement(
-	                                'div',
-	                                null,
-	                                _react2.default.createElement('div', { className: 'video-sm-2' }),
-	                                _react2.default.createElement(
-	                                    'div',
-	                                    { className: 'video-text-box' },
-	                                    _react2.default.createElement(
-	                                        'div',
-	                                        { className: 'text-box' },
-	                                        _react2.default.createElement(
-	                                            'div',
-	                                            { className: 'video-text-title' },
-	                                            'PROJECT DEMO: SILENT-SALUTATIONS'
-	                                        ),
-	                                        _react2.default.createElement(
-	                                            'div',
-	                                            { className: 'video-text-sm' },
-	                                            'A demonstration of a simple silent-applauding app built during a 24-hour hackathon.'
-	                                        )
-	                                    )
-	                                )
-	                            ),
-	                            _react2.default.createElement(
-	                                'div',
-	                                null,
-	                                _react2.default.createElement('div', { className: 'video-sm-3' }),
-	                                _react2.default.createElement(
-	                                    'div',
-	                                    { className: 'video-text-box' },
-	                                    _react2.default.createElement(
-	                                        'div',
-	                                        { className: 'text-box' },
-	                                        _react2.default.createElement(
-	                                            'div',
-	                                            { className: 'video-text-title' },
-	                                            'PROJECT DEMO: ARCHIVER '
-	                                        ),
-	                                        _react2.default.createElement(
-	                                            'div',
-	                                            { className: 'video-text-sm' },
-	                                            'A group presentation on a custom version control desktop application built while at Fullstack Academy.'
-	                                        )
-	                                    )
-	                                )
-	                            )
-	                        )
-	                    )
-	                )
-	            );
-	        }
-	    }]);
-	
-	    return Presentations;
-	}(_react2.default.Component);
-	
-	/* -----------------    CONTAINER     ------------------ */
-	
-	function mapStateToProps(state) {
-	    return {};
-	}
-	
-	function mapDispatchToProps(dispatch) {
-	    return {};
-	}
-	
-	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Presentations);
-
-/***/ },
-/* 284 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactRedux = __webpack_require__(178);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
 	var Projects = function (_React$Component) {
 	    _inherits(Projects, _React$Component);
 	
@@ -30623,7 +30481,243 @@
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Projects);
 
 /***/ },
+/* 284 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRedux = __webpack_require__(178);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Presentations = function (_React$Component) {
+	    _inherits(Presentations, _React$Component);
+	
+	    function Presentations(props) {
+	        _classCallCheck(this, Presentations);
+	
+	        return _possibleConstructorReturn(this, (Presentations.__proto__ || Object.getPrototypeOf(Presentations)).call(this, props));
+	    }
+	
+	    _createClass(Presentations, [{
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'div',
+	                { className: 'grey-section spacer' },
+	                _react2.default.createElement(
+	                    'h1',
+	                    { className: 'no-margin' },
+	                    'Presentations'
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'wrapper' },
+	                    _react2.default.createElement(
+	                        'article',
+	                        { className: 'main' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'flex-container' },
+	                            _react2.default.createElement(
+	                                'div',
+	                                null,
+	                                _react2.default.createElement('div', { className: 'video-sm-1' }),
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'video-text-box' },
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        { className: 'text-box' },
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'video-text-title' },
+	                                            'TECH TALK: THE JAVASCRIPT SEMICOLON '
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'video-text-sm' },
+	                                            'A semi-deep dive into the finer points of semicolons in JavaScript.'
+	                                        )
+	                                    )
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                null,
+	                                _react2.default.createElement('div', { className: 'video-sm-2' }),
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'video-text-box' },
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        { className: 'text-box' },
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'video-text-title' },
+	                                            'PROJECT DEMO: SILENT-SALUTATIONS'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'video-text-sm' },
+	                                            'A demonstration of a simple silent-applauding app built during a 24-hour hackathon.'
+	                                        )
+	                                    )
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                null,
+	                                _react2.default.createElement('div', { className: 'video-sm-3' }),
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'video-text-box' },
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        { className: 'text-box' },
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'video-text-title' },
+	                                            'PROJECT DEMO: ARCHIVER '
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'video-text-sm' },
+	                                            'A group presentation on a custom version control desktop application built while at Fullstack Academy.'
+	                                        )
+	                                    )
+	                                )
+	                            )
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return Presentations;
+	}(_react2.default.Component);
+	
+	/* -----------------    CONTAINER     ------------------ */
+	
+	function mapStateToProps(state) {
+	    return {};
+	}
+	
+	function mapDispatchToProps(dispatch) {
+	    return {};
+	}
+	
+	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Presentations);
+
+/***/ },
 /* 285 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRedux = __webpack_require__(178);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Resume = function (_React$Component) {
+	    _inherits(Resume, _React$Component);
+	
+	    function Resume(props) {
+	        _classCallCheck(this, Resume);
+	
+	        return _possibleConstructorReturn(this, (Resume.__proto__ || Object.getPrototypeOf(Resume)).call(this, props));
+	    }
+	
+	    _createClass(Resume, [{
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'div',
+	                { className: 'spacer' },
+	                _react2.default.createElement(
+	                    'h1',
+	                    { className: 'no-margin' },
+	                    'What I\'ve been up to'
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'wrapper' },
+	                    _react2.default.createElement(
+	                        'article',
+	                        { className: 'main' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'flex-container' },
+	                            _react2.default.createElement(
+	                                'div',
+	                                null,
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'link-box-resume' },
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        { className: 'btn-lg-text' },
+	                                        'DOWNLOAD RESUME'
+	                                    )
+	                                )
+	                            )
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return Resume;
+	}(_react2.default.Component);
+	
+	/* -----------------    CONTAINER     ------------------ */
+	
+	function mapStateToProps(state) {
+	    return {};
+	}
+	
+	function mapDispatchToProps(dispatch) {
+	    return {};
+	}
+	
+	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Resume);
+
+/***/ },
+/* 286 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30718,96 +30812,6 @@
 	}
 	
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Contact);
-
-/***/ },
-/* 286 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactRedux = __webpack_require__(178);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var Resume = function (_React$Component) {
-	    _inherits(Resume, _React$Component);
-	
-	    function Resume(props) {
-	        _classCallCheck(this, Resume);
-	
-	        return _possibleConstructorReturn(this, (Resume.__proto__ || Object.getPrototypeOf(Resume)).call(this, props));
-	    }
-	
-	    _createClass(Resume, [{
-	        key: 'render',
-	        value: function render() {
-	            return _react2.default.createElement(
-	                'div',
-	                { className: 'spacer' },
-	                _react2.default.createElement(
-	                    'h1',
-	                    { className: 'no-margin' },
-	                    'What I\'ve been up to'
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'wrapper' },
-	                    _react2.default.createElement(
-	                        'article',
-	                        { className: 'main' },
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'flex-container' },
-	                            _react2.default.createElement(
-	                                'div',
-	                                null,
-	                                _react2.default.createElement(
-	                                    'div',
-	                                    { className: 'link-box-resume' },
-	                                    _react2.default.createElement(
-	                                        'div',
-	                                        { className: 'btn-lg-text' },
-	                                        'DOWNLOAD RESUME'
-	                                    )
-	                                )
-	                            )
-	                        )
-	                    )
-	                )
-	            );
-	        }
-	    }]);
-	
-	    return Resume;
-	}(_react2.default.Component);
-	
-	/* -----------------    CONTAINER     ------------------ */
-	
-	function mapStateToProps(state) {
-	    return {};
-	}
-	
-	function mapDispatchToProps(dispatch) {
-	    return {};
-	}
-	
-	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Resume);
 
 /***/ }
 /******/ ]);
