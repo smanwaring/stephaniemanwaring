@@ -12,7 +12,8 @@ provider:
       Resource: '*'
 
 custom:
-  domain: stephanie.manwaring.io
+  domain: manwaring.io
+  url: stephanie.manwaring.io
   cloudFrontHostedZoneId: Z2FDTNDATAQYW2
   domainHostedZoneId: Z1BTH43EP6V0W5
 
@@ -28,7 +29,7 @@ resources:
     Site:
       Type: AWS::S3::Bucket
       Properties:
-        BucketName: ${self:custom.domain}
+        BucketName: ${self:custom.url}
         AccessControl: PublicRead
         WebsiteConfiguration:
           IndexDocument: index.html
@@ -36,7 +37,7 @@ resources:
     NakedRecordSet:
       Type: AWS::Route53::RecordSet
       Properties:
-        Name: ${self:custom.domain}
+        Name: ${self:custom.url}
         Type: A
         AliasTarget:
           DNSName:
@@ -47,7 +48,7 @@ resources:
     WWWRecordSet:
       Type: AWS::Route53::RecordSet
       Properties:
-        Name: www.${self:custom.domain}
+        Name: www.${self:custom.url}
         Type: A
         AliasTarget:
           DNSName:
@@ -60,8 +61,8 @@ resources:
       Properties:
         DistributionConfig:
           Aliases:
-            - ${self:custom.domain}
-            - www.${self:custom.domain}
+            - ${self:custom.url}
+            - www.${self:custom.url}
           CustomErrorResponses:
             - ErrorCode: 404
               ErrorCachingMinTTL: 0
