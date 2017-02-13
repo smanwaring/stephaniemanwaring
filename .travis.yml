@@ -9,7 +9,7 @@ install:
     
 script:
   - cd infrastructure && serverless deploy
-  - webpack
+  - npm run build
 
 deploy:
   provider: s3
