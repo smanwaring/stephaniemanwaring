@@ -10,7 +10,7 @@ import store from './store';
 
 
 /*------ COMPONENTS/CONTAINERS ------ */
-import Root from './components/Root';
+import Root from './components/root';
 import Homepage from './components/homepage/homepage.component';
 import About from './components/about/about.component';
 import Presentations from './components/presentations/presentation.component';

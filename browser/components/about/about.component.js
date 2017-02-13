@@ -10,7 +10,7 @@ class About extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="spacer">
                 <div className="wrapper">
                 <aside className="aside aside-1">
                     <div className="text-highlight">Hello!</div>

@@ -63,9 +63,9 @@
 	
 	var _store2 = _interopRequireDefault(_store);
 	
-	var _Root = __webpack_require__(278);
+	var _root = __webpack_require__(278);
 	
-	var _Root2 = _interopRequireDefault(_Root);
+	var _root2 = _interopRequireDefault(_root);
 	
 	var _homepage = __webpack_require__(281);
 	
@@ -106,7 +106,7 @@
 			{ history: _reactRouter.hashHistory },
 			_react2.default.createElement(
 				_reactRouter.Route,
-				{ path: '/', component: _Root2.default },
+				{ path: '/', component: _root2.default },
 				_react2.default.createElement(_reactRouter.Route, { path: '/hello', component: _homepage2.default }),
 				_react2.default.createElement(_reactRouter.Route, { path: '/about', component: _about2.default }),
 				_react2.default.createElement(_reactRouter.Route, { path: '/presentations', component: _presentation2.default }),
@@ -30105,7 +30105,7 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                'div',
-	                null,
+	                { className: 'spacer' },
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'wrapper' },
