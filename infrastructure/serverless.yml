@@ -1,0 +1,114 @@
+service: StephanieIO-Site
+
+provider:
+  name: aws
+  runtime: nodejs4.3
+  stage: prod
+  deploymentBucket: automation-serverlessartifact-${opt:accountId, env:ACCOUNT_ID}
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - s3:*
+      Resource: '*'
+
+custom:
+  domain: stephanie.manwaring.io
+  cloudFrontHostedZoneId: Z2FDTNDATAQYW2
+  domainHostedZoneId: Z1BTH43EP6V0W5
+
+functions:
+
+  EmptyBucket:
+    handler: empty-bucket.handler
+
+resources:
+
+  Resources:
+
+    Site:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: ${self:custom.domain}
+        AccessControl: PublicRead
+        WebsiteConfiguration:
+          IndexDocument: index.html
+            
+    NakedRecordSet:
+      Type: AWS::Route53::RecordSet
+      Properties:
+        Name: ${self:custom.domain}
+        Type: A
+        AliasTarget:
+          DNSName: Fn::GetAtt: CDN.DomainName
+          HostedZoneId: ${self:custom.cloudFrontHostedZoneId}
+        HostedZoneId: ${self:custom.domainHostedZoneId}
+    
+    WWWRecordSet:
+      Type: AWS::Route53::RecordSet
+      Properties:
+        Name: www.${self:custom.domain}
+        Type: A
+        AliasTarget:
+          DNSName: Fn::GetAtt: CDN.DomainName
+          HostedZoneId: ${self:custom.cloudFrontHostedZoneId}
+        HostedZoneId: ${self:custom.domainHostedZoneId}
+
+    CDN:
+      Type: AWS::CloudFront::Distribution
+      Properties:
+        DistributionConfig:
+          Aliases:
+            - ${self:custom.domain}
+            - www.${self:custom.domain}
+          CustomErrorResponses:
+            - ErrorCode: 404
+              ErrorCachingMinTTL: 0
+              ResponseCode: 200
+              ResponsePagePath: /index.html
+            - ErrorCode: 403
+              ErrorCachingMinTTL: 0
+              ResponseCode: 200
+              ResponsePagePath: /index.html
+          DefaultCacheBehavior:
+            AllowedMethods: [ GET, HEAD, OPTIONS ]
+            TargetOriginId: StaticSiteOrigin
+            ForwardedValues:
+              QueryString: true
+              Cookies:
+                Forward: none
+            DefaultTTL: 0
+            MinTTL: 0
+            MaxTTL: 0
+            ViewerProtocolPolicy: redirect-to-https
+          DefaultRootObject: index.html
+          Enabled: true
+          Origins:
+            - DomainName:
+                Fn::GetAtt : Site.DomainName
+              Id: StaticSiteOrigin
+              S3OriginConfig:
+                OriginAccessIdentity: ''
+          PriceClass: PriceClass_100
+          ViewerCertificate:
+            AcmCertificateArn:
+              Ref: DomainCertificate
+            SslSupportMethod: sni-only
+
+    DomainCertificate:
+      Type: AWS::CertificateManager::Certificate
+      Properties:
+        DomainName: '*.${self:custom.domain}'
+        DomainValidationOptions:
+          - DomainName: '*.${self:custom.domain}'
+            ValidationDomain: ${self:custom.domain}
+        SubjectAlternativeNames:
+          - ${self:custom.domain}
+
+    EmptySiteBucket:
+      Type: Custom::EmptySiteBucket
+      DependsOn: Site
+      Properties:  
+        ServiceToken:
+          Fn::GetAtt: EmptyBucketLambdaFunction.Arn
+        BucketName:
+          Ref: Site
