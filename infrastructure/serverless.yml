@@ -39,7 +39,8 @@ resources:
         Name: ${self:custom.domain}
         Type: A
         AliasTarget:
-          DNSName: Fn::GetAtt: CDN.DomainName
+          DNSName:
+            Fn::GetAtt: CDN.DomainName
           HostedZoneId: ${self:custom.cloudFrontHostedZoneId}
         HostedZoneId: ${self:custom.domainHostedZoneId}
     
@@ -49,7 +50,8 @@ resources:
         Name: www.${self:custom.domain}
         Type: A
         AliasTarget:
-          DNSName: Fn::GetAtt: CDN.DomainName
+          DNSName:
+            Fn::GetAtt: CDN.DomainName
           HostedZoneId: ${self:custom.cloudFrontHostedZoneId}
         HostedZoneId: ${self:custom.domainHostedZoneId}
 
