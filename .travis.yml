@@ -8,7 +8,7 @@ install:
   - npm install --no-optional
     
 script:
-  - cd infrastructure && serverless deploy
+  - cd infrastructure && serverless deploy && cd..
   - npm run build
 
 deploy:

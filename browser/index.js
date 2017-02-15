@@ -17,7 +17,6 @@ import Presentations from './components/presentations/presentation.component';
 import Projects from './components/projects/projects.component';
 import Contact from './components/contact/contact.component';
 import Resume from './components/resume/resume';
-import Footer from './components/footer/footer.component';
 
 
 
