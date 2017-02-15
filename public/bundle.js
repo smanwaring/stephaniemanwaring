@@ -91,13 +91,8 @@
 	
 	var _resume2 = _interopRequireDefault(_resume);
 	
-	var _footer = __webpack_require__(280);
-	
-	var _footer2 = _interopRequireDefault(_footer);
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	/*------ COMPONENTS/CONTAINERS ------ */
 	_reactDom2.default.render(_react2.default.createElement(
 		_reactRedux.Provider,
 		{ store: _store2.default },
@@ -117,6 +112,8 @@
 			)
 		)
 	), document.getElementById('app'));
+	
+	/*------ COMPONENTS/CONTAINERS ------ */
 
 /***/ },
 /* 1 */
