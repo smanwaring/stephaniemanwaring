@@ -29744,27 +29744,48 @@
 	var Navbar = function (_React$Component) {
 	    _inherits(Navbar, _React$Component);
 	
-	    function Navbar() {
+	    function Navbar(props) {
 	        _classCallCheck(this, Navbar);
 	
-	        return _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).apply(this, arguments));
+	        var _this = _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).call(this, props));
+	
+	        _this.state = {
+	            menuOpen: false
+	        };
+	        _this.handleMenuClick = _this.handleMenuClick.bind(_this);
+	        return _this;
 	    }
 	
 	    _createClass(Navbar, [{
+	        key: 'handleMenuClick',
+	        value: function handleMenuClick() {
+	            this.setState({ menuOpen: !this.state.menuOpen });
+	        }
+	    }, {
 	        key: 'render',
 	        value: function render() {
+	            var menuClasses = this.state.menuOpen ? 'menu expand' : 'menu';
 	            return _react2.default.createElement(
 	                'div',
 	                { className: 'navbar' },
 	                _react2.default.createElement(
 	                    'div',
-	                    { className: 'navbar-center' },
+	                    { className: 'mobile-menu' },
+	                    _react2.default.createElement(
+	                        'i',
+	                        { className: 'material-icons', onClick: this.handleMenuClick },
+	                        'menu'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: menuClasses, onClick: this.handleMenuClick },
 	                    _react2.default.createElement(
 	                        _reactRouter.Link,
 	                        { to: '/hello' },
 	                        _react2.default.createElement(
 	                            'div',
-	                            { className: 'navbar-text' },
+	                            { className: 'menu-text' },
 	                            'hello!'
 	                        )
 	                    ),
@@ -29773,7 +29794,7 @@
 	                        { to: '/about' },
 	                        _react2.default.createElement(
 	                            'div',
-	                            { className: 'navbar-text' },
+	                            { className: 'menu-text' },
 	                            'about'
 	                        )
 	                    ),
@@ -29782,7 +29803,7 @@
 	                        { to: '/projects' },
 	                        _react2.default.createElement(
 	                            'div',
-	                            { className: 'navbar-text' },
+	                            { className: 'menu-text' },
 	                            'projects'
 	                        )
 	                    ),
@@ -29791,7 +29812,7 @@
 	                        { to: '/presentations' },
 	                        _react2.default.createElement(
 	                            'div',
-	                            { className: 'navbar-text' },
+	                            { className: 'menu-text' },
 	                            'presentations'
 	                        )
 	                    ),
@@ -29800,7 +29821,7 @@
 	                        { to: '/resume' },
 	                        _react2.default.createElement(
 	                            'div',
-	                            { className: 'navbar-text' },
+	                            { className: 'menu-text' },
 	                            'resume'
 	                        )
 	                    ),
@@ -29809,7 +29830,7 @@
 	                        { to: '/contact' },
 	                        _react2.default.createElement(
 	                            'div',
-	                            { className: 'navbar-text' },
+	                            { className: 'menu-text' },
 	                            'contact'
 	                        )
 	                    )
@@ -30193,76 +30214,84 @@
 	                        { className: 'main' },
 	                        _react2.default.createElement(
 	                            'ul',
-	                            { className: 'left main-text' },
+	                            { className: 'left main-text column-flex' },
 	                            _react2.default.createElement(
-	                                'div',
-	                                { className: 'text-bold' },
-	                                'Frameworks/libraries'
+	                                'span',
+	                                { className: 'column-2' },
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'text-bold' },
+	                                    'Frameworks/libraries'
+	                                ),
+	                                _react2.default.createElement(
+	                                    'li',
+	                                    null,
+	                                    'React'
+	                                ),
+	                                _react2.default.createElement(
+	                                    'li',
+	                                    null,
+	                                    'React-Redux'
+	                                ),
+	                                _react2.default.createElement(
+	                                    'li',
+	                                    null,
+	                                    'Angular 2'
+	                                ),
+	                                _react2.default.createElement(
+	                                    'li',
+	                                    null,
+	                                    'Node.js'
+	                                ),
+	                                _react2.default.createElement(
+	                                    'li',
+	                                    null,
+	                                    'jQuery'
+	                                ),
+	                                _react2.default.createElement(
+	                                    'li',
+	                                    null,
+	                                    'Express'
+	                                ),
+	                                _react2.default.createElement(
+	                                    'li',
+	                                    null,
+	                                    'Mocha / Chai'
+	                                ),
+	                                _react2.default.createElement(
+	                                    'li',
+	                                    null,
+	                                    'AJAX'
+	                                ),
+	                                _react2.default.createElement(
+	                                    'li',
+	                                    null,
+	                                    'PostgresSQL'
+	                                ),
+	                                _react2.default.createElement(
+	                                    'li',
+	                                    null,
+	                                    'Sequelize'
+	                                )
 	                            ),
 	                            _react2.default.createElement(
-	                                'li',
-	                                null,
-	                                'React'
-	                            ),
-	                            _react2.default.createElement(
-	                                'li',
-	                                null,
-	                                'React-Redux'
-	                            ),
-	                            _react2.default.createElement(
-	                                'li',
-	                                null,
-	                                'Angular 2'
-	                            ),
-	                            _react2.default.createElement(
-	                                'li',
-	                                null,
-	                                'Node.js'
-	                            ),
-	                            _react2.default.createElement(
-	                                'li',
-	                                null,
-	                                'jQuery'
-	                            ),
-	                            _react2.default.createElement(
-	                                'li',
-	                                null,
-	                                'Express'
-	                            ),
-	                            _react2.default.createElement(
-	                                'li',
-	                                null,
-	                                'Mocha / Chai'
-	                            ),
-	                            _react2.default.createElement(
-	                                'li',
-	                                null,
-	                                'AJAX'
-	                            ),
-	                            _react2.default.createElement(
-	                                'li',
-	                                null,
-	                                'PostgresSQL'
-	                            ),
-	                            _react2.default.createElement(
-	                                'li',
-	                                null,
-	                                'Sequelize'
-	                            ),
-	                            _react2.default.createElement(
-	                                'div',
-	                                { className: 'text-bold' },
-	                                'Day-to-day comfort'
-	                            ),
-	                            _react2.default.createElement(
-	                                'li',
-	                                null,
-	                                'Version Control (GIT)'
-	                            ),
-	                            _react2.default.createElement(
-	                                'li',
-	                                null,
-	                                'Agile Methodology'
+	                                'span',
+	                                { className: 'column-2' },
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'text-bold about-top-spacer' },
+	                                    'Day-to-day comfort'
+	                                ),
+	                                _react2.default.createElement(
+	                                    'li',
+	                                    null,
+	                                    'Version Control (GIT)'
+	                                ),
+	                                _react2.default.createElement(
+	                                    'li',
+	                                    null,
+	                                    'Agile Methodology'
+	                                )
 	                            )
 	                        )
 	                    )

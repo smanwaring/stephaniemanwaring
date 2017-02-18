@@ -52,7 +52,8 @@ class About extends React.Component {
                     <div className="text-bold">Technologies</div>
                 </aside>
                 <article className="main">
-                    <ul className="left main-text">
+                    <ul className="left main-text column-flex">
+                     <span className="column-2">
                         <div className="text-bold">Frameworks/libraries</div>
                         <li>React</li>
                         <li>React-Redux</li>
@@ -64,9 +65,12 @@ class About extends React.Component {
                         <li>AJAX</li>
                         <li>PostgresSQL</li>
                         <li>Sequelize</li>
-                        <div className="text-bold">Day-to-day comfort</div>
-                            <li>Version Control (GIT)</li>
-                            <li>Agile Methodology</li>
+                    </span>
+                    <span className="column-2">
+                        <div className="text-bold about-top-spacer">Day-to-day comfort</div>
+                        <li>Version Control (GIT)</li>
+                        <li>Agile Methodology</li>
+                    </span>
                     </ul>
                 </article>
                 </div>
