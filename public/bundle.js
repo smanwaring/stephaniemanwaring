@@ -29770,7 +29770,7 @@
 	                { className: 'navbar' },
 	                _react2.default.createElement(
 	                    'div',
-	                    { className: 'menu-text' },
+	                    { className: 'menu-text logo' },
 	                    ' /sm'
 	                ),
 	                _react2.default.createElement(

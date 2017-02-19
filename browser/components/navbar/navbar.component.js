@@ -20,7 +20,7 @@ class Navbar extends React.Component {
       const menuClasses = this.state.menuOpen ? 'menu expand' : 'menu';
         return (
             <div className="navbar">
-                <div className="menu-text"> /sm</div>
+                <div className="menu-text logo"> /sm</div>
                 <div className="mobile-menu"><i className="material-icons" onClick={this.handleMenuClick}>menu</i></div>
                 <div className={menuClasses} onClick={this.handleMenuClick}>
                     <Link to={'/hello'}><div className="menu-text">hello</div></Link>
