@@ -30314,10 +30314,19 @@
 	                { className: 'spacer' },
 	                _react2.default.createElement(
 	                    'div',
-	                    { className: 'wrapper white' },
+	                    { className: 'wrapper' },
 	                    _react2.default.createElement(
 	                        'aside',
 	                        { className: 'aside aside-1' },
+	                        _react2.default.createElement(
+	                            'ul',
+	                            { className: 'flex-container' },
+	                            _react2.default.createElement('li', { className: 'video-lg' })
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'article',
+	                        { className: 'main' },
 	                        _react2.default.createElement(
 	                            'div',
 	                            { className: 'text-bold-black' },
@@ -30344,96 +30353,6 @@
 	                            'div',
 	                            { className: 'link-box' },
 	                            'LIVESITE'
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'article',
-	                        { className: 'main' },
-	                        _react2.default.createElement(
-	                            'ul',
-	                            { className: 'flex-container' },
-	                            _react2.default.createElement('li', { className: 'video-lg' })
-	                        )
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'wrapper' },
-	                    _react2.default.createElement(
-	                        'aside',
-	                        { className: 'aside aside-1' },
-	                        _react2.default.createElement(
-	                            'div',
-	                            null,
-	                            'Santa-Swap'
-	                        ),
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'main-text-project' },
-	                            'A fun single page web application inspired by Periscope\'s floating hearts and Facebook\'s reaction icons. Create a custom clap board or join one that already exists to view and/or participate in silent reactions from a audience, gauge audience sentiment, or use it for a colorful visual applaud from remote users during your presentation. '
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'article',
-	                        { className: 'main' },
-	                        _react2.default.createElement(
-	                            'ul',
-	                            { className: 'flex-container' },
-	                            _react2.default.createElement('li', { className: 'video-lg' })
-	                        )
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'wrapper' },
-	                    _react2.default.createElement(
-	                        'aside',
-	                        { className: 'aside aside-1' },
-	                        _react2.default.createElement(
-	                            'div',
-	                            null,
-	                            'Archiver'
-	                        ),
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'main-text-project' },
-	                            'A fun single page web application inspired by Periscope\'s floating hearts and Facebook\'s reaction icons. Create a custom clap board or join one that already exists to display silent reactions from a audience, gauge audience sentiment, or use it for a colorful visual applaud from remote users during your presentation.  '
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'article',
-	                        { className: 'main' },
-	                        _react2.default.createElement(
-	                            'ul',
-	                            { className: 'flex-container' },
-	                            _react2.default.createElement('li', { className: 'video-lg' })
-	                        )
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'wrapper' },
-	                    _react2.default.createElement(
-	                        'aside',
-	                        { className: 'aside aside-1' },
-	                        _react2.default.createElement(
-	                            'div',
-	                            null,
-	                            'Relationship'
-	                        ),
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'main-text-project' },
-	                            'A fun single page web application inspired by Periscope\'s floating hearts and Facebook\'s reaction icons. Create a custom clap board or join one that already exists to display silent reactions from a audience, gauge audience sentiment, or use it for a colorful visual applaud from remote users during your presentation. Built using my own react-redux boilerplate '
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'article',
-	                        { className: 'main' },
-	                        _react2.default.createElement(
-	                            'ul',
-	                            { className: 'flex-container' },
-	                            _react2.default.createElement('li', { className: 'video-lg' })
 	                        )
 	                    )
 	                )
