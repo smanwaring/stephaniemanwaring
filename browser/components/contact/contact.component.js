@@ -13,22 +13,14 @@ class Contact extends React.Component {
             <div className="spacer-sm">
                 <h1>Let's have a chat</h1>
                 <div className="wrapper">
-                <article className="main">
-                    <div className="flex-container-contact">
-                        <div className="dummy-logo">
-                            <img src="stack-overflow.png" alt="stack-overflow" height="60" width="60"/>
+                    <article className="main">
+                        <div className="flex-container-contact">
+                            <i className="fa fa-stack-overflow fa-3x icon" aria-hidden="true"/>
+                            <i className="fa fa-github fa-3x icon" aria-hidden="true"/>
+                            <i className="fa fa-linkedin fa-3x icon" aria-hidden="true"/>
+                            <i className="fa fa-envelope fa-3x icon" aria-hidden="true"/>
                         </div>
-                        <div className="dummy-logo">
-                            <img src="github.png" alt="github" height="60" width="60"/>
-                        </div>
-                      <div className="dummy-logo">
-                            <img src="linkedin.png" alt="linkedin" height="60" width="60"/>
-                      </div>
-                     <div className="dummy-logo">
-                            <img src="envelope.png" alt="email" height="60" width="60"/>
-                      </div>
-                    </div>
-                </article>
+                    </article>
                 </div>
             </div>
         );

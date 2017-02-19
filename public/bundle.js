@@ -29913,8 +29913,16 @@
 	                        ),
 	                        _react2.default.createElement(
 	                            'div',
-	                            { className: 'footer-white' },
-	                            ' This site was built and designed with love by yours truly'
+	                            { className: 'footer-white inline' },
+	                            ' This site was built and designed with '
+	                        ),
+	                        ' ',
+	                        _react2.default.createElement('i', { className: 'fa fa-heart inline yellow', 'aria-hidden': 'true' }),
+	                        ' ',
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'footer-white inline' },
+	                            'by yours truly'
 	                        )
 	                    )
 	                )
@@ -30000,7 +30008,7 @@
 	                null,
 	                _react2.default.createElement(
 	                    'div',
-	                    { className: 'box parallax-home' },
+	                    { className: 'box' },
 	                    _react2.default.createElement(
 	                        'div',
 	                        { className: 'welcome' },
@@ -30101,12 +30109,20 @@
 	                        'article',
 	                        { className: 'main' },
 	                        _react2.default.createElement(
-	                            'p',
-	                            null,
-	                            ' I\'m Stephanie Manwaring. I\'m a former marketing director turned full stack web developer. I attended Fullstack Academy of Code where I currently work as a teaching fellow and engineering intern. I\'ve worked independently and in small teams to develop sweet projects with the technologies I\'ve learned. I currently reside in NYC and continue to be inspired by its tech community.',
+	                            'div',
+	                            { className: 'inline' },
+	                            ' I\'m Stephanie Manwaring. I\'m a former marketing director turned full stack web developer. I attended Fullstack Academy of Code where I currently work as a teaching fellow and engineering intern. I\'ve worked independently and in small teams to develop sweet projects with the technologies I\'ve learned. I currently reside in NYC and continue to be inspired by its tech community. I '
+	                        ),
+	                        ' ',
+	                        _react2.default.createElement('i', { className: 'fa fa-heart inline yellow', 'aria-hidden': 'true' }),
+	                        ' ',
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'inline' },
+	                            'the web.',
 	                            _react2.default.createElement('br', null),
 	                            _react2.default.createElement('br', null),
-	                            'When I\'m not coding you can find me cycling on the streets on NYC, running through Central Park, putting together a four-course meal, board-gaming it up with friends, or doing laundry. I the web.'
+	                            'When I\'m not coding you can find me cycling on the streets on NYC, running through Central Park, putting together a four-course meal, board-gaming it up with friends, or doing laundry.'
 	                        )
 	                    )
 	                ),
@@ -30661,26 +30677,10 @@
 	                        _react2.default.createElement(
 	                            'div',
 	                            { className: 'flex-container-contact' },
-	                            _react2.default.createElement(
-	                                'div',
-	                                { className: 'dummy-logo' },
-	                                _react2.default.createElement('img', { src: 'stack-overflow.png', alt: 'stack-overflow', height: '60', width: '60' })
-	                            ),
-	                            _react2.default.createElement(
-	                                'div',
-	                                { className: 'dummy-logo' },
-	                                _react2.default.createElement('img', { src: 'github.png', alt: 'github', height: '60', width: '60' })
-	                            ),
-	                            _react2.default.createElement(
-	                                'div',
-	                                { className: 'dummy-logo' },
-	                                _react2.default.createElement('img', { src: 'linkedin.png', alt: 'linkedin', height: '60', width: '60' })
-	                            ),
-	                            _react2.default.createElement(
-	                                'div',
-	                                { className: 'dummy-logo' },
-	                                _react2.default.createElement('img', { src: 'envelope.png', alt: 'email', height: '60', width: '60' })
-	                            )
+	                            _react2.default.createElement('i', { className: 'fa fa-stack-overflow fa-3x icon', 'aria-hidden': 'true' }),
+	                            _react2.default.createElement('i', { className: 'fa fa-github fa-3x icon', 'aria-hidden': 'true' }),
+	                            _react2.default.createElement('i', { className: 'fa fa-linkedin fa-3x icon', 'aria-hidden': 'true' }),
+	                            _react2.default.createElement('i', { className: 'fa fa-envelope fa-3x icon', 'aria-hidden': 'true' })
 	                        )
 	                    )
 	                )

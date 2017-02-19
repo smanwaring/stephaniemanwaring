@@ -7,10 +7,10 @@ export default class Root extends Component {
     render() {
         return (
             <div>
-                <Navbar/>
+                <Navbar />
                 {this.props.children}
-                <Footer/>
+                <Footer />
             </div>
-        )
+        );
     }
 }

@@ -90,7 +90,6 @@ NAVBAR
     font-weight: 300;
 }
 
-
 @media( min-width: 800px ) {
     .menu{
         display: inline-block;
@@ -200,6 +199,14 @@ h2 {
     background-color: #f8f9fb;
 }
 
+.inline {
+    display: inline;
+}
+
+.yellow {
+    color: #ffcf52
+}
+
 
 @import "compass/css3";
 
@@ -240,10 +247,6 @@ h2 {
 
 .about-top-spacer {
     padding: 20px 0 0 0; 
-}
-
-li {
-    margin-left: 40px;
 }
 
 @media all and (min-width: 600px) {
@@ -503,7 +506,6 @@ hr{
 
 .footer-white{
     color:white;
-    margin-left: 20px;
     font-size: 12px;
     margin-top: 2px;
 }
@@ -520,4 +522,23 @@ hr{
 
 .spacer-extra {
     padding: 100px 0 100px 0;
+}
+
+/*
+*
+*
+*
+Contact
+*
+*
+*
+*/
+
+
+.icon {
+    color: black;
+}
+
+.icon:hover {
+    color: gray;
 }

@@ -6,13 +6,12 @@ import Presentations from '../presentations/presentation.component';
 import Resume from '../resume/resume';
 import Contact from '../contact/contact.component';
 
-
 class Homepage extends React.Component {
 
     render() {
         return (
             <div>
-                <div className="box parallax-home">
+                <div className="box">
                 <div className="welcome">
                     <div className="header-font">WEB</div>
                     <div className="header-font">DEVELOPER</div>
