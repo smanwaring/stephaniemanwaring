@@ -29917,7 +29917,7 @@
 	                            ' This site was built and designed with '
 	                        ),
 	                        ' ',
-	                        _react2.default.createElement('i', { className: 'fa fa-heart inline yellow', 'aria-hidden': 'true' }),
+	                        _react2.default.createElement('i', { className: 'fa fa-heart inline icon-white', 'aria-hidden': 'true' }),
 	                        ' ',
 	                        _react2.default.createElement(
 	                            'div',
@@ -30316,10 +30316,10 @@
 	var Projects = function (_React$Component) {
 	    _inherits(Projects, _React$Component);
 	
-	    function Projects(props) {
+	    function Projects() {
 	        _classCallCheck(this, Projects);
 	
-	        return _possibleConstructorReturn(this, (Projects.__proto__ || Object.getPrototypeOf(Projects)).call(this, props));
+	        return _possibleConstructorReturn(this, (Projects.__proto__ || Object.getPrototypeOf(Projects)).apply(this, arguments));
 	    }
 	
 	    _createClass(Projects, [{

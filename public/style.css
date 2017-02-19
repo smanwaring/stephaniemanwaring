@@ -403,10 +403,6 @@ hr{
     background-color: white;
 }
 
-/*.projects-background{
-    background-color: #f8f9fb;
-}*/
-
 .video-text-box{
     width: 330px;
     height: 100px;
@@ -498,17 +494,46 @@ hr{
 }
 
 
+/*
+*
+*
+*
+Footer
+*
+*
+*
+*/
+
+
 .footer{
     background-color: black;
     text-align: left;
-    height: 80px;
+    height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px
 }
 
 .footer-white{
     color:white;
     font-size: 12px;
-    margin-top: 2px;
 }
+
+.icon-white {
+    color: white;
+}
+
+
+
+/*
+*
+*
+*
+Spacers
+*
+*
+*
+*/
+
 
 .spacer{
     padding-top: 40px;
@@ -542,3 +567,4 @@ Contact
 .icon:hover {
     color: gray;
 }
+

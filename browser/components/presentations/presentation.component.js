@@ -15,7 +15,10 @@ class Presentations extends React.Component {
                 <article className="main">
                     <div className="flex-container">
                         <div className="spacer-sm">
-                            <div className="video-sm-1"></div>
+                            <div className="video-sm-1">
+
+       
+                            </div>
                             <div className="video-text-box">
                                 <div className="text-box">
                                     <div className="video-text-title">TECH TALK: THE JAVASCRIPT SEMICOLON </div>
@@ -24,7 +27,11 @@ class Presentations extends React.Component {
                             </div>
                         </div>
                         <div className="spacer-sm">
-                            <div className="video-sm-2"></div>
+                            <div className="video-sm-2">
+
+                   
+
+                            </div>
                             <div className="video-text-box">
                                 <div className="text-box">
                                     <div className="video-text-title">PROJECT DEMO: SILENT-SALUTATIONS</div>
@@ -33,7 +40,10 @@ class Presentations extends React.Component {
                             </div>
                         </div>
                         <div className="spacer-sm">
-                            <div className="video-sm-3"></div>
+                            <div className="video-sm-3">
+
+
+                            </div>
                             <div className="video-text-box">
                                 <div className="text-box">
                                     <div className="video-text-title">PROJECT DEMO: ARCHIVER </div>

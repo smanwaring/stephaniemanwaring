@@ -1,13 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-
 class Projects extends React.Component {
-    constructor(props){
-        super(props);
-    };
-
-
     render() {
         return (
             <div className="spacer">
