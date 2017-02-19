@@ -30558,6 +30558,11 @@
 	                'div',
 	                { className: 'spacer spacer-extra' },
 	                _react2.default.createElement(
+	                    'h1',
+	                    { className: 'no-margin' },
+	                    'What I\'ve been up to'
+	                ),
+	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'wrapper' },
 	                    _react2.default.createElement(
