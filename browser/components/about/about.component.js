@@ -13,11 +13,10 @@ class About extends React.Component {
             <div className="spacer">
                 <div className="wrapper">
                 <aside className="aside aside-1">
-                    <div className="text-highlight">Hello!</div>
-                    <div className="text-bold">Nice to meet you.</div>
+                    <div>Nice to meet you.</div>
                 </aside>
                 <article className="main">
-                    <p className="main-text"> I'm Stephanie Manwaring. I'm a former marketing director turned full stack web developer. 
+                    <p> I'm Stephanie Manwaring. I'm a former marketing director turned full stack web developer. 
                         I attended Fullstack Academy of Code where I currently work as a teaching fellow and engineering intern. 
                         I've worked independently and in small teams to develop sweet projects with the technologies I've learned.  
                         I currently reside in NYC and continue to be inspired by its tech community. 
@@ -36,7 +35,7 @@ class About extends React.Component {
                     <div className="text-bold" >Languages</div>
                 </aside>
                 <article className="main">
-                    <ul className="main-text">
+                    <ul>
                         <li>JavaScript</li>
                         <li>HTML5</li>
                         <li>CSS3</li>
@@ -49,12 +48,12 @@ class About extends React.Component {
 
                 <div className="wrapper">
                 <aside className="aside aside-1">
-                    <div className="text-bold">Technologies</div>
+                    <div>Technologies</div>
                 </aside>
                 <article className="main">
-                    <ul className="left main-text column-flex">
+                    <ul className="left column-flex">
                      <span className="column-2">
-                        <div className="text-bold">Frameworks/libraries</div>
+                        <div>Frameworks/libraries</div>
                         <li>React</li>
                         <li>React-Redux</li>
                         <li>Angular 2</li>
@@ -67,7 +66,7 @@ class About extends React.Component {
                         <li>Sequelize</li>
                     </span>
                     <span className="column-2">
-                        <div className="text-bold about-top-spacer">Day-to-day comfort</div>
+                        <div className="about-top-spacer">Day-to-day comfort</div>
                         <li>Version Control (GIT)</li>
                         <li>Agile Methodology</li>
                     </span>

@@ -29770,6 +29770,11 @@
 	                { className: 'navbar' },
 	                _react2.default.createElement(
 	                    'div',
+	                    { className: 'menu-text' },
+	                    ' /sm'
+	                ),
+	                _react2.default.createElement(
+	                    'div',
 	                    { className: 'mobile-menu' },
 	                    _react2.default.createElement(
 	                        'i',
@@ -29786,7 +29791,7 @@
 	                        _react2.default.createElement(
 	                            'div',
 	                            { className: 'menu-text' },
-	                            'hello!'
+	                            'hello'
 	                        )
 	                    ),
 	                    _react2.default.createElement(
@@ -29981,45 +29986,13 @@
 	var Homepage = function (_React$Component) {
 	    _inherits(Homepage, _React$Component);
 	
-	    function Homepage(props) {
+	    function Homepage() {
 	        _classCallCheck(this, Homepage);
 	
-	        var _this = _possibleConstructorReturn(this, (Homepage.__proto__ || Object.getPrototypeOf(Homepage)).call(this, props));
-	
-	        _this.state = {
-	            randomFactsArr: ['yellow-cake enthusiast', 'Mr. Meeseeks sympathizer', 'Arrested Development quoter', 'former baby', 'NYC cyclist', 'carrot juice junkie', 'lover of semicolons', 'needle fearer', 'empanada maker', 'mystery novel reader', 'human being', 'tardigrade admirer'],
-	            currentRandomFact: 'yellow-cake enthusiast'
-	        };
-	        _this.randomFactGeneratorDown = _this.randomFactGeneratorDown.bind(_this);
-	        _this.randomFactGeneratorUp = _this.randomFactGeneratorUp.bind(_this);
-	        return _this;
+	        return _possibleConstructorReturn(this, (Homepage.__proto__ || Object.getPrototypeOf(Homepage)).apply(this, arguments));
 	    }
 	
 	    _createClass(Homepage, [{
-	        key: 'randomFactGeneratorDown',
-	        value: function randomFactGeneratorDown() {
-	            var currentIndex = this.state.randomFactsArr.indexOf(this.state.currentRandomFact);
-	            var nextIndex = void 0;
-	            if (currentIndex === this.state.randomFactsArr.length - 1) {
-	                nextIndex = 0;
-	            } else {
-	                nextIndex = currentIndex + 1;
-	            }
-	            this.setState({ currentRandomFact: this.state.randomFactsArr[nextIndex] });
-	        }
-	    }, {
-	        key: 'randomFactGeneratorUp',
-	        value: function randomFactGeneratorUp() {
-	            var currentIndex = this.state.randomFactsArr.indexOf(this.state.currentRandomFact);
-	            var nextIndex = void 0;
-	            if (currentIndex === 0) {
-	                nextIndex = this.state.randomFactsArr.length - 1;
-	            } else {
-	                nextIndex = currentIndex - 1;
-	            }
-	            this.setState({ currentRandomFact: this.state.randomFactsArr[nextIndex] });
-	        }
-	    }, {
 	        key: 'render',
 	        value: function render() {
 	            return _react2.default.createElement(
@@ -30027,42 +30000,30 @@
 	                null,
 	                _react2.default.createElement(
 	                    'div',
-	                    { className: 'box' },
+	                    { className: 'box parallax-home' },
 	                    _react2.default.createElement(
 	                        'div',
 	                        { className: 'welcome' },
 	                        _react2.default.createElement(
 	                            'div',
-	                            { className: 'md-font' },
-	                            'Hi! I\'m Stephanie Manwaring'
+	                            { className: 'header-font' },
+	                            'WEB'
 	                        ),
 	                        _react2.default.createElement(
 	                            'div',
-	                            { className: 'lg-font' },
-	                            'WEB DEVELOPER'
-	                        ),
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'sm-font' },
-	                            ' and ',
-	                            this.state.currentRandomFact
-	                        ),
-	                        _react2.default.createElement(
-	                            'i',
-	                            { className: 'material-icons lg-icon', onClick: this.randomFactGeneratorDown },
-	                            'keyboard_arrow_left'
-	                        ),
-	                        _react2.default.createElement(
-	                            'i',
-	                            { className: 'material-icons lg-icon', onClick: this.randomFactGeneratorUp },
-	                            'keyboard_arrow_right'
+	                            { className: 'header-font' },
+	                            'DEVELOPER'
 	                        )
 	                    )
 	                ),
 	                _react2.default.createElement(_about2.default, null),
+	                _react2.default.createElement('div', { className: 'parallax' }),
 	                _react2.default.createElement(_projects2.default, null),
+	                _react2.default.createElement('div', { className: 'parallax' }),
 	                _react2.default.createElement(_presentation2.default, null),
+	                _react2.default.createElement('div', { className: 'parallax' }),
 	                _react2.default.createElement(_resume2.default, null),
+	                _react2.default.createElement('div', { className: 'parallax' }),
 	                _react2.default.createElement(_contact2.default, null)
 	            );
 	        }
@@ -30132,12 +30093,7 @@
 	                        { className: 'aside aside-1' },
 	                        _react2.default.createElement(
 	                            'div',
-	                            { className: 'text-highlight' },
-	                            'Hello!'
-	                        ),
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'text-bold' },
+	                            null,
 	                            'Nice to meet you.'
 	                        )
 	                    ),
@@ -30146,7 +30102,7 @@
 	                        { className: 'main' },
 	                        _react2.default.createElement(
 	                            'p',
-	                            { className: 'main-text' },
+	                            null,
 	                            ' I\'m Stephanie Manwaring. I\'m a former marketing director turned full stack web developer. I attended Fullstack Academy of Code where I currently work as a teaching fellow and engineering intern. I\'ve worked independently and in small teams to develop sweet projects with the technologies I\'ve learned. I currently reside in NYC and continue to be inspired by its tech community.',
 	                            _react2.default.createElement('br', null),
 	                            _react2.default.createElement('br', null),
@@ -30172,7 +30128,7 @@
 	                        { className: 'main' },
 	                        _react2.default.createElement(
 	                            'ul',
-	                            { className: 'main-text' },
+	                            null,
 	                            _react2.default.createElement(
 	                                'li',
 	                                null,
@@ -30205,7 +30161,7 @@
 	                        { className: 'aside aside-1' },
 	                        _react2.default.createElement(
 	                            'div',
-	                            { className: 'text-bold' },
+	                            null,
 	                            'Technologies'
 	                        )
 	                    ),
@@ -30214,13 +30170,13 @@
 	                        { className: 'main' },
 	                        _react2.default.createElement(
 	                            'ul',
-	                            { className: 'left main-text column-flex' },
+	                            { className: 'left column-flex' },
 	                            _react2.default.createElement(
 	                                'span',
 	                                { className: 'column-2' },
 	                                _react2.default.createElement(
 	                                    'div',
-	                                    { className: 'text-bold' },
+	                                    null,
 	                                    'Frameworks/libraries'
 	                                ),
 	                                _react2.default.createElement(
@@ -30279,7 +30235,7 @@
 	                                { className: 'column-2' },
 	                                _react2.default.createElement(
 	                                    'div',
-	                                    { className: 'text-bold about-top-spacer' },
+	                                    { className: 'about-top-spacer' },
 	                                    'Day-to-day comfort'
 	                                ),
 	                                _react2.default.createElement(
@@ -30355,13 +30311,7 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                'div',
-	                { className: 'projects-background spacer' },
-	                _react2.default.createElement(
-	                    'h1',
-	                    { className: 'no-margin' },
-	                    'These are my projects'
-	                ),
-	                _react2.default.createElement('hr', null),
+	                { className: 'spacer' },
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'wrapper white' },
@@ -30546,12 +30496,7 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                'div',
-	                { className: 'grey-section spacer' },
-	                _react2.default.createElement(
-	                    'h1',
-	                    { className: 'no-margin' },
-	                    'Presentations'
-	                ),
+	                { className: 'grey-section spacer-extra' },
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'wrapper' },
@@ -30563,7 +30508,7 @@
 	                            { className: 'flex-container' },
 	                            _react2.default.createElement(
 	                                'div',
-	                                null,
+	                                { className: 'spacer-sm' },
 	                                _react2.default.createElement('div', { className: 'video-sm-1' }),
 	                                _react2.default.createElement(
 	                                    'div',
@@ -30586,7 +30531,7 @@
 	                            ),
 	                            _react2.default.createElement(
 	                                'div',
-	                                null,
+	                                { className: 'spacer-sm' },
 	                                _react2.default.createElement('div', { className: 'video-sm-2' }),
 	                                _react2.default.createElement(
 	                                    'div',
@@ -30609,7 +30554,7 @@
 	                            ),
 	                            _react2.default.createElement(
 	                                'div',
-	                                null,
+	                                { className: 'spacer-sm' },
 	                                _react2.default.createElement('div', { className: 'video-sm-3' }),
 	                                _react2.default.createElement(
 	                                    'div',
@@ -30692,12 +30637,7 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                'div',
-	                { className: 'spacer' },
-	                _react2.default.createElement(
-	                    'h1',
-	                    { className: 'no-margin' },
-	                    'What I\'ve been up to'
-	                ),
+	                { className: 'spacer spacer-extra' },
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'wrapper' },
@@ -30782,7 +30722,7 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                'div',
-	                { className: 'grey-section spacer-sm' },
+	                { className: 'spacer-sm' },
 	                _react2.default.createElement(
 	                    'h1',
 	                    null,

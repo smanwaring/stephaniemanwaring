@@ -10,12 +10,11 @@ class Presentations extends React.Component {
 
     render() {
         return (
-            <div className="grey-section spacer">
-                <h1 className="no-margin">Presentations</h1>
+            <div className="grey-section spacer-extra">
                 <div className="wrapper">
                 <article className="main">
                     <div className="flex-container">
-                        <div>
+                        <div className="spacer-sm">
                             <div className="video-sm-1"></div>
                             <div className="video-text-box">
                                 <div className="text-box">
@@ -24,7 +23,7 @@ class Presentations extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div className="spacer-sm">
                             <div className="video-sm-2"></div>
                             <div className="video-text-box">
                                 <div className="text-box">
@@ -33,7 +32,7 @@ class Presentations extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div className="spacer-sm">
                             <div className="video-sm-3"></div>
                             <div className="video-text-box">
                                 <div className="text-box">

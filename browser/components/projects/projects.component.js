@@ -10,9 +10,7 @@ class Projects extends React.Component {
 
     render() {
         return (
-            <div className="projects-background spacer">
-                <h1 className="no-margin">These are my projects</h1>
-                <hr/>
+            <div className="spacer">
           <div className="wrapper white">
                 <aside className="aside aside-1">
                     <div className="text-bold-black">Clap-Fetti</div>

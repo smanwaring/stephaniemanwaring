@@ -8,6 +8,34 @@ html, body {
     
 }
 
+.parallax { 
+    /* The image used */
+    background-image: url("projects.png");
+
+    /* Set a specific height */
+    height: 250px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-home { 
+    /* The image used */
+    background-image: url("projects.png");
+
+    /* Set a specific height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 
 /*
@@ -21,20 +49,19 @@ NAVBAR
 */
 
 
-.navbar{
+.navbar {
     width: 100%;
     text-align: right;
     background-color: white;
     position: relative;
 
-
 }
 
-.mobile-menu{
+.mobile-menu {
     padding: 8px 8px;
 }
 
-.menu{
+.menu {
     vertical-align: middle;
     height: 0;
     overflow: hidden;
@@ -47,13 +74,13 @@ NAVBAR
     transition: 0.2s all;
 }
 
-.expand{
+.expand {
     height: auto;
     overflow: auto;
-    transition: 0.2s all;
+    transition: 0.5s all;
 }
 
-.menu-text{
+.menu-text {
     list-style: none;
     display: inline-block;
     text-align: center;
@@ -63,7 +90,8 @@ NAVBAR
     font-weight: 300;
 }
 
-@media( min-width: 800px ){
+
+@media( min-width: 800px ) {
     .menu{
         display: inline-block;
         position: inherit;
@@ -91,48 +119,53 @@ HOMEPAGE
   display: flex;
   flex-flow: column;
   height: 100%;
-  /*background-color: #dc143c;*/
-  /*background-color: #3a1a44;*/
-  /*background-color: #16b9d8;*/
-  /*background-color: #edf1f4;*/
-  /*background-color: black;*/
-  background-color:  rgb(237, 238, 239);
+  background-image: url('placeholder.jpg');
   color: white;
+
 }
 
-.welcome{
+.welcome {
     font-weight: 300;
-    margin-top: 80px;
-    margin-left: 50px;
-    color: #333333;
+    color: white;
+
 }
 
-.md-font{
+.md-font {
     font-size: 75px;
 }
 
-.lg-font{
-    font-size: 120px;
+.header-font {
+    font-size: 60px;
+    font-weight: 600;
 }
 
-.sm-font{
+.sm-font {
     font-size: 40px;
 }
+
+@media( min-width: 800px ) {
+    .header-font {
+        font-size: 100px;
+        font-weight: 600;
+    }
+}
+
+
+/*
+*
+*
+*
+About 
+*
+*
+*
+*/
+
+
 
 h2 {
     margin: 0;
 }
-
-.lg-icon{
-    font-size: 100px !important;
-    color:#ffcf52;
-}
-
-.lg-icon:hover{
-    color:#918f8f;
-    cursor: default;
-}
-
 
 .flexbox-container {
 	display: -ms-flex;
@@ -195,7 +228,6 @@ h2 {
 
 .main {
   text-align: left;
-  color: grey;
   font-weight: 300;
   font-size: 18px;
 }
@@ -203,7 +235,6 @@ h2 {
 .aside-1 {
   text-align: left;
   width: 50px;
-  color: grey;
   font-size: 20px;
 }
 
@@ -239,7 +270,7 @@ li {
   .main    { flex: 3 0px; }
   .aside-1 { 
       order: 1; 
-      padding-left: 50px;
+      padding-left: 25px;
   } 
   .main    { order: 2; }
   .aside-2 { order: 3; }
@@ -257,7 +288,6 @@ hr {
 .video-sm-1{
     width: 330px;
     height: 186px;
-    margin-top: 10px;
     line-height: 150px;
     font-weight: bold;
     font-size: 3em;
@@ -270,7 +300,6 @@ hr {
 .video-sm-2{
     width: 330px;
     height: 186px;
-    margin-top: 10px;
     line-height: 150px;
     font-weight: bold;
     font-size: 3em;
@@ -282,7 +311,6 @@ hr {
 .video-sm-3{
     width: 330px;
     height: 186px;
-    margin-top: 10px;
     line-height: 150px;
     font-weight: bold;
     font-size: 3em;
@@ -307,18 +335,6 @@ hr {
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
 }
-
-/*.flex-item {
-  padding: 5px;
-  width: 200px;
-  height: 150px;
-  margin-top: 10px;
-  
-  line-height: 150px;
-  font-weight: bold;
-  font-size: 3em;
-  text-align: center;
-}*/
 
 
 /*On the flex container*/
@@ -349,21 +365,6 @@ hr {
     /*color: #dc143c;*/
 }
 
-.text-bold{
-    color: darkgray;
-
-}
-
-.text-bold-black{
-    /*color:black;*/
-    color: #333333;
-}
-
-.main-text{
-    /*color: black;*/
-    color: #333333;
-}
-
 hr{
     width: 85%;
 }
@@ -389,7 +390,7 @@ hr{
 
 .link-box:hover{
     border-color: black;
-    background-color:#fee000; 
+    background-color:black; 
     font-size: 14px;
     padding: 10px;
     width: 70px;
@@ -398,8 +399,10 @@ hr{
     border-width: 2px;
     display: inline-block;
     margin-left: 5px;
-    color: black;
+    color: white;
+    transition: 0.5s all;
 }
+
 
 
 .white{
@@ -415,7 +418,7 @@ hr{
     height: 100px;
     background-color:white;;
     text-align: center;
-    padding: 10px 0 10px 0;;
+    padding: 10px 0 10px 0;
 }
 
 .grey-section{
@@ -436,6 +439,12 @@ hr{
 
 }
 
+.presentation-border{
+    border: solid;
+    border-color: black;
+    border-width: 2px;
+    margin-top: 20px
+}
 .text-box{
     margin: 10px 20px 10px 20px;
 }
@@ -460,7 +469,7 @@ hr{
 }
 
 
-.link-box{
+/*.link-box{
     border-color: black;
     font-size: 14px;
     padding: 10px;
@@ -471,7 +480,7 @@ hr{
     display: inline-block;
     margin-left: 5px;
     color: black;
-}
+}*/
 
 .link-box-resume{
     border-color: black;
@@ -484,6 +493,25 @@ hr{
     height: 60px;
     font-weight: 600;
 }
+
+.link-box-resume:hover{
+
+    border-color: black;
+    background-color:black; 
+    font-size: 18px;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    color: white;
+    transition: 0.5s all;
+    font-weight: 600;
+    height: 60px;
+    width: 220px;
+
+
+
+}
+
 
 .btn-lg-text{
     margin-top: 20px;
@@ -504,11 +532,15 @@ hr{
 }
 
 .spacer{
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .spacer-sm{
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.spacer-extra {
+    padding: 100px 0 100px 0;
 }
