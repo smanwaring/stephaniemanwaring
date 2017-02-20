@@ -292,7 +292,7 @@ Projects
     border-color: rgb(237, 238, 239);
     border-width: 3px;
     background-image: url('silent-sal-img.png');
-    background-size: auto 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
@@ -305,7 +305,7 @@ Projects
     border-color: rgb(237, 238, 239);
     border-width: 3px;
     background-image: url('archiver-img.png');
-    background-size: auto 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
@@ -640,6 +640,10 @@ Spacers
 
 .spacer-extra {
     padding: 100px 0 100px 0;
+}
+
+.bottom-spacer {
+    margin-bottom: 30px;
 }
 
 /*

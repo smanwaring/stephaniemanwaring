@@ -1,19 +1,15 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-
 class Presentations extends React.Component {
-    constructor(props){
-        super(props);
-    };
-
-
     render() {
         return (
             <div className="grey-section spacer-extra">
                 <div className="wrapper">
                 <article className="main">
                     <div className="flex-container">
+
+
                         <div className="spacer-sm">
                             <div className="video-sm-1">
                             </div>
@@ -24,6 +20,9 @@ class Presentations extends React.Component {
                                 </div>
                             </div>
                         </div>
+              
+
+
                         <div className="spacer-sm">
                             <div className="video-sm-2">
                             </div>
@@ -34,11 +33,10 @@ class Presentations extends React.Component {
                                 </div>
                             </div>
                         </div>
+                       
+                       
                         <div className="spacer-sm">
-                            <div className="video-sm-3">
-
-
-                            </div>
+                            <div className="video-sm-3"></div>
                             <div className="video-text-box">
                                 <div className="text-box">
                                     <div className="video-text-title">PROJECT DEMO: ARCHIVER </div>

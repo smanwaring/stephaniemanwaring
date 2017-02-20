@@ -30122,7 +30122,7 @@
 	                { className: 'spacer' },
 	                _react2.default.createElement(
 	                    'div',
-	                    { className: 'wrapper' },
+	                    { className: 'wrapper bottom-spacer' },
 	                    _react2.default.createElement(
 	                        'aside',
 	                        { className: 'aside aside-1' },
@@ -30149,13 +30149,17 @@
 	                        _react2.default.createElement(
 	                            'div',
 	                            { className: 'main-text-project' },
-	                            'Powered by: React, Redux, Socket.io, HTML5/CSS3 and my own React-Redux boilerplate'
+	                            'Powered by: React, Redux, Express, PostgreSql, Socket.io, HTML5/CSS3 and my own React-Redux boilerplate'
 	                        ),
 	                        _react2.default.createElement('br', null),
 	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'link-box' },
-	                            'GITHUB'
+	                            'a',
+	                            { href: 'https://github.com/smanwaring/silent-clapper' },
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'link-box' },
+	                                'GITHUB'
+	                            )
 	                        ),
 	                        _react2.default.createElement(
 	                            'div',
@@ -30166,7 +30170,7 @@
 	                ),
 	                _react2.default.createElement(
 	                    'div',
-	                    { className: 'wrapper' },
+	                    { className: 'wrapper bottom-spacer' },
 	                    _react2.default.createElement(
 	                        'aside',
 	                        { className: 'aside aside-1' },
@@ -30193,18 +30197,26 @@
 	                        _react2.default.createElement(
 	                            'div',
 	                            { className: 'main-text-project' },
-	                            'Powered by: React-Redux and Electron.js, HTML5/CSS3'
+	                            'Powered by:Electron.js, React, Redux, Express, PostreSql HTML5/CSS3'
 	                        ),
 	                        _react2.default.createElement('br', null),
 	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'link-box' },
-	                            'GITHUB'
+	                            'a',
+	                            { href: 'https://github.com/chehitskenniexd/Archiver' },
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'link-box' },
+	                                'GITHUB'
+	                            )
 	                        ),
 	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'link-box' },
-	                            'DEMO'
+	                            'a',
+	                            { href: 'https://www.youtube.com/watch?v=5izv_zAEQEI' },
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'link-box' },
+	                                'DEMO'
+	                            )
 	                        )
 	                    )
 	                )
@@ -30256,10 +30268,10 @@
 	var Presentations = function (_React$Component) {
 	    _inherits(Presentations, _React$Component);
 	
-	    function Presentations(props) {
+	    function Presentations() {
 	        _classCallCheck(this, Presentations);
 	
-	        return _possibleConstructorReturn(this, (Presentations.__proto__ || Object.getPrototypeOf(Presentations)).call(this, props));
+	        return _possibleConstructorReturn(this, (Presentations.__proto__ || Object.getPrototypeOf(Presentations)).apply(this, arguments));
 	    }
 	
 	    _createClass(Presentations, [{
@@ -30556,8 +30568,6 @@
 	var _react2 = _interopRequireDefault(_react);
 	
 	var _reactRedux = __webpack_require__(178);
-	
-	var _reactRouter = __webpack_require__(216);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	

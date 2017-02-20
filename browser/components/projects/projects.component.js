@@ -2,10 +2,10 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 class Projects extends React.Component {
-    render() {
-        return (
+  render() {
+    return (
             <div className="spacer">
-                <div className="wrapper">      
+                <div className="wrapper bottom-spacer">      
                     <aside className="aside aside-1">
                         <ul className="flex-container">
                             <li className="video-lg-1"></li>
@@ -19,14 +19,14 @@ class Projects extends React.Component {
                             already exists to view and/or participate in silent reactions from a audience, gauge audience sentiment, or use it for a colorful 
                             visual applaud from remote users during your presentation. </div>
                             <br/>
-                            <div className="main-text-project">Powered by: React, Redux, Socket.io, HTML5/CSS3 and my own React-Redux boilerplate</div>
+                            <div className="main-text-project">Powered by: React, Redux, Express, PostgreSql, Socket.io, HTML5/CSS3 and my own React-Redux boilerplate</div>
                             <br/>
-                        <div className="link-box">GITHUB</div>
+                        <a href="https://github.com/smanwaring/silent-clapper"><div className="link-box">GITHUB</div></a>
                         <div className="link-box">LIVESITE</div>
                     </article>
                 </div>
 
-                <div className="wrapper">      
+                <div className="wrapper bottom-spacer">      
                     <aside className="aside aside-1">
                         <ul className="flex-container">
                             <li className="video-lg-2"></li>
@@ -38,10 +38,10 @@ class Projects extends React.Component {
                             A custom version-control desktop application for text documents. Users can create teams of collaborators for specific documents and any collaborator can push up changes for others to view or download to their computer. Archiver let's users have a complete version history of all changes too. Archiver doesn't use any external APIs or git commands. Instead, we built custom version control commands to create a unique user experience that doesn't involve having to learn the command line or having to interface with Github.
                         </div>
                             <br/>
-                            <div className="main-text-project">Powered by: React-Redux and Electron.js, HTML5/CSS3</div>
+                            <div className="main-text-project">Powered by:Electron.js, React, Redux, Express, PostreSql HTML5/CSS3</div>
                             <br/>
-                        <div className="link-box">GITHUB</div>
-                        <div className="link-box">DEMO</div>
+                        <a href="https://github.com/chehitskenniexd/Archiver"><div className="link-box">GITHUB</div></a>
+                        <a href="https://www.youtube.com/watch?v=5izv_zAEQEI"><div className="link-box">DEMO</div></a>
                     </article>
                 </div>
             </div>
@@ -52,16 +52,16 @@ class Projects extends React.Component {
 /* -----------------    CONTAINER     ------------------ */
 
 function mapStateToProps(state){
-	return {
-	};
+  return {
+  };
 }
 
 function mapDispatchToProps(dispatch){
-	return {
-	};
+  return {
+  };
 }
 
 export default connect(
-	mapStateToProps,
-	mapDispatchToProps
+  mapStateToProps,
+  mapDispatchToProps
 )(Projects);
