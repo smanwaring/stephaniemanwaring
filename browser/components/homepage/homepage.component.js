@@ -5,31 +5,37 @@ import Projects from '../projects/projects.component';
 import Presentations from '../presentations/presentation.component';
 import Resume from '../resume/resume';
 import Contact from '../contact/contact.component';
+import Navbar from '../navbar/navbar.component';
+import Footer from '../footer/footer.component';
 
 class Homepage extends React.Component {
 
     render() {
         return (
             <div>
-                <div className="box">
+                <Navbar />
+                <a id="home_ref"><div className="box">
                 <div className="welcome">
                     <div className="header-font">WEB</div>
                     <div className="header-font">DEVELOPER</div>
                 </div>
-                </div>
-                <About />
+                </div></a>
+                <a id="about_ref"><About /></a>
                 <div className="parallax"></div>
-                <Projects />
+                <a id="projects_ref"><Projects /></a>
                 <div className="parallax"></div>
-                <Presentations />
+                <a id="presentations_ref"><Presentations /></a>
                 <div className="parallax"></div>
-                <Resume />
+                <a id="resume_ref"><Resume /></a>
                 <div className="parallax"></div>
-                <Contact />
+                <a id="contact_ref"><Contact /></a>
+                <Footer />
             </div>
         );
     }
 }
+
+
 
 /* -----------------    CONTAINER     ------------------ */
 

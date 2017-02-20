@@ -29670,14 +29670,6 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _navbar = __webpack_require__(279);
-	
-	var _navbar2 = _interopRequireDefault(_navbar);
-	
-	var _footer = __webpack_require__(280);
-	
-	var _footer2 = _interopRequireDefault(_footer);
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -29701,9 +29693,7 @@
 	            return _react2.default.createElement(
 	                'div',
 	                null,
-	                _react2.default.createElement(_navbar2.default, null),
-	                this.props.children,
-	                _react2.default.createElement(_footer2.default, null)
+	                this.props.children
 	            );
 	        }
 	    }]);
@@ -29769,9 +29759,13 @@
 	                'div',
 	                { className: 'navbar' },
 	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'menu-text logo' },
-	                    ' /sm'
+	                    'a',
+	                    { href: '#home_ref' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'menu-text logo' },
+	                        ' /sm'
+	                    )
 	                ),
 	                _react2.default.createElement(
 	                    'div',
@@ -29786,8 +29780,8 @@
 	                    'div',
 	                    { className: menuClasses, onClick: this.handleMenuClick },
 	                    _react2.default.createElement(
-	                        _reactRouter.Link,
-	                        { to: '/hello' },
+	                        'a',
+	                        { hrof: '#home_ref' },
 	                        _react2.default.createElement(
 	                            'div',
 	                            { className: 'menu-text' },
@@ -29795,8 +29789,8 @@
 	                        )
 	                    ),
 	                    _react2.default.createElement(
-	                        _reactRouter.Link,
-	                        { to: '/about' },
+	                        'a',
+	                        { href: '#about_ref' },
 	                        _react2.default.createElement(
 	                            'div',
 	                            { className: 'menu-text' },
@@ -29804,8 +29798,8 @@
 	                        )
 	                    ),
 	                    _react2.default.createElement(
-	                        _reactRouter.Link,
-	                        { to: '/projects' },
+	                        'a',
+	                        { href: '#projects_ref' },
 	                        _react2.default.createElement(
 	                            'div',
 	                            { className: 'menu-text' },
@@ -29813,8 +29807,8 @@
 	                        )
 	                    ),
 	                    _react2.default.createElement(
-	                        _reactRouter.Link,
-	                        { to: '/presentations' },
+	                        'a',
+	                        { href: '#presentations_ref' },
 	                        _react2.default.createElement(
 	                            'div',
 	                            { className: 'menu-text' },
@@ -29822,8 +29816,8 @@
 	                        )
 	                    ),
 	                    _react2.default.createElement(
-	                        _reactRouter.Link,
-	                        { to: '/resume' },
+	                        'a',
+	                        { href: '#resume_ref' },
 	                        _react2.default.createElement(
 	                            'div',
 	                            { className: 'menu-text' },
@@ -29831,8 +29825,8 @@
 	                        )
 	                    ),
 	                    _react2.default.createElement(
-	                        _reactRouter.Link,
-	                        { to: '/contact' },
+	                        'a',
+	                        { href: '#contact_ref' },
 	                        _react2.default.createElement(
 	                            'div',
 	                            { className: 'menu-text' },
@@ -29983,6 +29977,14 @@
 	
 	var _contact2 = _interopRequireDefault(_contact);
 	
+	var _navbar = __webpack_require__(279);
+	
+	var _navbar2 = _interopRequireDefault(_navbar);
+	
+	var _footer = __webpack_require__(280);
+	
+	var _footer2 = _interopRequireDefault(_footer);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -30006,33 +30008,59 @@
 	            return _react2.default.createElement(
 	                'div',
 	                null,
+	                _react2.default.createElement(_navbar2.default, null),
 	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'box' },
+	                    'a',
+	                    { id: 'home_ref' },
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'welcome' },
+	                        { className: 'box' },
 	                        _react2.default.createElement(
 	                            'div',
-	                            { className: 'header-font' },
-	                            'WEB'
-	                        ),
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'header-font' },
-	                            'DEVELOPER'
+	                            { className: 'welcome' },
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'header-font' },
+	                                'WEB'
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'header-font' },
+	                                'DEVELOPER'
+	                            )
 	                        )
 	                    )
 	                ),
-	                _react2.default.createElement(_about2.default, null),
+	                _react2.default.createElement(
+	                    'a',
+	                    { id: 'about_ref' },
+	                    _react2.default.createElement(_about2.default, null)
+	                ),
 	                _react2.default.createElement('div', { className: 'parallax' }),
-	                _react2.default.createElement(_projects2.default, null),
+	                _react2.default.createElement(
+	                    'a',
+	                    { id: 'projects_ref' },
+	                    _react2.default.createElement(_projects2.default, null)
+	                ),
 	                _react2.default.createElement('div', { className: 'parallax' }),
-	                _react2.default.createElement(_presentation2.default, null),
+	                _react2.default.createElement(
+	                    'a',
+	                    { id: 'presentations_ref' },
+	                    _react2.default.createElement(_presentation2.default, null)
+	                ),
 	                _react2.default.createElement('div', { className: 'parallax' }),
-	                _react2.default.createElement(_resume2.default, null),
+	                _react2.default.createElement(
+	                    'a',
+	                    { id: 'resume_ref' },
+	                    _react2.default.createElement(_resume2.default, null)
+	                ),
 	                _react2.default.createElement('div', { className: 'parallax' }),
-	                _react2.default.createElement(_contact2.default, null)
+	                _react2.default.createElement(
+	                    'a',
+	                    { id: 'contact_ref' },
+	                    _react2.default.createElement(_contact2.default, null)
+	                ),
+	                _react2.default.createElement(_footer2.default, null)
 	            );
 	        }
 	    }]);

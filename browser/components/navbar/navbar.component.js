@@ -20,15 +20,15 @@ class Navbar extends React.Component {
       const menuClasses = this.state.menuOpen ? 'menu expand' : 'menu';
         return (
             <div className="navbar">
-                <div className="menu-text logo"> /sm</div>
+                <a href="#home_ref"><div className="menu-text logo"> /sm</div></a>
                 <div className="mobile-menu"><i className="material-icons" onClick={this.handleMenuClick}>menu</i></div>
                 <div className={menuClasses} onClick={this.handleMenuClick}>
-                    <Link to={'/hello'}><div className="menu-text">hello</div></Link>
-                    <Link to={'/about'}><div className="menu-text">about</div></Link>
-                    <Link to={'/projects'}><div className="menu-text">projects</div></Link>
-                    <Link to={'/presentations'}><div className="menu-text">presentations</div></Link>
-                    <Link to={'/resume'}><div className="menu-text">resume</div></Link>
-                    <Link to={'/contact'}><div className="menu-text">contact</div></Link>
+                    <a hrof="#home_ref"><div className="menu-text">hello</div></a>
+                    <a href="#about_ref"><div className="menu-text">about</div></a>
+                    <a href="#projects_ref"><div className="menu-text">projects</div></a>
+                    <a href="#presentations_ref"><div className="menu-text">presentations</div></a>
+                    <a href="#resume_ref"><div className="menu-text">resume</div></a>
+                    <a href="#contact_ref"><div className="menu-text">contact</div></a>
                 </div>
             </div>
         );

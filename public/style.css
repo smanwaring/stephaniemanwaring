@@ -93,10 +93,16 @@ NAVBAR
 .logo {
     float: left;
     padding-left: 10px;
+    color: rgba(255,255,255,.8);
+}
+
+.logo:hover {
+    color: white;
 }
 
 .material-icons {
     font-size: 30px;
+    color: rgba(255,255,255,.8)
 }
 
 @media( min-width: 800px ) {
@@ -112,7 +118,9 @@ NAVBAR
     }
     .menu-text:hover {
         color:white;
-
+    }
+    .menu-text {
+        color:rgba(255,255,255,.8);
     }
 }
 
@@ -134,6 +142,7 @@ HOMEPAGE
   justify-content: center;
   height: 100vh;
   background-image: url('placeholder.jpg');
+  background-size: 100%;
   color: white;
   position: relative;
   top: 0;
