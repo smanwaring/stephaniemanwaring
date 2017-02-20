@@ -67,27 +67,27 @@
 	
 	var _root2 = _interopRequireDefault(_root);
 	
-	var _homepage = __webpack_require__(281);
+	var _homepage = __webpack_require__(279);
 	
 	var _homepage2 = _interopRequireDefault(_homepage);
 	
-	var _about = __webpack_require__(282);
+	var _about = __webpack_require__(280);
 	
 	var _about2 = _interopRequireDefault(_about);
 	
-	var _presentation = __webpack_require__(284);
+	var _presentation = __webpack_require__(282);
 	
 	var _presentation2 = _interopRequireDefault(_presentation);
 	
-	var _projects = __webpack_require__(283);
+	var _projects = __webpack_require__(281);
 	
 	var _projects2 = _interopRequireDefault(_projects);
 	
-	var _contact = __webpack_require__(286);
+	var _contact = __webpack_require__(284);
 	
 	var _contact2 = _interopRequireDefault(_contact);
 	
-	var _resume = __webpack_require__(285);
+	var _resume = __webpack_require__(283);
 	
 	var _resume2 = _interopRequireDefault(_resume);
 	
@@ -29721,267 +29721,31 @@
 	
 	var _reactRedux = __webpack_require__(178);
 	
-	var _reactRouter = __webpack_require__(216);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var Navbar = function (_React$Component) {
-	    _inherits(Navbar, _React$Component);
-	
-	    function Navbar(props) {
-	        _classCallCheck(this, Navbar);
-	
-	        var _this = _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).call(this, props));
-	
-	        _this.state = {
-	            menuOpen: false
-	        };
-	        _this.handleMenuClick = _this.handleMenuClick.bind(_this);
-	        return _this;
-	    }
-	
-	    _createClass(Navbar, [{
-	        key: 'handleMenuClick',
-	        value: function handleMenuClick() {
-	            this.setState({ menuOpen: !this.state.menuOpen });
-	        }
-	    }, {
-	        key: 'render',
-	        value: function render() {
-	            var menuClasses = this.state.menuOpen ? 'menu expand' : 'menu';
-	            return _react2.default.createElement(
-	                'div',
-	                { className: 'navbar' },
-	                _react2.default.createElement(
-	                    'a',
-	                    { href: '#home_ref' },
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'menu-text logo' },
-	                        ' /sm'
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'mobile-menu' },
-	                    _react2.default.createElement(
-	                        'i',
-	                        { className: 'material-icons', onClick: this.handleMenuClick },
-	                        'menu'
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: menuClasses, onClick: this.handleMenuClick },
-	                    _react2.default.createElement(
-	                        'a',
-	                        { hrof: '#home_ref' },
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'menu-text' },
-	                            'hello'
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'a',
-	                        { href: '#about_ref' },
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'menu-text' },
-	                            'about'
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'a',
-	                        { href: '#projects_ref' },
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'menu-text' },
-	                            'projects'
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'a',
-	                        { href: '#presentations_ref' },
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'menu-text' },
-	                            'presentations'
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'a',
-	                        { href: '#resume_ref' },
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'menu-text' },
-	                            'resume'
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'a',
-	                        { href: '#contact_ref' },
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'menu-text' },
-	                            'contact'
-	                        )
-	                    )
-	                )
-	            );
-	        }
-	    }]);
-	
-	    return Navbar;
-	}(_react2.default.Component);
-	
-	/* -----------------    CONTAINER     ------------------ */
-	
-	function mapStateToProps(state) {
-	    return {};
-	}
-	
-	function mapDispatchToProps(dispatch) {
-	    return {};
-	}
-	
-	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Navbar);
-
-/***/ },
-/* 280 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactRedux = __webpack_require__(178);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var Footer = function (_React$Component) {
-	    _inherits(Footer, _React$Component);
-	
-	    function Footer(props) {
-	        _classCallCheck(this, Footer);
-	
-	        return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).call(this, props));
-	    }
-	
-	    _createClass(Footer, [{
-	        key: 'render',
-	        value: function render() {
-	            return _react2.default.createElement(
-	                'div',
-	                { className: 'footer' },
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'wrapper' },
-	                    _react2.default.createElement(
-	                        'article',
-	                        { className: 'main' },
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'footer-white' },
-	                            '\xA9 2017 Stephanie Manwaring'
-	                        ),
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'footer-white inline' },
-	                            ' This site was built and designed with '
-	                        ),
-	                        ' ',
-	                        _react2.default.createElement('i', { className: 'fa fa-heart inline icon-white', 'aria-hidden': 'true' }),
-	                        ' ',
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'footer-white inline' },
-	                            'by yours truly'
-	                        )
-	                    )
-	                )
-	            );
-	        }
-	    }]);
-	
-	    return Footer;
-	}(_react2.default.Component);
-	
-	/* -----------------    CONTAINER     ------------------ */
-	
-	function mapStateToProps(state) {
-	    return {};
-	}
-	
-	function mapDispatchToProps(dispatch) {
-	    return {};
-	}
-	
-	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Footer);
-
-/***/ },
-/* 281 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactRedux = __webpack_require__(178);
-	
-	var _about = __webpack_require__(282);
+	var _about = __webpack_require__(280);
 	
 	var _about2 = _interopRequireDefault(_about);
 	
-	var _projects = __webpack_require__(283);
+	var _projects = __webpack_require__(281);
 	
 	var _projects2 = _interopRequireDefault(_projects);
 	
-	var _presentation = __webpack_require__(284);
+	var _presentation = __webpack_require__(282);
 	
 	var _presentation2 = _interopRequireDefault(_presentation);
 	
-	var _resume = __webpack_require__(285);
+	var _resume = __webpack_require__(283);
 	
 	var _resume2 = _interopRequireDefault(_resume);
 	
-	var _contact = __webpack_require__(286);
+	var _contact = __webpack_require__(284);
 	
 	var _contact2 = _interopRequireDefault(_contact);
 	
-	var _navbar = __webpack_require__(279);
+	var _navbar = __webpack_require__(285);
 	
 	var _navbar2 = _interopRequireDefault(_navbar);
 	
-	var _footer = __webpack_require__(280);
+	var _footer = __webpack_require__(286);
 	
 	var _footer2 = _interopRequireDefault(_footer);
 	
@@ -30081,7 +29845,7 @@
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Homepage);
 
 /***/ },
-/* 282 */
+/* 280 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30316,7 +30080,7 @@
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(About);
 
 /***/ },
-/* 283 */
+/* 281 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30365,7 +30129,7 @@
 	                        _react2.default.createElement(
 	                            'ul',
 	                            { className: 'flex-container' },
-	                            _react2.default.createElement('li', { className: 'video-lg' })
+	                            _react2.default.createElement('li', { className: 'video-lg-1' })
 	                        )
 	                    ),
 	                    _react2.default.createElement(
@@ -30373,8 +30137,8 @@
 	                        { className: 'main' },
 	                        _react2.default.createElement(
 	                            'div',
-	                            { className: 'text-bold-black' },
-	                            'Clap-Fetti'
+	                            { className: 'project-head' },
+	                            'Silent-Salutations'
 	                        ),
 	                        _react2.default.createElement(
 	                            'div',
@@ -30385,7 +30149,7 @@
 	                        _react2.default.createElement(
 	                            'div',
 	                            { className: 'main-text-project' },
-	                            'Powered by: React-Redux, Socket.io, and my own react/redux boilerplate'
+	                            'Powered by: React, Redux, Socket.io, HTML5/CSS3 and my own React-Redux boilerplate'
 	                        ),
 	                        _react2.default.createElement('br', null),
 	                        _react2.default.createElement(
@@ -30397,6 +30161,50 @@
 	                            'div',
 	                            { className: 'link-box' },
 	                            'LIVESITE'
+	                        )
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'wrapper' },
+	                    _react2.default.createElement(
+	                        'aside',
+	                        { className: 'aside aside-1' },
+	                        _react2.default.createElement(
+	                            'ul',
+	                            { className: 'flex-container' },
+	                            _react2.default.createElement('li', { className: 'video-lg-2' })
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'article',
+	                        { className: 'main' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'project-head' },
+	                            'Archiver'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'main-text-project' },
+	                            'A custom version-control desktop application for text documents. Users can create teams of collaborators on text documents and push up changes for others to view the changes made in that version or download the latest version to make updates. Archiver doesn\'t use any external APIs or git commands. Instead, we built custom version control commands to create a unique user experience that doesn\'t involve having to learn the command line or having to interface with Github.'
+	                        ),
+	                        _react2.default.createElement('br', null),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'main-text-project' },
+	                            'Powered by: React-Redux and Electron.js, HTML5/CSS3'
+	                        ),
+	                        _react2.default.createElement('br', null),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'link-box' },
+	                            'GITHUB'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'link-box' },
+	                            'DEMO'
 	                        )
 	                    )
 	                )
@@ -30420,7 +30228,7 @@
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Projects);
 
 /***/ },
-/* 284 */
+/* 282 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30561,7 +30369,7 @@
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Presentations);
 
 /***/ },
-/* 285 */
+/* 283 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30651,7 +30459,7 @@
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Resume);
 
 /***/ },
-/* 286 */
+/* 284 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30730,6 +30538,242 @@
 	}
 	
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Contact);
+
+/***/ },
+/* 285 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRedux = __webpack_require__(178);
+	
+	var _reactRouter = __webpack_require__(216);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Navbar = function (_React$Component) {
+	    _inherits(Navbar, _React$Component);
+	
+	    function Navbar(props) {
+	        _classCallCheck(this, Navbar);
+	
+	        var _this = _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).call(this, props));
+	
+	        _this.state = {
+	            menuOpen: false
+	        };
+	        _this.handleMenuClick = _this.handleMenuClick.bind(_this);
+	        return _this;
+	    }
+	
+	    _createClass(Navbar, [{
+	        key: 'handleMenuClick',
+	        value: function handleMenuClick() {
+	            this.setState({ menuOpen: !this.state.menuOpen });
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            var menuClasses = this.state.menuOpen ? 'menu expand' : 'menu';
+	            return _react2.default.createElement(
+	                'div',
+	                { className: 'navbar' },
+	                _react2.default.createElement(
+	                    'a',
+	                    { href: '#home_ref' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'menu-text logo' },
+	                        ' /sm'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'mobile-menu' },
+	                    _react2.default.createElement(
+	                        'i',
+	                        { className: 'material-icons', onClick: this.handleMenuClick },
+	                        'menu'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: menuClasses, onClick: this.handleMenuClick },
+	                    _react2.default.createElement(
+	                        'a',
+	                        { hrof: '#home_ref' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'menu-text' },
+	                            'hello'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'a',
+	                        { href: '#about_ref' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'menu-text' },
+	                            'about'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'a',
+	                        { href: '#projects_ref' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'menu-text' },
+	                            'projects'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'a',
+	                        { href: '#presentations_ref' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'menu-text' },
+	                            'presentations'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'a',
+	                        { href: '#resume_ref' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'menu-text' },
+	                            'resume'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'a',
+	                        { href: '#contact_ref' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'menu-text' },
+	                            'contact'
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return Navbar;
+	}(_react2.default.Component);
+	
+	/* -----------------    CONTAINER     ------------------ */
+	
+	function mapStateToProps(state) {
+	    return {};
+	}
+	
+	function mapDispatchToProps(dispatch) {
+	    return {};
+	}
+	
+	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Navbar);
+
+/***/ },
+/* 286 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRedux = __webpack_require__(178);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Footer = function (_React$Component) {
+	    _inherits(Footer, _React$Component);
+	
+	    function Footer(props) {
+	        _classCallCheck(this, Footer);
+	
+	        return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).call(this, props));
+	    }
+	
+	    _createClass(Footer, [{
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'div',
+	                { className: 'footer' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'wrapper' },
+	                    _react2.default.createElement(
+	                        'article',
+	                        { className: 'main' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'footer-white' },
+	                            '\xA9 2017 Stephanie Manwaring'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'footer-white inline' },
+	                            ' This site was built and designed with '
+	                        ),
+	                        ' ',
+	                        _react2.default.createElement('i', { className: 'fa fa-heart inline icon-white', 'aria-hidden': 'true' }),
+	                        ' ',
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'footer-white inline' },
+	                            'by yours truly'
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return Footer;
+	}(_react2.default.Component);
+	
+	/* -----------------    CONTAINER     ------------------ */
+	
+	function mapStateToProps(state) {
+	    return {};
+	}
+	
+	function mapDispatchToProps(dispatch) {
+	    return {};
+	}
+	
+	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Footer);
 
 /***/ }
 /******/ ]);

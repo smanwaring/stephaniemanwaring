@@ -283,12 +283,47 @@ Projects
     padding: 20px 0 0 0; 
 }
 
-.video-lg{
+.video-lg-1{
     width: 442px;
-    height: 300px;
-    background-color:#07b57a;
+    height: 235px;
     max-width: 80vw;
     max-height: 53.3vw;
+    border: solid;
+    border-color: lightgray;
+    border-width: 3px;
+    background-image: url('silent-sal-img.png');
+    background-size: 100% 100%;
+}
+
+.video-lg-2{
+    width: 442px;
+    height: 235px;
+    max-width: 80vw;
+    max-height: 53.3vw;
+    border: solid;
+    border-color: lightgray;
+    border-width: 3px;
+    background-image: url('archiver-img.png');
+    background-size: 100% 100%;
+}
+
+.video-lg-3{
+    width: 442px;
+    height: 235px;
+    max-width: 80vw;
+    max-height: 53.3vw;
+    border: solid;
+    border-color: lightgray;
+    border-width: 3px;
+    background-image: url('silent-sal-img.png');
+    background-size: 100% 100%;
+}
+
+
+
+.project-head {
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
 @media all and (min-width: 600px) {
