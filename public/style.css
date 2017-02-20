@@ -95,6 +95,10 @@ NAVBAR
     padding-left: 10px;
 }
 
+.material-icons {
+    font-size: 30px;
+}
+
 @media( min-width: 800px ) {
     .menu{
         display: inline-block;
@@ -143,7 +147,7 @@ HOMEPAGE
 }
 
 .header-font {
-    font-size: 60px;
+    font-size: 55px;
     font-weight: 600;
 }
 
@@ -216,6 +220,14 @@ h2 {
     color: #ffcf52
 }
 
+/*
+*
+*
+Projects
+*
+*
+*/
+
 
 @import "compass/css3";
 
@@ -258,6 +270,14 @@ h2 {
     padding: 20px 0 0 0; 
 }
 
+.video-lg{
+    width: 442px;
+    height: 300px;
+    background-color:#07b57a;
+    max-width: 80vw;
+    max-height: 53.3vw;
+}
+
 @media all and (min-width: 600px) {
   .aside { flex: 1 auto; }
 }
@@ -267,11 +287,9 @@ h2 {
         width: 50%;
         display: inline-block;
     }
-
     .column-flex {
         display: flex;
     }
-
     .about-top-spacer {
         padding: 0; 
     }
@@ -279,7 +297,10 @@ h2 {
 }
 
 @media all and (min-width: 800px) {
-  .main    { flex: 3 0px; }
+  .main    { 
+      flex: 2 0px;
+      margin-left: 20px; 
+  }
   .aside-1 { 
       order: 1; 
       padding-left: 25px;
@@ -287,6 +308,12 @@ h2 {
   .main    { order: 2; }
   .aside-2 { order: 3; }
   .footer  { order: 4; }
+  .video-lg {
+      width: 30vw;
+      height: 20vw;
+      min-width: 300px;
+      min-height: 200px;
+  }
 }
 
 hr {
@@ -295,39 +322,6 @@ hr {
   color:#fff;
   height:1px;
   width:50%;
-}
-
-.video-sm-1{
-    width: 330px;
-    height: 186px;
-    line-height: 150px;
-    font-weight: bold;
-    font-size: 3em;
-    text-align: center;
-    background-image: url('/semicolon-techtalk.png');
-}
-
-
-
-.video-sm-2{
-    width: 330px;
-    height: 186px;
-    line-height: 150px;
-    font-weight: bold;
-    font-size: 3em;
-    text-align: center;
-    background-image: url('/silent-salutations.png');
-}
-
-
-.video-sm-3{
-    width: 330px;
-    height: 186px;
-    line-height: 150px;
-    font-weight: bold;
-    font-size: 3em;
-    text-align: center;
-    background-image: url('/archiver.png');
 }
 
 
@@ -346,6 +340,7 @@ hr {
   
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
+  position: relative;
 }
 
 
@@ -355,12 +350,6 @@ hr {
    display: flex;
    -webkit-flex-direction: row;
    flex-direction: row;
-}
-
-.video-lg{
-    width: 442px;
-    height: 300px;
-    background-color:#07b57a;
 }
 
 .text-highlight{
@@ -412,6 +401,41 @@ hr{
     background-color: white;
 }
 
+
+/*
+Presentations
+*/
+
+.video-sm-1{
+    width: 330px;
+    height: 186px;
+    line-height: 150px;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    background-image: url('/semicolon-techtalk.png');
+}
+
+.video-sm-2{
+    width: 330px;
+    height: 186px;
+    line-height: 150px;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    background-image: url('/silent-salutations.png');
+}
+
+.video-sm-3{
+    width: 330px;
+    height: 186px;
+    line-height: 150px;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    background-image: url('/archiver.png');
+}
+
 .video-text-box{
     width: 330px;
     height: 100px;
@@ -445,6 +469,14 @@ hr{
 }
 .text-box{
     margin: 10px 20px 10px 20px;
+}
+
+.video-hover {
+    position: abosolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20px;
 }
 
 .flex-container-contact {

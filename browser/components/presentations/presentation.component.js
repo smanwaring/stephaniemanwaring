@@ -26,11 +26,11 @@ class Presentations extends React.Component {
                                 </div>
                             </div>
                         </div>
+
+
+
                         <div className="spacer-sm">
                             <div className="video-sm-2">
-
-                   
-
                             </div>
                             <div className="video-text-box">
                                 <div className="text-box">
