@@ -35,7 +35,7 @@ class Projects extends React.Component {
                     <article className="main">
                         <div className="project-head">Archiver</div>
                         <div className="main-text-project">
-                            A custom version-control desktop application for text documents. Users can create teams of collaborators on text documents and push up changes for others to view the changes made in that version or download the latest version to make updates. Archiver doesn't use any external APIs or git commands. Instead, we built custom version control commands to create a unique user experience that doesn't involve having to learn the command line or having to interface with Github.
+                            A custom version-control desktop application for text documents. Users can create teams of collaborators for specific documents and any collaborator can push up changes for others to view or download to their computer. Archiver let's users have a complete version history of all changes too. Archiver doesn't use any external APIs or git commands. Instead, we built custom version control commands to create a unique user experience that doesn't involve having to learn the command line or having to interface with Github.
                         </div>
                             <br/>
                             <div className="main-text-project">Powered by: React-Redux and Electron.js, HTML5/CSS3</div>

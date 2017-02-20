@@ -289,10 +289,11 @@ Projects
     max-width: 80vw;
     max-height: 53.3vw;
     border: solid;
-    border-color: lightgray;
+    border-color: rgb(237, 238, 239);
     border-width: 3px;
     background-image: url('silent-sal-img.png');
-    background-size: 100% 100%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
 }
 
 .video-lg-2{
@@ -301,10 +302,11 @@ Projects
     max-width: 80vw;
     max-height: 53.3vw;
     border: solid;
-    border-color: lightgray;
+    border-color: rgb(237, 238, 239);
     border-width: 3px;
     background-image: url('archiver-img.png');
-    background-size: 100% 100%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
 }
 
 .video-lg-3{
@@ -313,10 +315,10 @@ Projects
     max-width: 80vw;
     max-height: 53.3vw;
     border: solid;
-    border-color: lightgray;
+    border-color: rgb(237, 238, 239);
     border-width: 3px;
     background-image: url('silent-sal-img.png');
-    background-size: 100% 100%;
+    background-size: 100%;
 }
 
 
@@ -347,7 +349,7 @@ Projects
 @media all and (min-width: 800px) {
   .main    { 
       flex: 2 0px;
-      margin-left: 20px; 
+      /*margin-left: 20px; */
   }
   .aside-1 { 
       order: 1; 
@@ -493,7 +495,6 @@ Presentations
 
 .grey-section{
     background-color: rgb(237, 238, 239);
-    /*background-color: #f8f8f8;*/
 }
 
 .video-text-sm{

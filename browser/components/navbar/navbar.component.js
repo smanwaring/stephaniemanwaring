@@ -23,7 +23,7 @@ class Navbar extends React.Component {
                 <a href="#home_ref"><div className="menu-text logo"> /sm</div></a>
                 <div className="mobile-menu"><i className="material-icons" onClick={this.handleMenuClick}>menu</i></div>
                 <div className={menuClasses} onClick={this.handleMenuClick}>
-                    <a hrof="#home_ref"><div className="menu-text">hello</div></a>
+                    <a href="#home_ref"><div className="menu-text">hello</div></a>
                     <a href="#about_ref"><div className="menu-text">about</div></a>
                     <a href="#projects_ref"><div className="menu-text">projects</div></a>
                     <a href="#presentations_ref"><div className="menu-text">presentations</div></a>
