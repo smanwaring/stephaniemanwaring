@@ -355,7 +355,6 @@ hr {
 .text-highlight{
     color: #fee000;
     font-weight: 600;
-    /*color: #dc143c;*/
 }
 
 hr{
@@ -534,6 +533,10 @@ Presentations
     margin-top: 20px;
 }
 
+.video-text-title:hover {
+    color: gray;
+}
+
 
 /*
 *
@@ -549,7 +552,7 @@ Footer
 .footer{
     background-color: black;
     text-align: left;
-    height: 50px;
+    height: 70px;
     padding-top: 10px;
     padding-bottom: 10px
 }

@@ -16,8 +16,6 @@ class Presentations extends React.Component {
                     <div className="flex-container">
                         <div className="spacer-sm">
                             <div className="video-sm-1">
-
-       
                             </div>
                             <div className="video-text-box">
                                 <div className="text-box">
@@ -26,9 +24,6 @@ class Presentations extends React.Component {
                                 </div>
                             </div>
                         </div>
-
-
-
                         <div className="spacer-sm">
                             <div className="video-sm-2">
                             </div>
