@@ -107,8 +107,12 @@ NAVBAR
         height: auto;
         background-color: transparent;
     }
-    .mobile-menu{
+    .mobile-menu {
         display: none;
+    }
+    .menu-text:hover {
+        color:white;
+
     }
 }
 
