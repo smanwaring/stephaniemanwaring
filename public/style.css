@@ -183,44 +183,36 @@ HOMEPAGE
 */
 
 
-.box {
+.wallpaper {
   display: flex;
   flex-flow: column;
   justify-content: center;
   height: 100vh;
   background-image: url('welcome.jpg');
-  background-size: 100%;
-  color: white;
+  background-size: cover;
+    background-position: center;
+  background-repeat: no-repeat;
   position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
 }
 
-.welcome {
-    font-weight: 300;
-    color: white;
-}
-
-.md-font {
-    font-size: 75px;
+.info {
+  font-weight: 300;
+  color: white;
 }
 
 .header-font {
-    font-size: 55px;
-    font-weight: 600;
-}
-
-.sm-font {
-    font-size: 40px;
+  font-size: 55px;
+  font-weight: 600;
 }
 
 @media( min-width: 800px ) {
-    .header-font {
-        font-size: 100px;
-        font-weight: 600;
-    }
+  .header-font {
+    font-size: 100px;
+  }
 }
+
+
+
 
 
 /*
@@ -236,7 +228,7 @@ About
 
 
 h2 {
-    margin: 0;
+  margin: 0;
 }
 
 .flexbox-container {

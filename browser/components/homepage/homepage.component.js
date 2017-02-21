@@ -14,8 +14,8 @@ class Homepage extends React.Component {
         return (
             <div>
                 <Navbar />
-                <a id="home_ref"><div className="box">
-                <div className="welcome">
+                <a id="home_ref"><div className="wallpaper">
+                <div className="info">
                     <div className="header-font">WEB</div>
                     <div className="header-font">DEVELOPER</div>
                 </div>

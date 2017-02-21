@@ -29778,10 +29778,10 @@
 	                    { id: 'home_ref' },
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'box' },
+	                        { className: 'wallpaper' },
 	                        _react2.default.createElement(
 	                            'div',
-	                            { className: 'welcome' },
+	                            { className: 'info' },
 	                            _react2.default.createElement(
 	                                'div',
 	                                { className: 'header-font' },
