@@ -26,21 +26,34 @@ class Homepage extends React.Component {
         return (
             <div>
                 <Navbar />
-                <div className="wallpaper">
-                <div className="info">
-                    <div className="header-font">WEB</div>
-                    <div className="header-font">DEVELOPER</div>
-                </div>
-                </div>
-                <Element name="test1"><About /></Element>
+                <Element name="home">
+                  <div className="wallpaper">
+                    <div className="info">
+                        <div className="header-font">WEB</div>
+                        <div className="header-font">DEVELOPER</div>
+                    </div>
+                  </div>
+                </Element>
+                <Element name="about">
+                  <About />
+                </Element>
                 <div className="parallax-projects"></div>
-                <Projects />
-                <div className="parallax-presentations"></div>
-                <Presentations />
+                <Element name="projects">
+                  <Projects />
+                </Element>
+                <div className="parallax-presentations">
+                </div>
+                <Element name="presentations">
+                  <Presentations />
+                </Element>
                 <div className="parallax-resume"></div>
-                <Resume />
+                <Element name="resume">
+                  <Resume />
+                </Element>
                 <div className="parallax-contact"></div>
-                <Contact />
+                <Element name="contact">
+                  <Contact />
+                </Element>
                 <Footer />
             </div>
         );

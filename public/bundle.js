@@ -29710,7 +29710,7 @@
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
+	  value: true
 	});
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -29768,68 +29768,88 @@
 	var scrollSpy = _reactScroll2.default.scrollSpy;
 	
 	var Homepage = function (_React$Component) {
-	    _inherits(Homepage, _React$Component);
+	  _inherits(Homepage, _React$Component);
 	
-	    function Homepage() {
-	        _classCallCheck(this, Homepage);
+	  function Homepage() {
+	    _classCallCheck(this, Homepage);
 	
-	        return _possibleConstructorReturn(this, (Homepage.__proto__ || Object.getPrototypeOf(Homepage)).apply(this, arguments));
-	    }
+	    return _possibleConstructorReturn(this, (Homepage.__proto__ || Object.getPrototypeOf(Homepage)).apply(this, arguments));
+	  }
 	
-	    _createClass(Homepage, [{
-	        key: 'render',
-	        value: function render() {
-	            return _react2.default.createElement(
+	  _createClass(Homepage, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(_navbar2.default, null),
+	        _react2.default.createElement(
+	          Element,
+	          { name: 'home' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'wallpaper' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'info' },
+	              _react2.default.createElement(
 	                'div',
-	                null,
-	                _react2.default.createElement(_navbar2.default, null),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'wallpaper' },
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'info' },
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'header-font' },
-	                            'WEB'
-	                        ),
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'header-font' },
-	                            'DEVELOPER'
-	                        )
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    Element,
-	                    { name: 'test1' },
-	                    _react2.default.createElement(_about2.default, null)
-	                ),
-	                _react2.default.createElement('div', { className: 'parallax-projects' }),
-	                _react2.default.createElement(_projects2.default, null),
-	                _react2.default.createElement('div', { className: 'parallax-presentations' }),
-	                _react2.default.createElement(_presentation2.default, null),
-	                _react2.default.createElement('div', { className: 'parallax-resume' }),
-	                _react2.default.createElement(_resume2.default, null),
-	                _react2.default.createElement('div', { className: 'parallax-contact' }),
-	                _react2.default.createElement(_contact2.default, null),
-	                _react2.default.createElement(_footer2.default, null)
-	            );
-	        }
-	    }]);
+	                { className: 'header-font' },
+	                'WEB'
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'header-font' },
+	                'DEVELOPER'
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          Element,
+	          { name: 'about' },
+	          _react2.default.createElement(_about2.default, null)
+	        ),
+	        _react2.default.createElement('div', { className: 'parallax-projects' }),
+	        _react2.default.createElement(
+	          Element,
+	          { name: 'projects' },
+	          _react2.default.createElement(_projects2.default, null)
+	        ),
+	        _react2.default.createElement('div', { className: 'parallax-presentations' }),
+	        _react2.default.createElement(
+	          Element,
+	          { name: 'presentations' },
+	          _react2.default.createElement(_presentation2.default, null)
+	        ),
+	        _react2.default.createElement('div', { className: 'parallax-resume' }),
+	        _react2.default.createElement(
+	          Element,
+	          { name: 'resume' },
+	          _react2.default.createElement(_resume2.default, null)
+	        ),
+	        _react2.default.createElement('div', { className: 'parallax-contact' }),
+	        _react2.default.createElement(
+	          Element,
+	          { name: 'contact' },
+	          _react2.default.createElement(_contact2.default, null)
+	        ),
+	        _react2.default.createElement(_footer2.default, null)
+	      );
+	    }
+	  }]);
 	
-	    return Homepage;
+	  return Homepage;
 	}(_react2.default.Component);
 	
 	/* -----------------    CONTAINER     ------------------ */
 	
 	function mapStateToProps(state) {
-	    return {};
+	  return {};
 	}
 	
 	function mapDispatchToProps(dispatch) {
-	    return {};
+	  return {};
 	}
 	
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Homepage);
@@ -30631,9 +30651,13 @@
 	        'div',
 	        { className: 'navbar' },
 	        _react2.default.createElement(
-	          'div',
-	          { className: 'menu-text logo' },
-	          ' /sm'
+	          ScrollLink,
+	          { to: 'home', smooth: true, duration: 500 },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'menu-text logo' },
+	            ' /sm'
+	          )
 	        ),
 	        _react2.default.createElement(
 	          'div',
@@ -30654,7 +30678,7 @@
 	          ),
 	          _react2.default.createElement(
 	            ScrollLink,
-	            { to: 'test1', smooth: true, duration: 500 },
+	            { to: 'about', smooth: true, duration: 500 },
 	            _react2.default.createElement(
 	              'div',
 	              { className: 'menu-text' },
@@ -30662,24 +30686,40 @@
 	            )
 	          ),
 	          _react2.default.createElement(
-	            'div',
-	            { className: 'menu-text' },
-	            'projects'
+	            ScrollLink,
+	            { to: 'projects', smooth: true, duration: 500 },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'menu-text' },
+	              'projects'
+	            )
 	          ),
 	          _react2.default.createElement(
-	            'div',
-	            { className: 'menu-text' },
-	            'presentations'
+	            ScrollLink,
+	            { to: 'presentations', smooth: true, duration: 500 },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'menu-text' },
+	              'presentations'
+	            )
 	          ),
 	          _react2.default.createElement(
-	            'div',
-	            { className: 'menu-text' },
-	            'resume'
+	            ScrollLink,
+	            { to: 'resume', smooth: true, duration: 900 },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'menu-text' },
+	              'resume'
+	            )
 	          ),
 	          _react2.default.createElement(
-	            'div',
-	            { className: 'menu-text' },
-	            'contact'
+	            ScrollLink,
+	            { to: 'contact', smooth: true, duration: 900 },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'menu-text' },
+	              'contact'
+	            )
 	          )
 	        )
 	      );

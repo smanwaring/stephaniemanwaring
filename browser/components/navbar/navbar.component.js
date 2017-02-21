@@ -51,15 +51,15 @@ class Navbar extends React.Component {
       const menuClasses = this.state.menuOpen ? 'menu expand' : 'menu';
         return (
             <div className="navbar">
-                <div className="menu-text logo"> /sm</div>
+                <ScrollLink to="home" smooth={true} duration={500}><div className="menu-text logo"> /sm</div></ScrollLink>
                 <div className="mobile-menu"><i className="material-icons" onClick={this.handleMenuClick}>menu</i></div>
                 <div className={menuClasses} onClick={this.handleMenuClick}>
                     <div className="menu-text">hello</div>
-                    <ScrollLink to="test1" smooth={true} duration={500}><div className="menu-text">about</div></ScrollLink>
-                    <div className="menu-text">projects</div>
-                    <div className="menu-text">presentations</div>
-                    <div className="menu-text">resume</div>
-                    <div className="menu-text">contact</div>
+                    <ScrollLink to="about" smooth={true} duration={500}><div className="menu-text">about</div></ScrollLink>
+                    <ScrollLink to="projects" smooth={true} duration={500}><div className="menu-text">projects</div></ScrollLink>
+                    <ScrollLink to="presentations" smooth={true} duration={500}><div className="menu-text">presentations</div></ScrollLink>
+                    <ScrollLink to="resume" smooth={true} duration={900}><div className="menu-text">resume</div></ScrollLink>
+                    <ScrollLink to="contact" smooth={true} duration={900}><div className="menu-text">contact</div></ScrollLink>
                 </div>
             </div>
         );
