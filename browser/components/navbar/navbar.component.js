@@ -1,5 +1,15 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import Scroll from 'react-scroll';
+import { Link } from 'react-router';
+
+
+
+let ScrollLink = Scroll.Link;
+let Element = Scroll.Element;
+let Events = Scroll.Events;
+let scroll = Scroll.animateScroll;
+let scrollSpy = Scroll.scrollSpy;
 
 
 class Navbar extends React.Component {
@@ -11,6 +21,28 @@ class Navbar extends React.Component {
     this.handleMenuClick = this.handleMenuClick.bind(this);
   }
 
+  componentDidMount() {
+    Events.scrollEvent.register('begin', function(to, element) {
+      console.log("begin", arguments);
+    });
+
+    Events.scrollEvent.register('end', function(to, element) {
+      console.log("end", arguments);
+    });
+
+    scrollSpy.update();
+
+  }
+
+  componentWillUnmount() {
+    Events.scrollEvent.remove('begin');
+    Events.scrollEvent.remove('end');
+  }
+
+  scrollTo() {
+    scroll.scrollTo(100);
+  }
+
     handleMenuClick(){
         this.setState( { menuOpen: !this.state.menuOpen}  );
     }
@@ -19,15 +51,15 @@ class Navbar extends React.Component {
       const menuClasses = this.state.menuOpen ? 'menu expand' : 'menu';
         return (
             <div className="navbar">
-                <a href="#home_ref"><div className="menu-text logo"> /sm</div></a>
+                <div className="menu-text logo"> /sm</div>
                 <div className="mobile-menu"><i className="material-icons" onClick={this.handleMenuClick}>menu</i></div>
                 <div className={menuClasses} onClick={this.handleMenuClick}>
-                    <a href="#home_ref"><div className="menu-text">hello</div></a>
-                    <a href="#about_ref"><div className="menu-text">about</div></a>
-                    <a href="#projects_ref"><div className="menu-text">projects</div></a>
-                    <a href="#presentations_ref"><div className="menu-text">presentations</div></a>
-                    <a href="#resume_ref"><div className="menu-text">resume</div></a>
-                    <a href="#contact_ref"><div className="menu-text">contact</div></a>
+                    <div className="menu-text">hello</div>
+                    <ScrollLink to="test1" smooth={true} duration={500}><div className="menu-text">about</div></ScrollLink>
+                    <div className="menu-text">projects</div>
+                    <div className="menu-text">presentations</div>
+                    <div className="menu-text">resume</div>
+                    <div className="menu-text">contact</div>
                 </div>
             </div>
         );

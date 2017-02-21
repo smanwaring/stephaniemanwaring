@@ -7,6 +7,18 @@ import Resume from '../resume/resume';
 import Contact from '../contact/contact.component';
 import Navbar from '../navbar/navbar.component';
 import Footer from '../footer/footer.component';
+import Scroll from 'react-scroll';
+
+
+
+let ScrollLink = Scroll.Link;
+let Element = Scroll.Element;
+let Events = Scroll.Events;
+let scroll = Scroll.animateScroll;
+let scrollSpy = Scroll.scrollSpy;
+
+
+
 
 class Homepage extends React.Component {
 
@@ -14,21 +26,21 @@ class Homepage extends React.Component {
         return (
             <div>
                 <Navbar />
-                <a id="home_ref"><div className="wallpaper">
+                <div className="wallpaper">
                 <div className="info">
                     <div className="header-font">WEB</div>
                     <div className="header-font">DEVELOPER</div>
                 </div>
-                </div></a>
-                <a id="about_ref"><About /></a>
+                </div>
+                <Element name="test1"><About /></Element>
                 <div className="parallax-projects"></div>
-                <a id="projects_ref"><Projects /></a>
+                <Projects />
                 <div className="parallax-presentations"></div>
-                <a id="presentations_ref"><Presentations /></a>
+                <Presentations />
                 <div className="parallax-resume"></div>
-                <a id="resume_ref"><Resume /></a>
+                <Resume />
                 <div className="parallax-contact"></div>
-                <a id="contact_ref"><Contact /></a>
+                <Contact />
                 <Footer />
             </div>
         );
