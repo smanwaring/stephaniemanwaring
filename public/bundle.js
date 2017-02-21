@@ -30617,21 +30617,7 @@
 	  _createClass(Navbar, [{
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
-	      Events.scrollEvent.register('begin', function (to, element) {
-	        console.log("begin", arguments);
-	      });
-	
-	      Events.scrollEvent.register('end', function (to, element) {
-	        console.log("end", arguments);
-	      });
-	
 	      scrollSpy.update();
-	    }
-	  }, {
-	    key: 'componentWillUnmount',
-	    value: function componentWillUnmount() {
-	      Events.scrollEvent.remove('begin');
-	      Events.scrollEvent.remove('end');
 	    }
 	  }, {
 	    key: 'scrollTo',
