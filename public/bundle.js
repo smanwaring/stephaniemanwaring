@@ -29800,25 +29800,25 @@
 	                    { id: 'about_ref' },
 	                    _react2.default.createElement(_about2.default, null)
 	                ),
-	                _react2.default.createElement('div', { className: 'parallax' }),
+	                _react2.default.createElement('div', { className: 'parallax-projects' }),
 	                _react2.default.createElement(
 	                    'a',
 	                    { id: 'projects_ref' },
 	                    _react2.default.createElement(_projects2.default, null)
 	                ),
-	                _react2.default.createElement('div', { className: 'parallax' }),
+	                _react2.default.createElement('div', { className: 'parallax-presentations' }),
 	                _react2.default.createElement(
 	                    'a',
 	                    { id: 'presentations_ref' },
 	                    _react2.default.createElement(_presentation2.default, null)
 	                ),
-	                _react2.default.createElement('div', { className: 'parallax' }),
+	                _react2.default.createElement('div', { className: 'parallax-resume' }),
 	                _react2.default.createElement(
 	                    'a',
 	                    { id: 'resume_ref' },
 	                    _react2.default.createElement(_resume2.default, null)
 	                ),
-	                _react2.default.createElement('div', { className: 'parallax' }),
+	                _react2.default.createElement('div', { className: 'parallax-contact' }),
 	                _react2.default.createElement(
 	                    'a',
 	                    { id: 'contact_ref' },

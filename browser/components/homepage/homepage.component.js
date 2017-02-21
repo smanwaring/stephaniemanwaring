@@ -21,13 +21,13 @@ class Homepage extends React.Component {
                 </div>
                 </div></a>
                 <a id="about_ref"><About /></a>
-                <div className="parallax"></div>
+                <div className="parallax-projects"></div>
                 <a id="projects_ref"><Projects /></a>
-                <div className="parallax"></div>
+                <div className="parallax-presentations"></div>
                 <a id="presentations_ref"><Presentations /></a>
-                <div className="parallax"></div>
+                <div className="parallax-resume"></div>
                 <a id="resume_ref"><Resume /></a>
-                <div className="parallax"></div>
+                <div className="parallax-contact"></div>
                 <a id="contact_ref"><Contact /></a>
                 <Footer />
             </div>

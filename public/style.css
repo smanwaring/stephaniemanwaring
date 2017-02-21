@@ -9,9 +9,9 @@ html, body {
     
 }
 
-.parallax { 
+.parallax-projects { 
     /* The image used */
-    background-image: url("projects.png");
+    background-image: url("projects.jpg");
 
     /* Set a specific height */
     height: 250px; 
@@ -22,6 +22,51 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.parallax-presentations { 
+    /* The image used */
+    background-image: url("presentations.jpg");
+
+    /* Set a specific height */
+    height: 250px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-resume { 
+    /* The image used */
+    background-image: url("resume.jpg");
+
+    /* Set a specific height */
+    height: 250px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-contact { 
+    /* The image used */
+    background-image: url("contact.jpg");
+
+    /* Set a specific height */
+    height: 250px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
 
 .parallax-home { 
     /* The image used */
@@ -56,6 +101,7 @@ NAVBAR
     background-color: transparent;
     position: absolute;
     z-index: 10;
+    padding-top: 20px;
 }
 
 .mobile-menu {
@@ -112,6 +158,7 @@ NAVBAR
         padding: 0px;
         height: auto;
         background-color: transparent;
+        margin-right: 20px;
     }
     .mobile-menu {
         display: none;
@@ -141,7 +188,7 @@ HOMEPAGE
   flex-flow: column;
   justify-content: center;
   height: 100vh;
-  background-image: url('placeholder.jpg');
+  background-image: url('welcome.jpg');
   background-size: 100%;
   color: white;
   position: relative;
