@@ -452,40 +452,45 @@ hr {
 
 /*On the flex container*/
 .flexcontainer-proj {
-   display: -webkit-flex;
-   display: flex;
-   -webkit-flex-direction: row;
-   flex-direction: row;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
 }
 
-.text-highlight{
-    color: #fee000;
-    font-weight: 600;
+.text-highlight {
+  color: #fee000;
+  font-weight: 600;
 }
 
 hr{
-    width: 85%;
+  width: 85%;
 }
 
-.main-text-project{
-    font-weight: 300;
-    font-size: 16px;
+.main-text-project {
+  font-weight: 300;
+  font-size: 16px;
 }
 
-.link-box{
-    border-color: black;
-    font-size: 14px;
-    padding: 10px;
-    width: 70px;
-    text-align: center;
-    border-style: solid;
-    border-width: 2px;
-    display: inline-block;
-    margin-left: 5px;
-    color: black;
+.link-box {
+  border-color: black;
+  font-size: 14px;
+  padding: 10px;
+  width: 70px;
+  text-align: center;
+  border-style: solid;
+  border-width: 2px;
+  display: inline-block;
+  margin-left: 5px;
+  color: black;
 }
 
-.link-box:hover{
+.white {
+    background-color: white;
+}
+
+@media( min-width: 800px ) {
+  .link-box:hover {
     border-color: black;
     background-color:black; 
     font-size: 14px;
@@ -498,94 +503,94 @@ hr{
     margin-left: 5px;
     color: white;
     transition: 0.3s all;
+  }
+
 }
 
-
-
-.white{
-    background-color: white;
-}
 
 
 /*
+*
+*
 Presentations
+*
+*
 */
 
-.presentation-link{
-    text-decoration: none;
-    color: #000;
+.presentation-link {
+  text-decoration: none;
+  color: #000;
 }
 
-.video-sm-1{
-    width: 330px;
-    height: 186px;
-    line-height: 150px;
-    font-weight: bold;
-    font-size: 3em;
-    text-align: center;
-    background-image: url('/semicolon-techtalk.png');
+.video-sm-1 { 
+  width: 330px;
+  height: 186px;
+  line-height: 150px;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  background-image: url('/semicolon-techtalk.png');
 }
 
-.video-sm-2{
-    width: 330px;
-    height: 186px;
-    line-height: 150px;
-    font-weight: bold;
-    font-size: 3em;
-    text-align: center;
-    background-image: url('/silent-salutations.png');
+.video-sm-2 {
+  width: 330px;
+  height: 186px;
+  line-height: 150px;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  background-image: url('/silent-salutations.png');
 }
 
-.video-sm-3{
-    width: 330px;
-    height: 186px;
-    line-height: 150px;
-    font-weight: bold;
-    font-size: 3em;
-    text-align: center;
-    background-image: url('/archiver.png');
+.video-sm-3 {
+  width: 330px;
+  height: 186px;
+  line-height: 150px;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  background-image: url('/archiver.png');
 }
 
-.video-text-box{
-    width: 330px;
-    height: 100px;
-    background-color:white;;
-    text-align: center;
-    padding: 10px 0 10px 0;
+.video-text-box {
+  width: 330px;
+  height: 100px;
+  background-color:white;;
+  text-align: center;
+  padding: 10px 0 10px 0;
 }
 
-.grey-section{
-    background-color: rgb(237, 238, 239);
+.grey-section {
+  background-color: rgb(237, 238, 239);
 }
 
-.video-text-sm{
-    font-size: 12px;
-
+.video-text-sm {
+  font-size: 12px;
 }
 
 .video-text-title{
-    font-size: 16px;
-    margin-bottom: 10px;
-    font-weight: 900;
-
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 900;
 }
 
-.presentation-border{
-    border: solid;
-    border-color: black;
-    border-width: 2px;
-    margin-top: 20px
+.presentation-border {
+  border: solid;
+  border-color: black;
+  border-width: 2px;
+  margin-top: 20px
 }
+
 .text-box{
-    margin: 10px 20px 10px 20px;
+  margin: 10px 20px 10px 20px;
 }
 
 .video-hover {
-    position: abosolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 20px;
+  position: abosolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
 }
 
 .flex-container-contact {
@@ -607,44 +612,39 @@ Presentations
     margin-top: 0;
 }
 
-
-.link-box-resume{
-    border-color: black;
-    font-size: 18px;
-    width: 220px;
-    text-align: center;
-    border-style: solid;
-    border-width: 2px;
-    color: black;
-    height: 60px;
-    font-weight: 600;
+.link-box-resume {
+  border-color: black;
+  font-size: 18px;
+  width: 220px;
+  text-align: center;
+  border-style: solid;
+  border-width: 2px;
+  color: black;
+  height: 60px;
+  font-weight: 600;
 }
 
-.link-box-resume:hover{
-
-    border-color: black;
-    background-color:black; 
-    font-size: 18px;
-    text-align: center;
-    border-style: solid;
-    border-width: 2px;
-    color: white;
-    transition: 0.3s all;
-    font-weight: 600;
-    height: 60px;
-    width: 220px;
-
-
-
+.link-box-resume:hover {
+  border-color: black;
+  background-color:black; 
+  font-size: 18px;
+  text-align: center;
+  border-style: solid;
+  border-width: 2px;
+  color: white;
+  transition: 0.3s all;
+  font-weight: 600;
+  height: 60px;
+  width: 220px;
 }
 
 
-.btn-lg-text{
-    margin-top: 20px;
+.btn-lg-text {
+  margin-top: 20px;
 }
 
 .video-text-title:hover {
-    color: gray;
+  color: gray;
 }
 
 
@@ -659,22 +659,22 @@ Footer
 */
 
 
-.footer{
-    background-color: black;
-    text-align: left;
-    height: 70px;
-    padding-top: 10px;
-    padding-bottom: 10px
+.footer {
+  background-color: black;
+  text-align: left;
+  height: 70px;
+  padding-top: 10px;
+  padding-bottom: 10px
 }
 
-.footer-white{
-    color:white;
-    font-size: 12px;
+.footer-white {
+  color:white;
+  font-size: 12px;
 }
 
 .icon-custom {
-    color: white;
-    font-size: 10px;
+  color: white;
+  font-size: 10px;
 }
 
 
@@ -689,22 +689,22 @@ Spacers
 */
 
 
-.spacer{
-    padding-top: 40px;
-    padding-bottom: 40px;
+.spacer {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
-.spacer-sm{
-    padding-top: 10px;
-    padding-bottom: 10px;
+.spacer-sm  {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .spacer-extra {
-    padding: 100px 0 100px 0;
+  padding: 100px 0 100px 0;
 }
 
 .bottom-spacer {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 /*
@@ -719,10 +719,9 @@ Contact
 
 
 .icon {
-    color: black;
+  color: black;
 }
 
 .icon:hover {
-    color: gray;
+  color: gray;
 }
-

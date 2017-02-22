@@ -30207,7 +30207,7 @@
 	                        _react2.default.createElement(
 	                            'div',
 	                            { className: 'main-text-project' },
-	                            'Powered by:Electron.js, React, Redux, Express, PostreSql HTML5/CSS3'
+	                            'Powered by: Electron.js, React, Redux, Express, PostreSql HTML5/CSS3'
 	                        ),
 	                        _react2.default.createElement('br', null),
 	                        _react2.default.createElement(
