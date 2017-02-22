@@ -29745,11 +29745,11 @@
 	
 	var _navbar2 = _interopRequireDefault(_navbar);
 	
-	var _footer = __webpack_require__(286);
+	var _footer = __webpack_require__(298);
 	
 	var _footer2 = _interopRequireDefault(_footer);
 	
-	var _reactScroll = __webpack_require__(287);
+	var _reactScroll = __webpack_require__(286);
 	
 	var _reactScroll2 = _interopRequireDefault(_reactScroll);
 	
@@ -30498,6 +30498,8 @@
 	
 	var _reactRedux = __webpack_require__(178);
 	
+	var _reactRouter = __webpack_require__(216);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -30535,9 +30537,21 @@
 	                        _react2.default.createElement(
 	                            'div',
 	                            { className: 'flex-container-contact' },
-	                            _react2.default.createElement('i', { className: 'fa fa-stack-overflow fa-3x icon', 'aria-hidden': 'true' }),
-	                            _react2.default.createElement('i', { className: 'fa fa-github fa-3x icon', 'aria-hidden': 'true' }),
-	                            _react2.default.createElement('i', { className: 'fa fa-linkedin fa-3x icon', 'aria-hidden': 'true' }),
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: 'https://stackoverflow.com/users/7370337/stephanie-manwaring?tab=profile' },
+	                                _react2.default.createElement('i', { className: 'fa fa-stack-overflow fa-3x icon', 'aria-hidden': 'true' })
+	                            ),
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: 'https://github.com/smanwaring' },
+	                                _react2.default.createElement('i', { className: 'fa fa-github fa-3x icon', 'aria-hidden': 'true' })
+	                            ),
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: 'https://www.linkedin.com/in/stephaniemanwaring' },
+	                                _react2.default.createElement('i', { className: 'fa fa-linkedin fa-3x icon', 'aria-hidden': 'true' })
+	                            ),
 	                            _react2.default.createElement('i', { className: 'fa fa-envelope fa-3x icon', 'aria-hidden': 'true' })
 	                        )
 	                    )
@@ -30579,7 +30593,7 @@
 	
 	var _reactRedux = __webpack_require__(178);
 	
-	var _reactScroll = __webpack_require__(287);
+	var _reactScroll = __webpack_require__(286);
 	
 	var _reactScroll2 = _interopRequireDefault(_reactScroll);
 	
@@ -30733,110 +30747,24 @@
 /* 286 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactRedux = __webpack_require__(178);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var Footer = function (_React$Component) {
-	    _inherits(Footer, _React$Component);
-	
-	    function Footer(props) {
-	        _classCallCheck(this, Footer);
-	
-	        return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).call(this, props));
-	    }
-	
-	    _createClass(Footer, [{
-	        key: 'render',
-	        value: function render() {
-	            return _react2.default.createElement(
-	                'div',
-	                { className: 'footer' },
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'wrapper' },
-	                    _react2.default.createElement(
-	                        'article',
-	                        { className: 'main' },
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'footer-white' },
-	                            '\xA9 2017 Stephanie Manwaring'
-	                        ),
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'footer-white inline' },
-	                            ' This site was built and designed with '
-	                        ),
-	                        ' ',
-	                        _react2.default.createElement('i', { className: 'fa fa-heart inline icon-white', 'aria-hidden': 'true' }),
-	                        ' ',
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'footer-white inline' },
-	                            'by yours truly'
-	                        )
-	                    )
-	                )
-	            );
-	        }
-	    }]);
-	
-	    return Footer;
-	}(_react2.default.Component);
-	
-	/* -----------------    CONTAINER     ------------------ */
-	
-	function mapStateToProps(state) {
-	    return {};
-	}
-	
-	function mapDispatchToProps(dispatch) {
-	    return {};
-	}
-	
-	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Footer);
+	exports.Link = __webpack_require__(287);
+	exports.Button = __webpack_require__(296);
+	exports.Element = __webpack_require__(297);
+	exports.Helpers = __webpack_require__(288);
+	exports.scroller = __webpack_require__(295);
+	exports.Events = __webpack_require__(293);
+	exports.scrollSpy = __webpack_require__(294);
+	exports.animateScroll = __webpack_require__(289);
+
 
 /***/ },
 /* 287 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports.Link = __webpack_require__(288);
-	exports.Button = __webpack_require__(297);
-	exports.Element = __webpack_require__(298);
-	exports.Helpers = __webpack_require__(289);
-	exports.scroller = __webpack_require__(296);
-	exports.Events = __webpack_require__(294);
-	exports.scrollSpy = __webpack_require__(295);
-	exports.animateScroll = __webpack_require__(290);
-
-
-/***/ },
-/* 288 */
-/***/ function(module, exports, __webpack_require__) {
-
 	"use strict";
 	
 	var React = __webpack_require__(1);
-	var Helpers = __webpack_require__(289);
+	var Helpers = __webpack_require__(288);
 	
 	var Link = React.createClass({
 	  render: function () {
@@ -30848,7 +30776,7 @@
 
 
 /***/ },
-/* 289 */
+/* 288 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -30856,9 +30784,9 @@
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(32);
 	
-	var animateScroll = __webpack_require__(290);
-	var scrollSpy = __webpack_require__(295);
-	var defaultScroller = __webpack_require__(296);
+	var animateScroll = __webpack_require__(289);
+	var scrollSpy = __webpack_require__(294);
+	var defaultScroller = __webpack_require__(295);
 	var assign = __webpack_require__(4);
 	
 	
@@ -31092,18 +31020,18 @@
 
 
 /***/ },
-/* 290 */
+/* 289 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var assign = __webpack_require__(4);
 	
-	var smooth = __webpack_require__(291);
+	var smooth = __webpack_require__(290);
 	
 	var easing = smooth.defaultEasing;
 	
-	var cancelEvents = __webpack_require__(292);
+	var cancelEvents = __webpack_require__(291);
 	
-	var events = __webpack_require__(294);
+	var events = __webpack_require__(293);
 	
 	/*
 	 * Function helper
@@ -31296,7 +31224,7 @@
 
 
 /***/ },
-/* 291 */
+/* 290 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -31314,10 +31242,10 @@
 	}
 
 /***/ },
-/* 292 */
+/* 291 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var addPassiveEventListener = __webpack_require__(293);
+	var addPassiveEventListener = __webpack_require__(292);
 	
 	var events = ['mousedown', 'mousewheel', 'touchmove', 'keydown']
 	
@@ -31335,7 +31263,7 @@
 
 
 /***/ },
-/* 293 */
+/* 292 */
 /***/ function(module, exports) {
 
 	/*
@@ -31364,7 +31292,7 @@
 
 
 /***/ },
-/* 294 */
+/* 293 */
 /***/ function(module, exports) {
 
 	
@@ -31383,10 +31311,10 @@
 	module.exports = Events;
 
 /***/ },
-/* 295 */
+/* 294 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var addPassiveEventListener = __webpack_require__(293);
+	var addPassiveEventListener = __webpack_require__(292);
 	
 	var eventThrottler = function(eventHandler) {
 	  var eventHandlerTimeout;
@@ -31490,13 +31418,13 @@
 
 
 /***/ },
-/* 296 */
+/* 295 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var assign = __webpack_require__(4);
 	
-	var animateScroll = __webpack_require__(290);
-	var events = __webpack_require__(294);
+	var animateScroll = __webpack_require__(289);
+	var events = __webpack_require__(293);
 	
 	var __mapped = {};
 	var __activeLink;
@@ -31600,13 +31528,13 @@
 
 
 /***/ },
-/* 297 */
+/* 296 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	
 	var React = __webpack_require__(1);
-	var Helpers = __webpack_require__(289);
+	var Helpers = __webpack_require__(288);
 	
 	var Button = React.createClass({
 	  render: function () {
@@ -31618,13 +31546,13 @@
 
 
 /***/ },
-/* 298 */
+/* 297 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	
 	var React = __webpack_require__(1);
-	var Helpers = __webpack_require__(289);
+	var Helpers = __webpack_require__(288);
 	
 	var Element = React.createClass({
 	  render: function () {
@@ -31634,6 +31562,92 @@
 	
 	module.exports = Helpers.Element(Element);
 
+
+/***/ },
+/* 298 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRedux = __webpack_require__(178);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Footer = function (_React$Component) {
+	    _inherits(Footer, _React$Component);
+	
+	    function Footer(props) {
+	        _classCallCheck(this, Footer);
+	
+	        return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).call(this, props));
+	    }
+	
+	    _createClass(Footer, [{
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'div',
+	                { className: 'footer' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'wrapper' },
+	                    _react2.default.createElement(
+	                        'article',
+	                        { className: 'main' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'footer-white' },
+	                            '\xA9 2017 Stephanie Manwaring'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'footer-white inline' },
+	                            ' This site was built and designed with '
+	                        ),
+	                        ' ',
+	                        _react2.default.createElement('i', { className: 'fa fa-heart inline icon-white', 'aria-hidden': 'true' }),
+	                        ' ',
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'footer-white inline' },
+	                            'by yours truly'
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return Footer;
+	}(_react2.default.Component);
+	
+	/* -----------------    CONTAINER     ------------------ */
+	
+	function mapStateToProps(state) {
+	    return {};
+	}
+	
+	function mapDispatchToProps(dispatch) {
+	    return {};
+	}
+	
+	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Footer);
 
 /***/ }
 /******/ ]);
