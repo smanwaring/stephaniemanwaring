@@ -30462,7 +30462,7 @@
 	                                null,
 	                                _react2.default.createElement(
 	                                    'a',
-	                                    { href: '/assets/StephanieManwaring.pdf', target: '_blank' },
+	                                    { href: '/assets/Stephanie_Manwaring.pdf', target: '_blank' },
 	                                    _react2.default.createElement(
 	                                        'div',
 	                                        { className: 'link-box-resume' },
