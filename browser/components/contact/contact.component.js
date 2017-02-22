@@ -12,14 +12,13 @@ class Contact extends React.Component {
     render() {
         return (
             <div className="spacer-sm">
-                <h1>Let's have a chat</h1>
+                <h1>Get in touch</h1>
                 <div className="wrapper">
                     <article className="main">
                         <div className="flex-container-contact">
                             <a href="https://stackoverflow.com/users/7370337/stephanie-manwaring?tab=profile"><i className="fa fa-stack-overflow fa-3x icon" aria-hidden="true"/></a>
                             <a href="https://github.com/smanwaring"><i className="fa fa-github fa-3x icon" aria-hidden="true"/></a>
                             <a href="https://www.linkedin.com/in/stephaniemanwaring"><i className="fa fa-linkedin fa-3x icon" aria-hidden="true"/></a>
-                            <i className="fa fa-envelope fa-3x icon" aria-hidden="true"/>
                         </div>
                     </article>
                 </div>
@@ -44,3 +43,5 @@ export default connect(
 	mapStateToProps,
 	mapDispatchToProps
 )(Contact);
+
+//  <i className="fa fa-envelope fa-3x icon" aria-hidden="true"/>

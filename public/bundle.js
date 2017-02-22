@@ -30526,7 +30526,7 @@
 	                _react2.default.createElement(
 	                    'h1',
 	                    null,
-	                    'Let\'s have a chat'
+	                    'Get in touch'
 	                ),
 	                _react2.default.createElement(
 	                    'div',
@@ -30551,8 +30551,7 @@
 	                                'a',
 	                                { href: 'https://www.linkedin.com/in/stephaniemanwaring' },
 	                                _react2.default.createElement('i', { className: 'fa fa-linkedin fa-3x icon', 'aria-hidden': 'true' })
-	                            ),
-	                            _react2.default.createElement('i', { className: 'fa fa-envelope fa-3x icon', 'aria-hidden': 'true' })
+	                            )
 	                        )
 	                    )
 	                )
@@ -30574,6 +30573,8 @@
 	}
 	
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Contact);
+	
+	//  <i className="fa fa-envelope fa-3x icon" aria-hidden="true"/>
 
 /***/ },
 /* 285 */
