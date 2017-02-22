@@ -9,7 +9,6 @@ class Presentations extends React.Component {
                 <article className="main">
                     <div className="flex-container">
 
-
                         <a className="presentation-link" href="https://www.youtube.com/watch?v=XkqyDM28y4A&t=25s">
                             <div className="spacer-sm">
                                 <div className="video-sm-1"></div>
@@ -21,7 +20,6 @@ class Presentations extends React.Component {
                                 </div>
                             </div>
                         </a>
-              
 
                         <a className="presentation-link" href="https://www.youtube.com/watch?v=3CYqL3NCO_8">
                             <div className="spacer-sm">
@@ -34,7 +32,7 @@ class Presentations extends React.Component {
                                 </div>
                             </div>
                          </a>
-                       
+
                        <a className="presentation-link" href="https://www.youtube.com/watch?v=5izv_zAEQEI&t=1s">
                             <div className="spacer-sm">
                                 <div className="video-sm-3"></div>
