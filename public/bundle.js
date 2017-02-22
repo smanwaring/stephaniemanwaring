@@ -30300,70 +30300,82 @@
 	                            'div',
 	                            { className: 'flex-container' },
 	                            _react2.default.createElement(
-	                                'div',
-	                                { className: 'spacer-sm' },
-	                                _react2.default.createElement('div', { className: 'video-sm-1' }),
+	                                'a',
+	                                { className: 'presentation-link', href: 'https://www.youtube.com/watch?v=XkqyDM28y4A&t=25s' },
 	                                _react2.default.createElement(
 	                                    'div',
-	                                    { className: 'video-text-box' },
+	                                    { className: 'spacer-sm' },
+	                                    _react2.default.createElement('div', { className: 'video-sm-1' }),
 	                                    _react2.default.createElement(
 	                                        'div',
-	                                        { className: 'text-box' },
+	                                        { className: 'video-text-box' },
 	                                        _react2.default.createElement(
 	                                            'div',
-	                                            { className: 'video-text-title' },
-	                                            'TECH TALK: THE JAVASCRIPT SEMICOLON '
-	                                        ),
-	                                        _react2.default.createElement(
-	                                            'div',
-	                                            { className: 'video-text-sm' },
-	                                            'A semi-deep dive into the finer points of semicolons in JavaScript.'
+	                                            { className: 'text-box' },
+	                                            _react2.default.createElement(
+	                                                'div',
+	                                                { className: 'video-text-title' },
+	                                                'TECH TALK: THE JAVASCRIPT SEMICOLON '
+	                                            ),
+	                                            _react2.default.createElement(
+	                                                'div',
+	                                                { className: 'video-text-sm' },
+	                                                'A semi-deep dive into the finer points of semicolons in JavaScript.'
+	                                            )
 	                                        )
 	                                    )
 	                                )
 	                            ),
 	                            _react2.default.createElement(
-	                                'div',
-	                                { className: 'spacer-sm' },
-	                                _react2.default.createElement('div', { className: 'video-sm-2' }),
+	                                'a',
+	                                { className: 'presentation-link', href: 'https://www.youtube.com/watch?v=3CYqL3NCO_8' },
 	                                _react2.default.createElement(
 	                                    'div',
-	                                    { className: 'video-text-box' },
+	                                    { className: 'spacer-sm' },
+	                                    _react2.default.createElement('div', { className: 'video-sm-2' }),
 	                                    _react2.default.createElement(
 	                                        'div',
-	                                        { className: 'text-box' },
+	                                        { className: 'video-text-box' },
 	                                        _react2.default.createElement(
 	                                            'div',
-	                                            { className: 'video-text-title' },
-	                                            'PROJECT DEMO: SILENT-SALUTATIONS'
-	                                        ),
-	                                        _react2.default.createElement(
-	                                            'div',
-	                                            { className: 'video-text-sm' },
-	                                            'A demonstration of a simple silent-applauding app built during a 24-hour hackathon.'
+	                                            { className: 'text-box' },
+	                                            _react2.default.createElement(
+	                                                'div',
+	                                                { className: 'video-text-title' },
+	                                                'PROJECT DEMO: SILENT-SALUTATIONS'
+	                                            ),
+	                                            _react2.default.createElement(
+	                                                'div',
+	                                                { className: 'video-text-sm' },
+	                                                'A demonstration of a simple silent-applauding app built during a 24-hour hackathon.'
+	                                            )
 	                                        )
 	                                    )
 	                                )
 	                            ),
 	                            _react2.default.createElement(
-	                                'div',
-	                                { className: 'spacer-sm' },
-	                                _react2.default.createElement('div', { className: 'video-sm-3' }),
+	                                'a',
+	                                { className: 'presentation-link', href: 'https://www.youtube.com/watch?v=5izv_zAEQEI&t=1s' },
 	                                _react2.default.createElement(
 	                                    'div',
-	                                    { className: 'video-text-box' },
+	                                    { className: 'spacer-sm' },
+	                                    _react2.default.createElement('div', { className: 'video-sm-3' }),
 	                                    _react2.default.createElement(
 	                                        'div',
-	                                        { className: 'text-box' },
+	                                        { className: 'video-text-box' },
 	                                        _react2.default.createElement(
 	                                            'div',
-	                                            { className: 'video-text-title' },
-	                                            'PROJECT DEMO: ARCHIVER '
-	                                        ),
-	                                        _react2.default.createElement(
-	                                            'div',
-	                                            { className: 'video-text-sm' },
-	                                            'A group presentation on a custom version control desktop application built while at Fullstack Academy.'
+	                                            { className: 'text-box' },
+	                                            _react2.default.createElement(
+	                                                'div',
+	                                                { className: 'video-text-title' },
+	                                                'PROJECT DEMO: ARCHIVER '
+	                                            ),
+	                                            _react2.default.createElement(
+	                                                'div',
+	                                                { className: 'video-text-sm' },
+	                                                'A group presentation on a custom version control desktop application built while at Fullstack Academy.'
+	                                            )
 	                                        )
 	                                    )
 	                                )
@@ -31622,7 +31634,7 @@
 	                            ' This site was built and designed with '
 	                        ),
 	                        ' ',
-	                        _react2.default.createElement('i', { className: 'fa fa-heart inline icon-white', 'aria-hidden': 'true' }),
+	                        _react2.default.createElement('i', { className: 'fa fa-heart inline icon-custom', 'aria-hidden': 'true' }),
 	                        ' ',
 	                        _react2.default.createElement(
 	                            'div',

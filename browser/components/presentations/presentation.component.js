@@ -10,40 +10,43 @@ class Presentations extends React.Component {
                     <div className="flex-container">
 
 
-                        <div className="spacer-sm">
-                            <div className="video-sm-1">
-                            </div>
-                            <div className="video-text-box">
-                                <div className="text-box">
-                                    <div className="video-text-title">TECH TALK: THE JAVASCRIPT SEMICOLON </div>
-                                    <div className="video-text-sm">A semi-deep dive into the finer points of semicolons in JavaScript.</div>
+                        <a className="presentation-link" href="https://www.youtube.com/watch?v=XkqyDM28y4A&t=25s">
+                            <div className="spacer-sm">
+                                <div className="video-sm-1"></div>
+                                <div className="video-text-box">
+                                    <div className="text-box">
+                                        <div className="video-text-title">TECH TALK: THE JAVASCRIPT SEMICOLON </div>
+                                        <div className="video-text-sm">A semi-deep dive into the finer points of semicolons in JavaScript.</div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
               
 
+                        <a className="presentation-link" href="https://www.youtube.com/watch?v=3CYqL3NCO_8">
+                            <div className="spacer-sm">
+                                <div className="video-sm-2"></div>
+                                <div className="video-text-box">
+                                    <div className="text-box">
+                                        <div className="video-text-title">PROJECT DEMO: SILENT-SALUTATIONS</div>
+                                        <div className="video-text-sm">A demonstration of a simple silent-applauding app built during a 24-hour hackathon.</div>
+                                    </div>
+                                </div>
+                            </div>
+                         </a>
+                       
+                       <a className="presentation-link" href="https://www.youtube.com/watch?v=5izv_zAEQEI&t=1s">
+                            <div className="spacer-sm">
+                                <div className="video-sm-3"></div>
+                                <div className="video-text-box">
+                                    <div className="text-box">
+                                        <div className="video-text-title">PROJECT DEMO: ARCHIVER </div>
+                                        <div className="video-text-sm">A group presentation on a custom version control desktop application built while at Fullstack Academy.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
 
-                        <div className="spacer-sm">
-                            <div className="video-sm-2">
-                            </div>
-                            <div className="video-text-box">
-                                <div className="text-box">
-                                    <div className="video-text-title">PROJECT DEMO: SILENT-SALUTATIONS</div>
-                                    <div className="video-text-sm">A demonstration of a simple silent-applauding app built during a 24-hour hackathon.</div>
-                                </div>
-                            </div>
-                        </div>
-                       
-                       
-                        <div className="spacer-sm">
-                            <div className="video-sm-3"></div>
-                            <div className="video-text-box">
-                                <div className="text-box">
-                                    <div className="video-text-title">PROJECT DEMO: ARCHIVER </div>
-                                    <div className="video-text-sm">A group presentation on a custom version control desktop application built while at Fullstack Academy.</div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </article>
                 </div>

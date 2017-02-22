@@ -513,6 +513,11 @@ hr{
 Presentations
 */
 
+.presentation-link{
+    text-decoration: none;
+    color: #000;
+}
+
 .video-sm-1{
     width: 330px;
     height: 186px;
@@ -669,10 +674,10 @@ Footer
     font-size: 12px;
 }
 
-.icon-white {
+.icon-custom {
     color: white;
+    font-size: 10px;
 }
-
 
 
 /*
@@ -723,6 +728,3 @@ Contact
     color: gray;
 }
 
-.fa-heart {
-    font-size: 10px;
-}
