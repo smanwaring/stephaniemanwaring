@@ -1,16 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Scroll from 'react-scroll';
-import { Link } from 'react-router';
-
-
 
 let ScrollLink = Scroll.Link;
 let Element = Scroll.Element;
 let Events = Scroll.Events;
 let scroll = Scroll.animateScroll;
 let scrollSpy = Scroll.scrollSpy;
-
 
 class Navbar extends React.Component {
   constructor(props){
@@ -40,7 +36,7 @@ class Navbar extends React.Component {
                 <ScrollLink to="home" smooth={true} duration={500}><div className="menu-text logo"> /sm</div></ScrollLink>
                 <div className="mobile-menu"><i className="material-icons" onClick={this.handleMenuClick}>menu</i></div>
                 <div className={menuClasses} onClick={this.handleMenuClick}>
-                    <div className="menu-text">hello</div>
+                    <ScrollLink to="home" smooth={true} duration={500}><div className="menu-text">home</div></ScrollLink>
                     <ScrollLink to="about" smooth={true} duration={500}><div className="menu-text">about</div></ScrollLink>
                     <ScrollLink to="projects" smooth={true} duration={500}><div className="menu-text">projects</div></ScrollLink>
                     <ScrollLink to="presentations" smooth={true} duration={500}><div className="menu-text">presentations</div></ScrollLink>
