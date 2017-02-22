@@ -11,10 +11,7 @@ class Resume extends React.Component {
                 <article className="main">
                     <div className="flex-container">
                         <div>
-                            {/*<div className="link-box-resume">*/}
-                                {/*<div className="btn-lg-text">DOWNLOAD RESUME</div>*/}
-                                <a href="/assets/StephanieManwaring.pdf" target="_blank"><div className="link-box">RESUME</div></a>
-                            {/*</div>*/}
+                            <a href="/assets/StephanieManwaring.pdf" target="_blank"><div className="link-box-resume">DOWNLOAD RESUME</div></a>
                         </div>
                     </div>
                 </article>

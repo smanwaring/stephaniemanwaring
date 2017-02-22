@@ -30465,8 +30465,8 @@
 	                                    { href: '/assets/StephanieManwaring.pdf', target: '_blank' },
 	                                    _react2.default.createElement(
 	                                        'div',
-	                                        { className: 'link-box' },
-	                                        'RESUME'
+	                                        { className: 'link-box-resume' },
+	                                        'DOWNLOAD RESUME'
 	                                    )
 	                                )
 	                            )
