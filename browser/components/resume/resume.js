@@ -3,11 +3,6 @@ import { connect } from 'react-redux';
 
 
 class Resume extends React.Component {
-    constructor(props){
-        super(props);
-    };
-
-
     render() {
         return (
             <div className="spacer spacer-extra">

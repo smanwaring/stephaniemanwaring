@@ -30431,10 +30431,10 @@
 	var Resume = function (_React$Component) {
 	    _inherits(Resume, _React$Component);
 	
-	    function Resume(props) {
+	    function Resume() {
 	        _classCallCheck(this, Resume);
 	
-	        return _possibleConstructorReturn(this, (Resume.__proto__ || Object.getPrototypeOf(Resume)).call(this, props));
+	        return _possibleConstructorReturn(this, (Resume.__proto__ || Object.getPrototypeOf(Resume)).apply(this, arguments));
 	    }
 	
 	    _createClass(Resume, [{

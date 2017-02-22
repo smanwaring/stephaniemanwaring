@@ -21,45 +21,43 @@ Parallax
 */
 
 .parallax-projects { 
-    /* The image used */
-    background-image: url("projects.jpg");
-    /* Set a specific height */
-    height: 150px;   
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  /* The image used */
+  background-image: url("projects.jpg");
+  /* Set a specific height */
+  height: 150px;   
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .parallax-presentations { 
-    /* The image used */
-    background-image: url("presentations.jpg");
-    /* Set a specific height */
-    height: 150px;   
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
+  /* The image used */
+  background-image: url("presentations.jpg");
+  /* Set a specific height */
+  height: 150px;   
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .parallax-resume { 
-    /* The image used */
-    background-image: url("resume.jpg");
-    /* Set a specific height */
-    height: 150px;   
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
+  /* The image used */
+  background-image: url("resume.jpg");
+  /* Set a specific height */
+  height: 150px;   
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .parallax-contact { 
-    /* The image used */
-    background-image: url("contact.jpg");
-    /* Set a specific height */
-    height: 150px;   
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  /* The image used */
+  background-image: url("contact.jpg");
+  /* Set a specific height */
+  height: 150px;   
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 
@@ -230,10 +228,6 @@ HOMEPAGE
 
 }
 
-
-
-
-
 /*
 *
 *
@@ -264,31 +258,31 @@ h2 {
 }
 
 .flexbox-container > div:first-child {
-	margin-right: 20px;
+  margin-right: 20px;
 }
 
-.about-padding{
-    margin-left: 50px;
+.about-padding {
+  margin-left: 50px;
 }
 
-.about-header{
-    font-size: 24px;
+.about-header {
+  font-size: 24px;
 }
 
-.left{
-    text-align: left;
+.left {
+  text-align: left;
 }
 
-.about-background{
-    background-color: #f8f9fb;
+.about-background { 
+  background-color: #f8f9fb;
 }
 
 .inline {
-    display: inline;
+  display: inline;
 }
 
 .yellow {
-    color: #ffcf52
+  color: #ffcf52
 }
 
 /*
@@ -507,8 +501,6 @@ hr{
 
 }
 
-
-
 /*
 *
 *
@@ -624,7 +616,6 @@ Presentations
   font-weight: 600;
 }
 
-
 .btn-lg-text {
   margin-top: 20px;
 }
@@ -679,7 +670,6 @@ Footer
   font-size: 10px;
 }
 
-
 /*
 *
 *
@@ -689,7 +679,6 @@ Spacers
 *
 *
 */
-
 
 .spacer {
   padding-top: 40px;
@@ -718,7 +707,6 @@ Contact
 *
 *
 */
-
 
 .icon {
   color: black;
