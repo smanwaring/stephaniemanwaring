@@ -9,16 +9,11 @@ import Navbar from '../navbar/navbar.component';
 import Footer from '../footer/footer.component';
 import Scroll from 'react-scroll';
 
-
-
 let ScrollLink = Scroll.Link;
 let Element = Scroll.Element;
 let Events = Scroll.Events;
 let scroll = Scroll.animateScroll;
 let scrollSpy = Scroll.scrollSpy;
-
-
-
 
 class Homepage extends React.Component {
 

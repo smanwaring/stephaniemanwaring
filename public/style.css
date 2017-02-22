@@ -9,78 +9,84 @@ html, body {
     
 }
 
+
+/*
+*
+*
+*
+Parallax
+*
+*
+*
+*/
+
 .parallax-projects { 
     /* The image used */
     background-image: url("projects.jpg");
-
     /* Set a specific height */
-    height: 250px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
+    height: 250px;   
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .parallax-presentations { 
     /* The image used */
     background-image: url("presentations.jpg");
-
     /* Set a specific height */
-    height: 250px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
+    height: 250px;   
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+
 }
 
 .parallax-resume { 
     /* The image used */
     background-image: url("resume.jpg");
-
     /* Set a specific height */
-    height: 250px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
+    height: 250px;   
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+
 }
 
 .parallax-contact { 
     /* The image used */
     background-image: url("contact.jpg");
-
     /* Set a specific height */
-    height: 250px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
+    height: 250px;   
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
 }
 
 
+@media( min-width: 800px ) {
+    .parallax-projects { 
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+    }
 
+    .parallax-presentations { 
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+    }
 
-.parallax-home { 
-    /* The image used */
-    background-image: url("projects.png");
+    .parallax-resume { 
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+    }
 
-    /* Set a specific height */
-    height: 100%; 
+    .parallax-contact { 
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+    }
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
+
+
 
 
 
@@ -209,6 +215,15 @@ HOMEPAGE
   .header-font {
     font-size: 100px;
   }
+}
+
+
+@media( min-width: 800px ) {
+    .wallpaper { 
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+    }
+
 }
 
 
