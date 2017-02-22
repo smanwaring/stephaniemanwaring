@@ -30461,12 +30461,12 @@
 	                                'div',
 	                                null,
 	                                _react2.default.createElement(
-	                                    'div',
-	                                    { className: 'link-box-resume' },
+	                                    'a',
+	                                    { href: '/assets/StephanieManwaring.pdf', target: '_blank' },
 	                                    _react2.default.createElement(
 	                                        'div',
-	                                        { className: 'btn-lg-text' },
-	                                        'DOWNLOAD RESUME'
+	                                        { className: 'link-box' },
+	                                        'RESUME'
 	                                    )
 	                                )
 	                            )
