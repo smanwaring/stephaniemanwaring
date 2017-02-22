@@ -33,15 +33,15 @@ class Navbar extends React.Component {
       const menuClasses = this.state.menuOpen ? 'menu expand' : 'menu';
         return (
             <div className="navbar">
-                <ScrollLink to="home" smooth={true} duration={500}><div className="menu-text logo"> /sm</div></ScrollLink>
+                <ScrollLink to="home" smooth={true} duration={500}><div className="menu-text logo pointer"> /sm</div></ScrollLink>
                 <div className="mobile-menu"><i className="material-icons" onClick={this.handleMenuClick}>menu</i></div>
                 <div className={menuClasses} onClick={this.handleMenuClick}>
-                    <ScrollLink to="home" smooth={true} duration={500}><div className="menu-text">home</div></ScrollLink>
-                    <ScrollLink to="about" smooth={true} duration={500}><div className="menu-text">about</div></ScrollLink>
-                    <ScrollLink to="projects" smooth={true} duration={500}><div className="menu-text">projects</div></ScrollLink>
-                    <ScrollLink to="presentations" smooth={true} duration={500}><div className="menu-text">presentations</div></ScrollLink>
-                    <ScrollLink to="resume" smooth={true} duration={900}><div className="menu-text">resume</div></ScrollLink>
-                    <ScrollLink to="contact" smooth={true} duration={900}><div className="menu-text">contact</div></ScrollLink>
+                    <ScrollLink to="home" smooth={true} duration={500}><div className="menu-text pointer">home</div></ScrollLink>
+                    <ScrollLink to="about" smooth={true} duration={500}><div className="menu-text pointer">about</div></ScrollLink>
+                    <ScrollLink to="projects" smooth={true} duration={500}><div className="menu-text pointer">projects</div></ScrollLink>
+                    <ScrollLink to="presentations" smooth={true} duration={500}><div className="menu-text pointer">presentations</div></ScrollLink>
+                    <ScrollLink to="resume" smooth={true} duration={900}><div className="menu-text pointer">resume</div></ScrollLink>
+                    <ScrollLink to="contact" smooth={true} duration={900}><div className="menu-text pointer">contact</div></ScrollLink>
                 </div>
             </div>
         );

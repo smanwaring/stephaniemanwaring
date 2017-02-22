@@ -30666,7 +30666,7 @@
 	          { to: 'home', smooth: true, duration: 500 },
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'menu-text logo' },
+	            { className: 'menu-text logo pointer' },
 	            ' /sm'
 	          )
 	        ),
@@ -30687,7 +30687,7 @@
 	            { to: 'home', smooth: true, duration: 500 },
 	            _react2.default.createElement(
 	              'div',
-	              { className: 'menu-text' },
+	              { className: 'menu-text pointer' },
 	              'home'
 	            )
 	          ),
@@ -30696,7 +30696,7 @@
 	            { to: 'about', smooth: true, duration: 500 },
 	            _react2.default.createElement(
 	              'div',
-	              { className: 'menu-text' },
+	              { className: 'menu-text pointer' },
 	              'about'
 	            )
 	          ),
@@ -30705,7 +30705,7 @@
 	            { to: 'projects', smooth: true, duration: 500 },
 	            _react2.default.createElement(
 	              'div',
-	              { className: 'menu-text' },
+	              { className: 'menu-text pointer' },
 	              'projects'
 	            )
 	          ),
@@ -30714,7 +30714,7 @@
 	            { to: 'presentations', smooth: true, duration: 500 },
 	            _react2.default.createElement(
 	              'div',
-	              { className: 'menu-text' },
+	              { className: 'menu-text pointer' },
 	              'presentations'
 	            )
 	          ),
@@ -30723,7 +30723,7 @@
 	            { to: 'resume', smooth: true, duration: 900 },
 	            _react2.default.createElement(
 	              'div',
-	              { className: 'menu-text' },
+	              { className: 'menu-text pointer' },
 	              'resume'
 	            )
 	          ),
@@ -30732,7 +30732,7 @@
 	            { to: 'contact', smooth: true, duration: 900 },
 	            _react2.default.createElement(
 	              'div',
-	              { className: 'menu-text' },
+	              { className: 'menu-text pointer' },
 	              'contact'
 	            )
 	          )
