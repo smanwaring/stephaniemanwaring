@@ -486,7 +486,7 @@ hr{
 }
 
 .white {
-    background-color: white;
+  background-color: white;
 }
 
 @media( min-width: 800px ) {
@@ -568,7 +568,7 @@ Presentations
   font-size: 12px;
 }
 
-.video-text-title{
+.video-text-title {
   font-size: 16px;
   margin-bottom: 10px;
   font-weight: 900;
@@ -624,20 +624,6 @@ Presentations
   font-weight: 600;
 }
 
-.link-box-resume:hover {
-  border-color: black;
-  background-color:black; 
-  font-size: 18px;
-  text-align: center;
-  border-style: solid;
-  border-width: 2px;
-  color: white;
-  transition: 0.3s all;
-  font-weight: 600;
-  height: 60px;
-  width: 220px;
-}
-
 
 .btn-lg-text {
   margin-top: 20px;
@@ -645,6 +631,22 @@ Presentations
 
 .video-text-title:hover {
   color: gray;
+}
+
+@media( min-width: 800px ) {
+  .link-box-resume:hover {
+    border-color: black;
+    background-color:black; 
+    font-size: 18px;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    color: white;
+    transition: 0.3s all;
+    font-weight: 600;
+    height: 60px;
+    width: 220px;
+  }
 }
 
 
