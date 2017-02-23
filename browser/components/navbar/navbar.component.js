@@ -8,7 +8,7 @@ let Events = Scroll.Events;
 let scroll = Scroll.animateScroll;
 let scrollSpy = Scroll.scrollSpy;
 
-class Navbar extends React.Component {
+export default class Navbar extends React.Component {
   constructor(props){
     super(props);
     this.state = {
@@ -25,9 +25,9 @@ class Navbar extends React.Component {
     scroll.scrollTo(100);
   }
 
-    handleMenuClick(){
-        this.setState( { menuOpen: !this.state.menuOpen}  );
-    }
+  handleMenuClick(){
+      this.setState( { menuOpen: !this.state.menuOpen}  );
+  }
 
     render() {
       const menuClasses = this.state.menuOpen ? 'menu expand' : 'menu';
@@ -48,19 +48,3 @@ class Navbar extends React.Component {
     }
 }
 
-/* -----------------    CONTAINER     ------------------ */
-
-function mapStateToProps(state){
-	return {
-	};
-}
-
-function mapDispatchToProps(dispatch){
-	return {
-	};
-}
-
-export default connect(
-	mapStateToProps,
-	mapDispatchToProps
-)(Navbar);

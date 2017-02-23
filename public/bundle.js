@@ -29821,10 +29821,10 @@
 /* 280 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
+	  value: true
 	});
 	
 	var _react = __webpack_require__(1);
@@ -29833,309 +29833,208 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	var languages = ['JavaScript', 'HTML5', 'CSS3', 'Sass'];
+	var technologies = ['React', 'React-Redux', 'Express', 'Node.js', 'jQuery', 'Mocha / Chai', 'AJAX', 'PostgresSQL', 'Sequelize', 'Angular 2'];
+	
 	exports.default = function () {
-	    return _react2.default.createElement(
-	        "div",
-	        { className: "spacer" },
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'spacer' },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'wrapper' },
+	      _react2.default.createElement(
+	        'aside',
+	        { className: 'aside aside-1' },
 	        _react2.default.createElement(
-	            "div",
-	            { className: "wrapper" },
-	            _react2.default.createElement(
-	                "aside",
-	                { className: "aside aside-1" },
-	                _react2.default.createElement(
-	                    "div",
-	                    null,
-	                    "Nice to meet you."
-	                )
-	            ),
-	            _react2.default.createElement(
-	                "article",
-	                { className: "main" },
-	                _react2.default.createElement(
-	                    "div",
-	                    { className: "inline" },
-	                    " I'm Stephanie Manwaring. I'm a former marketing director turned full stack web developer. I attended Fullstack Academy of Code where I currently work as a teaching fellow and engineering intern. I've worked independently and in small teams to develop sweet projects with the technologies I've learned. I currently reside in NYC and continue to be inspired by its tech community. I "
-	                ),
-	                " ",
-	                _react2.default.createElement("i", { className: "fa fa-heart inline yellow", "aria-hidden": "true" }),
-	                " ",
-	                _react2.default.createElement(
-	                    "div",
-	                    { className: "inline" },
-	                    "the web.",
-	                    _react2.default.createElement("br", null),
-	                    _react2.default.createElement("br", null),
-	                    "When I'm not coding you can find me cycling on the streets on NYC, running through Central Park, putting together a four-course meal, board-gaming it up with friends, or doing laundry."
-	                )
-	            )
-	        ),
-	        _react2.default.createElement("hr", null),
-	        _react2.default.createElement(
-	            "div",
-	            { className: "wrapper" },
-	            _react2.default.createElement(
-	                "aside",
-	                { className: "aside aside-1" },
-	                _react2.default.createElement(
-	                    "div",
-	                    { className: "text-bold" },
-	                    "Languages"
-	                )
-	            ),
-	            _react2.default.createElement(
-	                "article",
-	                { className: "main" },
-	                _react2.default.createElement(
-	                    "ul",
-	                    { className: "dashed" },
-	                    _react2.default.createElement(
-	                        "li",
-	                        null,
-	                        "JavaScript"
-	                    ),
-	                    _react2.default.createElement(
-	                        "li",
-	                        null,
-	                        "HTML5"
-	                    ),
-	                    _react2.default.createElement(
-	                        "li",
-	                        null,
-	                        "CSS3"
-	                    ),
-	                    _react2.default.createElement(
-	                        "li",
-	                        null,
-	                        "Sass"
-	                    )
-	                )
-	            )
-	        ),
-	        _react2.default.createElement("hr", null),
-	        _react2.default.createElement(
-	            "div",
-	            { className: "wrapper" },
-	            _react2.default.createElement(
-	                "aside",
-	                { className: "aside aside-1" },
-	                _react2.default.createElement(
-	                    "div",
-	                    null,
-	                    "Technologies"
-	                )
-	            ),
-	            _react2.default.createElement(
-	                "article",
-	                { className: "main" },
-	                _react2.default.createElement(
-	                    "ul",
-	                    { className: "left column-flex" },
-	                    _react2.default.createElement(
-	                        "span",
-	                        { className: "column-2" },
-	                        _react2.default.createElement(
-	                            "div",
-	                            { className: "bold" },
-	                            "Frameworks/libraries"
-	                        ),
-	                        _react2.default.createElement(
-	                            "li",
-	                            null,
-	                            "React"
-	                        ),
-	                        _react2.default.createElement(
-	                            "li",
-	                            null,
-	                            "React-Redux"
-	                        ),
-	                        _react2.default.createElement(
-	                            "li",
-	                            null,
-	                            "Angular 2"
-	                        ),
-	                        _react2.default.createElement(
-	                            "li",
-	                            null,
-	                            "Node.js"
-	                        ),
-	                        _react2.default.createElement(
-	                            "li",
-	                            null,
-	                            "jQuery"
-	                        ),
-	                        _react2.default.createElement(
-	                            "li",
-	                            null,
-	                            "Express"
-	                        ),
-	                        _react2.default.createElement(
-	                            "li",
-	                            null,
-	                            "Mocha / Chai"
-	                        ),
-	                        _react2.default.createElement(
-	                            "li",
-	                            null,
-	                            "AJAX"
-	                        ),
-	                        _react2.default.createElement(
-	                            "li",
-	                            null,
-	                            "PostgresSQL"
-	                        ),
-	                        _react2.default.createElement(
-	                            "li",
-	                            null,
-	                            "Sequelize"
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        "span",
-	                        { className: "column-2" },
-	                        _react2.default.createElement(
-	                            "div",
-	                            { className: "about-top-spacer bold" },
-	                            "Day-to-day comfort"
-	                        ),
-	                        _react2.default.createElement(
-	                            "li",
-	                            null,
-	                            "Version Control (GIT)"
-	                        ),
-	                        _react2.default.createElement(
-	                            "li",
-	                            null,
-	                            "Agile Methodology"
-	                        )
-	                    )
-	                )
-	            )
+	          'div',
+	          null,
+	          'Nice to meet you.'
 	        )
-	    );
+	      ),
+	      _react2.default.createElement(
+	        'article',
+	        { className: 'main' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'inline' },
+	          ' I\'m Stephanie Manwaring. I\'m a former marketing director turned full stack web developer. I attended Fullstack Academy of Code where I currently work as a teaching fellow and engineering intern. I\'ve worked independently and in small teams to develop sweet projects with the technologies I\'ve learned. I currently reside in NYC and continue to be inspired by its tech community. I '
+	        ),
+	        ' ',
+	        _react2.default.createElement('i', { className: 'fa fa-heart inline yellow', 'aria-hidden': 'true' }),
+	        ' ',
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'inline' },
+	          'the web.',
+	          _react2.default.createElement('br', null),
+	          _react2.default.createElement('br', null),
+	          'When I\'m not coding you can find me cycling on the streets on NYC, running through Central Park, putting together a four-course meal, board-gaming it up with friends, or doing laundry.'
+	        )
+	      )
+	    ),
+	    _react2.default.createElement('hr', null),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'wrapper' },
+	      _react2.default.createElement(
+	        'aside',
+	        { className: 'aside aside-1' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'text-bold' },
+	          'Languages'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'article',
+	        { className: 'main' },
+	        _react2.default.createElement(
+	          'ul',
+	          null,
+	          languages.map(function (language, i) {
+	            return _react2.default.createElement(
+	              'li',
+	              { key: i },
+	              language
+	            );
+	          })
+	        )
+	      )
+	    ),
+	    _react2.default.createElement('hr', null),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'wrapper' },
+	      _react2.default.createElement(
+	        'aside',
+	        { className: 'aside aside-1' },
+	        _react2.default.createElement(
+	          'div',
+	          null,
+	          'Technologies'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'article',
+	        { className: 'main' },
+	        _react2.default.createElement(
+	          'ul',
+	          { className: 'left column-flex' },
+	          _react2.default.createElement(
+	            'span',
+	            { className: 'column-2' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'bold' },
+	              'Frameworks/libraries'
+	            ),
+	            technologies.map(function (technology, i) {
+	              return _react2.default.createElement(
+	                'li',
+	                { key: 'technology-' + i },
+	                technology
+	              );
+	            })
+	          ),
+	          _react2.default.createElement(
+	            'span',
+	            { className: 'column-2' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'about-top-spacer bold' },
+	              'Day-to-day comfort'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Version Control (GIT)'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Agile Methodology'
+	            )
+	          )
+	        )
+	      )
+	    )
+	  );
 	};
 
 /***/ },
 /* 281 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
-			value: true
+		value: true
 	});
 	
 	var _react = __webpack_require__(1);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _projectsList = __webpack_require__(300);
+	
+	var _projectsList2 = _interopRequireDefault(_projectsList);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	exports.default = function () {
-			return _react2.default.createElement(
-					"div",
-					{ className: "spacer" },
+		return _react2.default.createElement(
+			'div',
+			{ className: 'spacer' },
+			_projectsList2.default.map(function (project) {
+				return _react2.default.createElement(
+					'div',
+					{ key: project.id, className: 'wrapper bottom-spacer' },
 					_react2.default.createElement(
-							"div",
-							{ className: "wrapper bottom-spacer" },
-							_react2.default.createElement(
-									"aside",
-									{ className: "aside aside-1" },
-									_react2.default.createElement(
-											"ul",
-											{ className: "flex-container" },
-											_react2.default.createElement("li", { className: "video-lg-1" })
-									)
-							),
-							_react2.default.createElement(
-									"article",
-									{ className: "main" },
-									_react2.default.createElement(
-											"div",
-											{ className: "project-head" },
-											"Silent-Salutations"
-									),
-									_react2.default.createElement(
-											"div",
-											{ className: "main-text-project" },
-											"A fun single page web application inspired by Periscope's floating hearts and Facebook's reaction icons. Create a custom clap board or join one that already exists to view and/or participate in silent reactions from a audience, gauge audience sentiment, or use it for a colorful visual applaud from remote users during your presentation. "
-									),
-									_react2.default.createElement("br", null),
-									_react2.default.createElement(
-											"div",
-											{ className: "main-text-project" },
-											"Powered by: React, Redux, Express, PostgreSql, Socket.io, HTML5/CSS3 and my own React-Redux boilerplate"
-									),
-									_react2.default.createElement("br", null),
-									_react2.default.createElement(
-											"a",
-											{ href: "https://github.com/smanwaring/silent-clapper" },
-											_react2.default.createElement(
-													"div",
-													{ className: "link-box" },
-													"GITHUB"
-											)
-									),
-									_react2.default.createElement(
-											"div",
-											{ className: "link-box" },
-											"LIVESITE"
-									)
-							)
+						'aside',
+						{ className: 'aside aside-1' },
+						_react2.default.createElement(
+							'ul',
+							{ className: 'flex-container' },
+							_react2.default.createElement('li', { className: 'video-lg-' + project.id })
+						)
 					),
 					_react2.default.createElement(
-							"div",
-							{ className: "wrapper bottom-spacer" },
-							_react2.default.createElement(
-									"aside",
-									{ className: "aside aside-1" },
-									_react2.default.createElement(
-											"ul",
-											{ className: "flex-container" },
-											_react2.default.createElement("li", { className: "video-lg-2" })
-									)
-							),
-							_react2.default.createElement(
-									"article",
-									{ className: "main" },
-									_react2.default.createElement(
-											"div",
-											{ className: "project-head" },
-											"Archiver"
-									),
-									_react2.default.createElement(
-											"div",
-											{ className: "main-text-project" },
-											"A custom version-control desktop application for text documents. Users can create teams of collaborators for specific documents and any collaborator can push up changes for others to view or download to their computer. Archiver let's users have a complete version history of all changes too. Archiver doesn't use any external APIs or git commands. Instead, we built custom version control commands to create a unique user experience that doesn't involve having to learn the command line or having to interface with Github."
-									),
-									_react2.default.createElement("br", null),
-									_react2.default.createElement(
-											"div",
-											{ className: "main-text-project" },
-											"Powered by: Electron.js, React, Redux, Express, PostreSql HTML5/CSS3"
-									),
-									_react2.default.createElement("br", null),
-									_react2.default.createElement(
-											"a",
-											{ href: "https://github.com/chehitskenniexd/Archiver" },
-											_react2.default.createElement(
-													"div",
-													{ className: "link-box" },
-													"GITHUB"
-											)
-									),
-									_react2.default.createElement(
-											"a",
-											{ href: "https://www.youtube.com/watch?v=5izv_zAEQEI" },
-											_react2.default.createElement(
-													"div",
-													{ className: "link-box" },
-													"DEMO"
-											)
-									)
-							)
+						'article',
+						{ className: 'main' },
+						_react2.default.createElement(
+							'div',
+							{ className: 'project-head' },
+							project.title
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'main-text-project' },
+							project.description
+						),
+						_react2.default.createElement('br', null),
+						_react2.default.createElement(
+							'div',
+							{ className: 'main-text-project' },
+							'Powered by: ',
+							project.poweredBy
+						),
+						_react2.default.createElement('br', null),
+						project.links.map(function (link) {
+							return _react2.default.createElement(
+								'a',
+								{ key: link.url, href: link.url },
+								_react2.default.createElement(
+									'div',
+									{ className: 'link-box' },
+									link.display
+								)
+							);
+						})
 					)
-			);
+				);
+			})
+		);
 	};
 
 /***/ },
@@ -30468,17 +30367,7 @@
 	  return Navbar;
 	}(_react2.default.Component);
 	
-	/* -----------------    CONTAINER     ------------------ */
-	
-	function mapStateToProps(state) {
-	  return {};
-	}
-	
-	function mapDispatchToProps(dispatch) {
-	  return {};
-	}
-	
-	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Navbar);
+	exports.default = Navbar;
 
 /***/ },
 /* 286 */
@@ -31348,6 +31237,32 @@
 	    )
 	  );
 	};
+
+/***/ },
+/* 299 */,
+/* 300 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var projects = [{
+	  id: 1,
+	  title: 'Silent-Salutations',
+	  description: " A fun single page web application inspired by Periscope's floating hearts and Facebook's reaction icons. Create a custom clap board or join one that already exists to view and/or participate in silent reactions from a audience, gauge audience sentiment, or use it for a colorful visual applaud from remote users during your presentation.",
+	  poweredBy: ' React, Redux, Express, PostgreSql, Socket.io, HTML5/CSS3 and my own React-Redux boilerplate',
+	  links: [{ url: 'https://github.com/smanwaring/silent-clapper', display: 'GITHUB' }, { url: "https://github.com/smanwaring", display: 'LIVESITE' }]
+	}, {
+	  id: 2,
+	  title: 'Archiver',
+	  description: "A custom version-control desktop application for text documents. Users can create teams of collaborators for specific documents and any collaborator can push up changes for others to view or download to their computer. Archiver let's users have a complete version history of all  changes too. Archiver doesn't use any external APIs or git commands. Instead, we built custom version control commands to create a unique user experience that doesn't involve having to learn the command line or having to interface with Github.",
+	  poweredBy: 'Electron.js, React, Redux, Express, PostreSql HTML5/CSS3',
+	  links: [{ url: 'https://github.com/chehitskenniexd/Archiver', display: 'GIT' }, { url: 'https://www.youtube.com/watch?v=5izv_zAEQEI', display: 'DEMO' }]
+	}];
+	
+	exports.default = projects;
 
 /***/ }
 /******/ ]);
