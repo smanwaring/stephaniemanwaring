@@ -4,7 +4,7 @@ const projects = [
     title: 'Silent-Salutations',
     description: " A fun single page web application inspired by Periscope's floating hearts and Facebook's reaction icons. Create a custom clap board or join one that already exists to view and/or participate in silent reactions from a audience, gauge audience sentiment, or use it for a colorful visual applaud from remote users during your presentation.", 
     poweredBy: ' React, Redux, Express, PostgreSql, Socket.io, HTML5/CSS3 and my own React-Redux boilerplate', 
-    links: [ { url: 'https://github.com/smanwaring/silent-clapper', display: 'GITHUB' }, {url: "https://github.com/smanwaring", display: 'LIVESITE' } ]
+    links: [ { url: 'https://github.com/smanwaring/silent-clapper', display: 'GITHUB' }, {url: "https://silent-salutations.herokuapp.com/", display: 'LIVESITE' } ]
   },
   {
     id: 2,
