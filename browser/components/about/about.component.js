@@ -34,7 +34,7 @@ class About extends React.Component {
                     <div className="text-bold" >Languages</div>
                 </aside>
                 <article className="main">
-                    <ul>
+                    <ul className="dashed">
                         <li>JavaScript</li>
                         <li>HTML5</li>
                         <li>CSS3</li>
@@ -52,7 +52,7 @@ class About extends React.Component {
                 <article className="main">
                     <ul className="left column-flex">
                      <span className="column-2">
-                        <div>Frameworks/libraries</div>
+                      <div className="bold">Frameworks/libraries</div>
                         <li>React</li>
                         <li>React-Redux</li>
                         <li>Angular 2</li>
@@ -65,7 +65,7 @@ class About extends React.Component {
                         <li>Sequelize</li>
                     </span>
                     <span className="column-2">
-                        <div className="about-top-spacer">Day-to-day comfort</div>
+                        <div className="about-top-spacer bold">Day-to-day comfort</div>
                         <li>Version Control (GIT)</li>
                         <li>Agile Methodology</li>
                     </span>

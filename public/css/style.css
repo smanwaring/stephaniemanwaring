@@ -289,6 +289,14 @@ h2 {
   color: #ffcf52
 }
 
+.bold {
+  font-weight: 400;
+}
+
+ul {
+  list-style-position: inside;
+}
+
 /*
 *
 *

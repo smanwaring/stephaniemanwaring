@@ -29946,7 +29946,7 @@
 	                        { className: 'main' },
 	                        _react2.default.createElement(
 	                            'ul',
-	                            null,
+	                            { className: 'dashed' },
 	                            _react2.default.createElement(
 	                                'li',
 	                                null,
@@ -29994,7 +29994,7 @@
 	                                { className: 'column-2' },
 	                                _react2.default.createElement(
 	                                    'div',
-	                                    null,
+	                                    { className: 'bold' },
 	                                    'Frameworks/libraries'
 	                                ),
 	                                _react2.default.createElement(
@@ -30053,7 +30053,7 @@
 	                                { className: 'column-2' },
 	                                _react2.default.createElement(
 	                                    'div',
-	                                    { className: 'about-top-spacer' },
+	                                    { className: 'about-top-spacer bold' },
 	                                    'Day-to-day comfort'
 	                                ),
 	                                _react2.default.createElement(
