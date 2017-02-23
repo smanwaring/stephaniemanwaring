@@ -11,7 +11,7 @@ const projects = [
     title: 'Archiver', 
     description: "A custom version-control desktop application for text documents. Users can create teams of collaborators for specific documents and any collaborator can push up changes for others to view or download to their computer. Archiver let's users have a complete version history of all  changes too. Archiver doesn't use any external APIs or git commands. Instead, we built custom version control commands to create a unique user experience that doesn't involve having to learn the command line or having to interface with Github.", 
     poweredBy: 'Electron.js, React, Redux, Express, PostreSql HTML5/CSS3', 
-    links: [ { url: 'https://github.com/chehitskenniexd/Archiver', display: 'GIT'}, {url: 'https://www.youtube.com/watch?v=5izv_zAEQEI', display: 'DEMO' } ]
+    links: [ { url: 'https://github.com/chehitskenniexd/Archiver', display: 'GITHUB'}, {url: 'https://www.youtube.com/watch?v=5izv_zAEQEI', display: 'DEMO' } ]
   }
 ];
 
