@@ -38,7 +38,7 @@ class About extends React.Component {
                         <li>JavaScript</li>
                         <li>HTML5</li>
                         <li>CSS3</li>
-                        <li>SASS/LESS</li>
+                        <li>Sass</li>
                     </ul>
                 </article>
                 </div>
