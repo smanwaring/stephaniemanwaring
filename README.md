@@ -1,1 +1,3 @@
-# react-redux-boilerplate
+# stephanie.manwaring.io
+
+A personal portfolio site.
