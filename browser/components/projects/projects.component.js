@@ -1,6 +1,8 @@
 import React from 'react';
 import projects from './projects-list';
 
+//why do you make my identation look so bad github :/
+
 export default () => (
 	<div className="spacer">
 		{ projects.map( project => {
