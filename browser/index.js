@@ -4,7 +4,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { Router, Route, hashHistory, IndexRoute } from 'react-router';
+import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 import store from './store';
 
 
@@ -22,7 +22,7 @@ import Resume from './components/resume/resume';
 
 ReactDOM.render(
   <Provider store={store}>
-	    <Router history={hashHistory}>
+	    <Router history={browserHistory}>
 			<Route path="/"component={Root}>
 				<Route path="/hello" component={Homepage}/>
 				<Route path="/about" component={About}/>
