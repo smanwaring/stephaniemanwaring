@@ -348,7 +348,8 @@ Projects
   border-color: rgb(237, 238, 239);
   border-width: 3px;
   background-image: url('/img/silent-sal-img.png');
-  background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -361,7 +362,8 @@ Projects
   border-color: rgb(237, 238, 239);
   border-width: 3px;
   background-image: url('/img/archiver-img.png');
-  background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
   background-repeat: no-repeat;
 }
 
