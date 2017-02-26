@@ -7,6 +7,8 @@ import Contact from '../contact/contact.component';
 import Navbar from '../navbar/navbar.component';
 import Footer from '../footer/footer.component';
 import Scroll from 'react-scroll';
+import './homepage.scss';
+import './shared.scss';
 
 let ScrollLink = Scroll.Link;
 let Element = Scroll.Element;
@@ -16,36 +18,36 @@ let scrollSpy = Scroll.scrollSpy;
 
 export default () => (
   <div>
-      <Navbar />
-      <Element name="home">
-        <div className="wallpaper">
-          <div className="info">
-              <div className="header-font">WEB</div>
-              <div className="header-font">DEVELOPER</div>
-          </div>
+    <Navbar />
+    <Element name="home">
+      <div className="wallpaper">
+        <div className="info">
+          <div className="header-font">WEB</div>
+          <div className="header-font">DEVELOPER</div>
         </div>
-      </Element>
-      <Element name="about">
-        <About />
-      </Element>
-      <div className="parallax-projects"></div>
-      <Element name="projects">
-        <Projects />
-      </Element>
-      <div className="parallax-presentations">
       </div>
-      <Element name="presentations">
-        <Presentations />
-      </Element>
-      <div className="parallax-resume"></div>
-      <Element name="resume">
-        <Resume />
-      </Element>
-      <div className="parallax-contact"></div>
-      <Element name="contact">
-        <Contact />
-      </Element>
-      <Footer />
+    </Element>
+    <Element name="about">
+      <About />
+    </Element>
+    <div className="parallax px-projects"></div>
+    <Element name="projects">
+      <Projects />
+    </Element>
+    <div className="parallax px-presentations">
+    </div>
+    <Element name="presentations">
+      <Presentations />
+    </Element>
+    <div className="parallax px-resume"></div>
+    <Element name="resume">
+      <Resume />
+    </Element>
+    <div className="parallax px-contact"></div>
+    <Element name="contact">
+      <Contact />
+    </Element>
+    <Footer />
   </div>
   );
 

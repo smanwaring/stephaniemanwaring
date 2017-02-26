@@ -1,0 +1,57 @@
+.wallpaper {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('/img/welcome.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  .info {
+   font-weight: 300;
+    color: white;
+  }
+  .header-font {
+    font-size: 55px;
+    font-weight: 300;
+  }
+}
+
+.parallax { 
+  height: 150px;   
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.px-projects { 
+  background-image: url("/img/projects.jpg");
+}
+
+.px-presentations { 
+  background-image: url("/img/presentations.jpg");
+}
+
+.px-resume { 
+  background-image: url("/img/resume.jpg");
+}
+
+.px-contact { 
+  background-image: url("/img/contact.jpg");
+}
+
+@media( min-width: 800px ) {
+  .wallpaper { 
+     background-attachment: fixed;
+    .header-font {
+      font-size: 100px;
+    }
+  }
+  .parallax { 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    height: 250px; 
+  }
+}
+

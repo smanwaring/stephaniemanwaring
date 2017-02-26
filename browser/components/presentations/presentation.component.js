@@ -1,4 +1,5 @@
 import React from 'react';
+import './presentations.scss';
 
 const presentations = [
   { id: 1, href: 'https://www.youtube.com/watch?v=XkqyDM28y4A&t=25s', title: 'TECH TALK: THE JAVASCRIPT SEMICOLON', description: 'A semi-deep dive into the finer points of semicolons in JavaScript.' },
@@ -15,7 +16,7 @@ export default () => (
             return (
               <a  key={presentation.id} className="presentation-link" href={presentation.href}>
                 <div className="spacer-sm">
-                    <div className={`video-sm-${presentation.id}`}></div>
+                    <div className={`video-sm video-sm-${presentation.id}`}></div>
                     <div className="video-text-box">
                         <div className="text-box">
                             <div className="video-text-title">{presentation.title}</div>

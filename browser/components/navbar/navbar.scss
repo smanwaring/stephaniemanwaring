@@ -1,0 +1,91 @@
+.navbar {
+    width: 100%;
+    text-align: right;
+    background-color: transparent;
+    position: absolute;
+    z-index: 10;
+    padding-top: 20px;
+}
+
+.mobile-menu {
+    padding: 8px 8px;
+}
+
+.menu {
+    vertical-align: middle;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: white; 
+    position: absolute;
+    right: 0;
+    padding: 0 20px 0 20px;
+    transition: 0.2s all;
+}
+
+.expand {
+    height: auto;
+    overflow: auto;
+    transition: 0.5s all;
+}
+
+.menu-text {
+  list-style: none;
+  display: inline-block;
+  color:#363636;
+  margin: 10px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.logo {
+  float: left;
+  padding-left: 10px;
+  color: rgba(255,255,255,.8);
+}
+
+.logo:hover {
+  color: white;
+}
+
+.material-icons {
+  font-size: 30px;
+  color: rgba(255,255,255,.8)
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+@media( min-width: 800px ) {
+    .menu{
+      display: inline-block;
+      position: inherit;
+      padding: 0px;
+      height: auto;
+      background-color: transparent;
+      margin-right: 20px;
+    }
+    .mobile-menu {
+      display: none;
+    }
+    .menu-text:hover {
+      color:white;
+    }
+    .menu-text {
+      color:rgba(255,255,255,.8);
+    }
+}
+
+/* fixed navbar */
+
+.navbar {
+  padding-bottom: 15px;
+  position: fixed;
+}
+
+.background {
+  background: rgba(0,0,0,.8);
+  box-shadow: 0 10px 15px rgba(0,0,0,0.36); 
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import './contact.scss';
 
 export default () => (
 <div className="spacer-sm">

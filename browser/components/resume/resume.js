@@ -1,4 +1,5 @@
 import React from 'react';
+import './resume.scss';
 
 export default () => (
   <div className="spacer spacer-extra">

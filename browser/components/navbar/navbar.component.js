@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Scroll from 'react-scroll';
+import './navbar.scss';
 
 let ScrollLink = Scroll.Link;
 let Element = Scroll.Element;
@@ -19,6 +20,13 @@ export default class Navbar extends React.Component {
 
   componentDidMount() {
     scrollSpy.update();
+    window.addEventListener('scroll', (evt) => {
+      if (window.scrollY > 200) {
+        document.querySelector('.navbar').classList.add('background');
+      } else {
+        document.querySelector('.navbar').classList.remove('background');
+      }
+    });
   }
 
   scrollTo() {

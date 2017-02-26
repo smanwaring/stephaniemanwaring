@@ -1,0 +1,31 @@
+
+.left {
+  text-align: left;
+}
+
+.inline {
+  display: inline;
+}
+
+.yellow {
+  color: #ffcf52
+}
+
+.bold {
+  font-weight: 400;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+.about-top-spacer {
+  padding: 20px 0 0 0; 
+}
+
+
+@media(min-width: 640px) {
+    .about-top-spacer {
+      padding: 0; 
+    }
+}
