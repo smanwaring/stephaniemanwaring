@@ -44,12 +44,12 @@ export default class Navbar extends React.Component {
             <ScrollLink to="home" smooth={true} duration={500}><div className="menu-text logo pointer"> /sm</div></ScrollLink>
             <div className="mobile-menu"><i className="material-icons" onClick={this.handleMenuClick}>menu</i></div>
             <div className={menuClasses} onClick={this.handleMenuClick}>
-              <ScrollLink to="home" smooth={true} duration={500}><div className="menu-text pointer">home</div></ScrollLink>
-              <ScrollLink to="about" smooth={true} duration={500}><div className="menu-text pointer">about</div></ScrollLink>
-              <ScrollLink to="projects" smooth={true} duration={500}><div className="menu-text pointer">projects</div></ScrollLink>
-              <ScrollLink to="presentations" smooth={true} duration={500}><div className="menu-text pointer">presentations</div></ScrollLink>
-              <ScrollLink to="resume" smooth={true} duration={900}><div className="menu-text pointer">resume</div></ScrollLink>
-              <ScrollLink to="contact" smooth={true} duration={900}><div className="menu-text pointer">contact</div></ScrollLink>
+              <ScrollLink to="home" smooth={true} duration={500}><div className="menu-text pointer" onClick={this.handleMenuClick}>home</div></ScrollLink>
+              <ScrollLink to="about" smooth={true} duration={500}><div className="menu-text pointer" onClick={this.handleMenuClick}>about</div></ScrollLink>
+              <ScrollLink to="projects" smooth={true} duration={500}><div className="menu-text pointer" onClick={this.handleMenuClick}>projects</div></ScrollLink>
+              <ScrollLink to="presentations" smooth={true} duration={500}><div className="menu-text pointer" onClick={this.handleMenuClick}>presentations</div></ScrollLink>
+              <ScrollLink to="resume" smooth={true} duration={900}><div className="menu-text pointer" onClick={this.handleMenuClick}>resume</div></ScrollLink>
+              <ScrollLink to="contact" smooth={true} duration={900}><div className="menu-text pointer" onClick={this.handleMenuClick}>contact</div></ScrollLink>
             </div>
           </div>
       );
