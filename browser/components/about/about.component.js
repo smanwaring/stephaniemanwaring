@@ -2,7 +2,7 @@ import React from 'react';
 import './about.scss';
 
 const languages = ['JavaScript', 'HTML5', 'CSS3', 'Sass'];
-const technologies = ['React', 'React-Redux', 'Express', 'Node.js', 'jQuery', 'Mocha / Chai', 'AJAX', 'PostgresSQL', 'Sequelize', 'Angular 2'];
+const technologies = ['React', 'React-Redux', 'Express', 'Node.js', 'jQuery', 'Mocha / Chai', 'AJAX', 'PostgreSQL', 'Sequelize', 'Angular 2'];
 
 export default () => (
   <div className="spacer">
