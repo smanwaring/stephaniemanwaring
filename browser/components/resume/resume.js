@@ -8,7 +8,7 @@ export default () => (
       <article className="main">
         <div className="flex-container">
           <div>
-            <a href="/assets/Stephanie_Manwaring.pdf" target="_blank">
+            <a href="/assets/StephanieManwaring_Resume.pdf" target="_blank">
               <div className="link-box-resume">DOWNLOAD RESUME</div>
             </a>
           </div>
