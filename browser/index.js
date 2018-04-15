@@ -7,7 +7,7 @@ import { Provider } from 'react-redux';
 import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 import store from './store';
 
-
+//test
 
 /*------ COMPONENTS/CONTAINERS ------ */
 import Root from './components/root';
